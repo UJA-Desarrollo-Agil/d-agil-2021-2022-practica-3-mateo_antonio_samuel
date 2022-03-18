@@ -1,140 +1,93 @@
-# Undum
+# Práctica 2  Desarrollo ágil
 
-Undum is a game framework for building a sophisticated form of
-hypertext interactive fiction.
+## Autores
 
-If that means nothing to you, then let's go back a few steps. Remember
-those Choose Your Own Adventure, or Fighting Fantasy books? Where you
-got to choose what your character does next? Well if you think of that
-in a web-page you have hypertext interactive fiction, or HIF. Instead
-of turning to a particular page, you click a link, and the next bit of
-content appears.
+Ivan Mateo Lozano Patzi- _imlp0003@red.ujaen.es_.
 
-The problem is that those kinds of games are pretty limited. Every
-time the player does something, the story could go in different
-directions. So the author has to either write masses of branches, or
-else the decisions you make as a player have to be relatively short
-lived. If you played CYOA books you'll know that the wrong move either
-ended the story pretty quickly, or else it didn't really matter what
-you did because you'd end up at the same place.
+Antonio Javier Armenteros Martinez - _ajam0011@red.ujaen.es_.
 
-To beat this limitation, Undum allows you to make the output
-dynamic. It allows you to keep track of what has happened to the
-character (any kinds of data, in fact), and to then change the text
-that gets output accordingly. Effectively it is like writing a CYOA
-page that is different each time you read it. This allows for far
-richer and more rewarding game design.
+Samuel Valverde Garcia - _svg00018@red.ujaen.es_.
 
-Undum is a pure client client-side library. It consists of a HTML file
-and three Javascript files. The HTML file uses a nice bit of styling,
-so there's a bunch of CSS and images in the default package too, but
-that can be replaced if you want. To create your own game, you edit
-the HTML file a little (mainly just changing the title and author),
-and edit one of the Javascript files.
+Grado en Ingeniría Informática, Universidad de Jaén.
 
-Because the game is written in Javascript, you get the full power of a
-dynamic and efficient programming language. This isn't a CYOA
-scripting system with limited functionality. You can take control of
-anything you want. Or you can just keep things simple using a bunch of
-simple functions provided by Undum.
+## Índice
 
+[1. Titulo y descripción de la práctica](#titulo)
 
-## Compatibility
+- [1.1. Titulo](#tituloPractica)
 
-Undum is designed for HTML5 and CSS3 browsers. It has been tested on
-Firefox 3.6, Chrome 5, and Safari 5. Older browsers may work okay too,
-but some of the animation won't work, the styles may render poorly,
-and saving and loading of games is unlikely to work. Anyone who wants
-to hack around with it and make it work more widely is welcome. Just
-fork this project on Github.
+- [1.2. Descripcion de la práctica](#descripcionPractica)
 
-The local storage system on some browsers does not work when loading a
-page from your hard drive. To test your game when developing it, you
-may want to start up a simple local webserver. I have found that
-Chrome seems to reliably provide local storage for local
-development. It also has excellent Javascript debugging tools.
+[2. Descripción del juego](#descripcion)
 
+- [2.1. Titulo del juego](#tituloJuego) 
 
-## Getting Started
+- [2.2. Trama](#trama)
 
-1. Download Undum. Use the 'download zip' link in the right column of
-   this page.
+[3. URL del tablero en trello](#trello)
 
-2. Unzip Undum somewhere on your hard-drive.
+[4. ¿Qué es Undum?](#undum)
 
-3. Open games/tutorial.html in your browser, and play through the tutorial.
+[5. Capturas de pantalla en trello](#capturasTrello)
 
-4. Copy games/tutorial.html to a file that reflects your game name.
+- [5.1. Inicio](#Foto1)
 
-5. Edit your HTML file and add the title, author and description of
-   the game you want to write. At the bottom of the file change the
-   name of `tutorial.game.js` to something else (by convention
-   *your-game-name*`.game.js`.
+<a name="titulo"></a>
 
-6. Copy `tutorial.game.js` to the file name you chose in the last
-   step. Open it and begin creating your game.
+# 1. Titulo y descripción de la práctica
 
+<a name="tituloPractica"></a>
 
-Reference documentation, including full API details, is at
-[http://idmillington.github.io/undum/](http://idmillington.github.io/undum/),
-and is also included in the repository.
+## 1.1. Titulo
 
-The source code for all the files is also heavily commented, so if you
-get stuck, go in and read it.
+**Proyecto Grupal. Sprint 0**
 
+<a name="descripcionPractica"></a>
 
-## Deploying
+## 1.2. Descripcion de la práctica
 
-To deploy your game, just upload your HTML file and the `media` folder
-to your webserver. You can serve several games with the same look and
-feel from the same directory. You need a different HTML file for each
-game, and each one should load the correct `.game.js` file at the
-end. Add any media you need for your game (images, audio, video), and
-the remaining files will be reused.
+Práctica 3 evaluable para la asignatura desarrollo ágil impartida por el profesor Víctor M. Rivas, consite 
 
-For example, if you had 3 games: `episode1`, `episode2`, and
-`christmas-special`. You'd have a directory structure:
+<a name="descripcion"></a>
 
-    episode1.html
-    episode2.html
-    christmas-special.html
-    media/
-        css/ ...
-        img/ ...
-        js/
-            jquery-1.4.2.min.js
-            undum.js
-        games/
-            episode1/
-                episode1.game.js
-                ... media for episode 1 ...
-            episode2/
-                episode2.game.js
-                ... media for episode 1 ...
-            christmas-special/
-                christmas-special.game.js
-                ... media for christmas special ...
+# 2. Descripción del juego
 
-This assumes you use the same directory lay out that I do. You are
-welcome to change things around, of course, as long as you work and
-change the references.
+<a name="tituloJuego"></a>
 
+## 2.1. Titulo del juego
 
-## Undum
+Victor Jones
 
-The name `undum` came from a little project that preceded this code
-base. In 2008 I put together a simple browser based game. It was
-narrative, but used the grind-based mechanics of games such as
-Farmville and Mafia Wars. Because of the grinding, I called it
-Carborundum, which I found I couldn't type at speed, so it became
-Undum. The code has changed out of all recognition since them, as the
-grind-based game moved to Flash. But the name stuck for the Javascript
-framework.
+<a name="trama"></a>
 
+## 2.2. Trama
 
-## License
+Historia sobre un muchacho que ha de atravesar una tormenta de arena, la cual nadie atraviesa por sus violentas sacudidas pero está rodeado de historias incluyendo la receta de la inmortalidad...
 
-The code, documentation, styles, design and images are all distributed
-under the MIT license. This permits you to modify and use them, even
-for commercial use. A copy of the MIT license is found in the LICENSE
-file.
+spoiler: la receta son churros que los puso por allí un conocido / familiar
+Podría empezar tomando cosas de su casa y, según el peso de la mochila/inventario, tienes que dejar cosas en su casa. También se puede hacer que haya objetos que necesite y no deba soltarlos de la mochila.
+
+También tiene dinero el personaje y podría facilitar algunas acciones.
+
+<a name="trello"></a>
+
+# 3. URL del tablero en trello
+
+**_Enlace al tablero de Trello_**: [https://trello.com/b/yuunbfUG/proyecto-desarrollo-%C3%A1gil](https://trello.com/b/yuunbfUG/proyecto-desarrollo-%C3%A1gil)
+
+<a name="undum"></a>
+
+# 4. ¿Qué es Undum?
+
+Undum es un framework que se ejecuta en un navegador y permite crear juegos interactivos basados en HTML, CSS y Javascript.
+
+Está disponible en http://github.com/idmillington/undum, desde donde se puede descargar el código para crear nuevos juegos, así como acceder a [un manual básico de utilización](http://idmillington.github.io/undum/).
+
+<a name="capturasTrello"></a>
+
+# 5. Capturas de pantalla en trello
+
+<a name="Foto1"></a>
+
+## 5.1. Inicio
+
