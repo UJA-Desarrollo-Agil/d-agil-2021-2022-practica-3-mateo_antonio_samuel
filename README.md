@@ -24,9 +24,9 @@ Grado en Ingeniría Informática, Universidad de Jaén.
 
 - [2.2. Trama](#trama)
 
-[3. URL del tablero en trello](#trello)
+[3. ¿Qué es Undum?](#undum)
 
-[4. ¿Qué es Undum?](#undum)
+[4. URL del tablero en trello](#trello)
 
 [5. Capturas de pantalla en trello](#capturasTrello)
 
@@ -46,7 +46,7 @@ Grado en Ingeniría Informática, Universidad de Jaén.
 
 ## 1.2. Descripcion de la práctica
 
-Práctica 3 evaluable para la asignatura desarrollo ágil impartida por el profesor Víctor M. Rivas, consite 
+Esta tercera práctica evaluable para la asignatura desarrollo ágil impartida por el profesor Víctor M. Rivas, consiste en utilizar la metodología Scrum para desarrollar una aventura conversacional en el framework Undum. En concreto esta practica se centra en la creación de un Product Backlog del proyecto grupal que se desarrollara con el resto de las practicas y la descripción del juego.
 
 <a name="descripcion"></a>
 
@@ -69,19 +69,19 @@ Podría empezar tomando cosas de su casa y, según el peso de la mochila/inventa
 
 También tiene dinero el personaje y podría facilitar algunas acciones.
 
-<a name="trello"></a>
-
-# 3. URL del tablero en trello
-
-**_Enlace al tablero de Trello_**: [https://trello.com/b/yuunbfUG/proyecto-desarrollo-%C3%A1gil](https://trello.com/b/yuunbfUG/proyecto-desarrollo-%C3%A1gil)
-
 <a name="undum"></a>
 
-# 4. ¿Qué es Undum?
+# 3. ¿Qué es Undum?
 
 Undum es un framework que se ejecuta en un navegador y permite crear juegos interactivos basados en HTML, CSS y Javascript.
 
 Está disponible en http://github.com/idmillington/undum, desde donde se puede descargar el código para crear nuevos juegos, así como acceder a [un manual básico de utilización](http://idmillington.github.io/undum/).
+
+<a name="trello"></a>
+
+# 4. URL del tablero en trello
+
+**_Enlace al tablero de Trello_**: [https://trello.com/b/yuunbfUG/proyecto-desarrollo-%C3%A1gil](https://trello.com/b/yuunbfUG/proyecto-desarrollo-%C3%A1gil)
 
 <a name="capturasTrello"></a>
 
