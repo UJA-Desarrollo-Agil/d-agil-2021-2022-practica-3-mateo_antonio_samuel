@@ -30,6 +30,8 @@ Estudiantes del curso 2021/2022 de Ingeniría Informática en la Universidad de 
 
 - [5.1. Inicio](#Foto1)
 
+[6. Planing Poker](#planing)
+
 <a name="titulo"></a>
 
 # 1. Titulo y descripción de la práctica
@@ -86,3 +88,26 @@ El siguente enlace lleva a nuestro tablero grupal de Trello: **[https://trello.c
 
 ## 5.1. Inicio
 
+![Trello1](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/Trello1.png)
+
+_Captura de pantalla del tablero Trello al inicio de la practica (1/4)_
+
+![Trello2](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/Trello2.png)
+
+_Captura de pantalla del tablero Trello al inicio de la practica (2/4)_
+
+![Trello3](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/Trello3.png)
+
+_Captura de pantalla del tablero Trello al inicio de la practica (3/4)_
+
+![Trello4](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/Trello4.png)
+
+_Captura de pantalla del tablero Trello al inicio de la practica (4/4)_
+
+<a name="planing"></a>
+
+# 6. Planning Poker
+
+![Planing](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/planning_poker.png)
+
+_Captura de pantalla de Telegram, votacion del planing poker_
