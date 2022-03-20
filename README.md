@@ -1,14 +1,12 @@
-# Práctica 2  Desarrollo ágil
+# Práctica 3 de Desarrollo ágil
 
 ## Autores
 
-Ivan Mateo Lozano Patzi- _imlp0003@red.ujaen.es_.
+ - Ivan Mateo Lozano Patzi - _imlp0003@red.ujaen.es_
+ - Antonio Javier Armenteros Martinez - _ajam0011@red.ujaen.es_
+ - Samuel Valverde Garcia - _svg00018@red.ujaen.es_
 
-Antonio Javier Armenteros Martinez - _ajam0011@red.ujaen.es_.
-
-Samuel Valverde Garcia - _svg00018@red.ujaen.es_.
-
-Grado en Ingeniría Informática, Universidad de Jaén.
+Estudiantes del curso 2021/2022 de Ingeniría Informática en la Universidad de Jaén.
 
 ## Índice
 
@@ -22,13 +20,13 @@ Grado en Ingeniría Informática, Universidad de Jaén.
 
 - [2.1. Titulo del juego](#tituloJuego) 
 
-- [2.2. Trama](#trama)
+- [2.2. Descripción de la aventura](#trama)
 
 [3. ¿Qué es Undum?](#undum)
 
 [4. URL del tablero en trello](#trello)
 
-[5. Capturas de pantalla en trello](#capturasTrello)
+[5. Capturas de pantalla en trello](#capturas)
 
 - [5.1. Inicio](#Foto1)
 
@@ -46,7 +44,7 @@ Grado en Ingeniría Informática, Universidad de Jaén.
 
 ## 1.2. Descripcion de la práctica
 
-Esta tercera práctica evaluable para la asignatura desarrollo ágil impartida por el profesor Víctor M. Rivas, consiste en utilizar la metodología Scrum para desarrollar una aventura conversacional en el framework Undum. En concreto esta practica se centra en la creación de un Product Backlog del proyecto grupal que se desarrollara con el resto de las practicas y la descripción del juego.
+Esta tercera práctica evaluable para la asignatura Desarrollo Ágil impartida por el profesor Víctor M. Rivas consiste en utilizar la metodología Scrum para desarrollar una aventura conversacional en el framework Undum. Esta practica se centra concretamente en inventar el título y la historia del juego y en la creación de un Product Backlog del proyecto grupal con el que se desarrollara el juego en las practicas restantes.
 
 <a name="descripcion"></a>
 
@@ -56,18 +54,15 @@ Esta tercera práctica evaluable para la asignatura desarrollo ágil impartida p
 
 ## 2.1. Titulo del juego
 
-Victor Jones
+Victor Jones y la receta de la inmortalidad.
 
 <a name="trama"></a>
 
-## 2.2. Trama
+## 2.2. Descripción de la aventura
 
-Historia sobre un muchacho que ha de atravesar una tormenta de arena, la cual nadie atraviesa por sus violentas sacudidas pero está rodeado de historias incluyendo la receta de la inmortalidad...
+La aventura tratará sobre Víctor Jones, un jóven que ya es casi un licenciado en ingeniería informática que sólo le faltan aprobar algunas asignaturas. Un día, yendo a una de sus clases, escucha de otros compañeros en los pasillos un cierto rumor que corre sobre la receta de la inmortalidad pero que sólo se encuentra en una zona desértica de Almería donde siempre hay mucha calima. Fascinado y curioso por la idea, se preparará para zambullirse de lleno a la trepidante aventura que le aguarda en *Oasis C*.
 
-spoiler: la receta son churros que los puso por allí un conocido / familiar
-Podría empezar tomando cosas de su casa y, según el peso de la mochila/inventario, tienes que dejar cosas en su casa. También se puede hacer que haya objetos que necesite y no deba soltarlos de la mochila.
-
-También tiene dinero el personaje y podría facilitar algunas acciones.
+A lo largo de la historia se podrán coger y soltar objetos de la mochila, además de utilizarlos para algún puzzle en específico. Víctor Jones no es practicante de halterofilia así que el peso que puede llevar consigo es limitado. Además, tendrá que tener en cuenta el dinero que lleva encima a pesar de ser estudiante universitario. Cada partida guardará la puntuación acumulada del jugador en base a las opciones que haya escojido.
 
 <a name="undum"></a>
 
@@ -81,9 +76,9 @@ Está disponible en http://github.com/idmillington/undum, desde donde se puede d
 
 # 4. URL del tablero en trello
 
-**_Enlace al tablero de Trello_**: [https://trello.com/b/yuunbfUG/proyecto-desarrollo-%C3%A1gil](https://trello.com/b/yuunbfUG/proyecto-desarrollo-%C3%A1gil)
+El siguente enlace lleva a nuestro tablero grupal de Trello: **[https://trello.com/b/yuunbfUG/proyecto-desarrollo-%C3%A1gil](https://trello.com/b/yuunbfUG/proyecto-desarrollo-%C3%A1gil)**
 
-<a name="capturasTrello"></a>
+<a name="capturas"></a>
 
 # 5. Capturas de pantalla en trello
 
