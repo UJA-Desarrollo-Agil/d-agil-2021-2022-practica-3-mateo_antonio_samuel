@@ -28,8 +28,6 @@ Estudiantes del curso 2021/2022 de Ingeniría Informática en la Universidad de 
 
 [5. Capturas de pantalla en trello](#capturas)
 
-- [5.1. Inicio](#Foto1)
-
 [6. Planing Poker](#planing)
 
 <a name="titulo"></a>
@@ -82,27 +80,19 @@ El siguente enlace lleva a nuestro tablero grupal de Trello: **[https://trello.c
 
 <a name="capturas"></a>
 
-# 5. Capturas de pantalla en trello
-
-<a name="Foto1"></a>
-
-## 5.1. Inicio
+# 5. Capturas de pantalla del tablero de Trello
 
 ![Trello1](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/Trello1.png)
 
-_Captura de pantalla del tablero Trello al inicio de la practica (1/4)_
+_Captura de pantalla del tablero Trello al inicio de la practica (1/3)_
 
 ![Trello2](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/Trello2.png)
 
-_Captura de pantalla del tablero Trello al inicio de la practica (2/4)_
+_Captura de pantalla del tablero Trello al inicio de la practica (2/3)_
 
 ![Trello3](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/Trello3.png)
 
-_Captura de pantalla del tablero Trello al inicio de la practica (3/4)_
-
-![Trello4](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/Trello4.png)
-
-_Captura de pantalla del tablero Trello al inicio de la practica (4/4)_
+_Captura de pantalla del tablero Trello al inicio de la practica (3/3)_
 
 <a name="planing"></a>
 
