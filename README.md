@@ -3,7 +3,7 @@
 ## Autores
 
  - Ivan Mateo Lozano Patzi - _imlp0003@red.ujaen.es_
- - Antonio Javier Armenteros Martinez - _ajam0011@red.ujaen.es_
+ - Antonio Javier Armenteros Martínez - _ajam0011@red.ujaen.es_
  - Samuel Valverde Garcia - _svg00018@red.ujaen.es_
 
 Estudiantes del curso 2021/2022 de Ingeniría Informática en la Universidad de Jaén.
@@ -60,9 +60,9 @@ Victor Jones y la receta de la inmortalidad.
 
 ## 2.2. Descripción de la aventura
 
-La aventura tratará sobre Víctor Jones, un jóven que ya es casi un licenciado en ingeniería informática que sólo le faltan aprobar algunas asignaturas. Un día, yendo a una de sus clases, escucha de otros compañeros en los pasillos un cierto rumor que corre sobre la receta de la inmortalidad pero que sólo se encuentra en una zona desértica de Almería donde siempre hay mucha calima. Fascinado y curioso por la idea, se preparará para zambullirse de lleno a la trepidante aventura que le aguarda en *Oasis C*.
+La aventura tratará sobre Víctor Jones, un joven que ya es casi un licenciado en ingeniería informática, que sólo le faltan aprobar algunas asignaturas. Un día, yendo a una de sus clases, escucha de otros compañeros en los pasillos un cierto rumor que corre sobre la receta de la inmortalidad pero que sólo se encuentra en una zona desértica de Almería donde siempre hay mucha calima. Fascinado y curioso por la idea, se preparará para zambullirse de lleno a la trepidante aventura que le aguarda en *Oasis C*.
 
-A lo largo de la historia se podrán coger y soltar objetos de la mochila, además de utilizarlos para algún puzzle en específico. Víctor Jones no es practicante de halterofilia así que el peso que puede llevar consigo es limitado. Además, tendrá que tener en cuenta el dinero que lleva encima a pesar de ser estudiante universitario. Cada partida guardará la puntuación acumulada del jugador en base a las opciones que haya escojido.
+A lo largo de la historia se podrán coger y soltar objetos de la mochila, además de utilizarlos para algún puzzle en específico. Víctor Jones no es practicante de halterofilia así que el peso que puede llevar consigo es limitado. Además, tendrá que tener en cuenta el dinero que lleva encima a pesar de ser estudiante universitario. Cada partida guardará la puntuación acumulada del jugador según las opciones que haya escogido.
 
 <a name="undum"></a>
 
