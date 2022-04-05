@@ -2284,8 +2284,32 @@
         random_error: "Initialize the Random with a non-empty seed before use.",
         dice_string_error: "Couldn't interpret your dice string: '{string}'."
     };
+    var es = {
+        terrible: "terrible",
+        poor: "pobre",
+        mediocre: "mediocre",
+        fair: "justa",
+        good: "normal",
+        great: "buena",
+        superb: "excelente",
+        yes: "sí",
+        no: "no",
+        choice: "Elección {number}",
+        no_group_definition: "Couldn't find a group definition for {id}.",
+        link_not_valid: "The link '{link}' doesn't appear to be valid.",
+        link_no_action: "Un enlace con una situación de '.', debe tener una acción.",
+        unknown_situation: "No puedes pasar a una situación desconocida: {id}.",
+        existing_situation: "No puede anular la situación {id} del HTML.",
+        erase_message: "Esto eliminará permanentemente a este personaje e inmediatamente te devolverá al comienzo del juego. ¿Estás seguro?",
+        no_current_situation: "No puedo mostrar, porque no tenemos una situación actual.",
+        no_local_storage: "No hay almacenamiento local disponible.",
+        random_seed_error: "Debe proporcionar una semilla aleatoria válida.",
+        random_error: "Inicialice el Random con una semilla no vacía antes de usarlo.",
+        dice_string_error: "No se pudo interpretar la cadena de dados: '{string}'."
+    };
     // Set this data as both the default fallback language, and the english
     // preferred language.
     undum.language[""] = en;
     undum.language["en"] = en;
+    undum.language["es"] = es;
 }(jQuery));

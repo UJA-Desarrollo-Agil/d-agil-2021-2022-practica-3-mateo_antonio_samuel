@@ -28,15 +28,22 @@ undum.game.slideUpSpeed = 500
 
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
-    start: new undum.SimpleSituation(
-        
+    comienzo: new undum.SimpleSituation(
+        "<h1>Una receta para ser inmortal</h1>" +
+        "<p>Víctor Jones, un jóven que ya es casi un licenciado en ingeniería informática que sólo le faltan aprobar algunas asignaturas.</p></br></br>" +
+        "<p>Un día, yendo a una de sus clases, escucha de otros compañeros en los pasillos un <em>cierto rumor</em> que corre sobre la receta de la inmortalidad " +
+        "pero que sólo se encuentra en una zona desértica de Almería donde siempre hay mucha calima.</p>" +
+        "<p>Fascinado y curioso por la idea, al acabar sus clases de la universidad <a href='final'>vuelve a su casa.</a></p>"
+    ),
+    final: new undum.SimpleSituation(
+        "<h1>Todo lo que empieza, acaba</h1>" +
+        "<p>INVENTARSE EL FINAL</p>"
     )
-   
 };
 
 // ---------------------------------------------------------------------------
 /* The Id of the starting situation. */
-undum.game.start = "start";
+undum.game.start = "comienzo";
 
 // ---------------------------------------------------------------------------
 /* Here we define all the qualities that our characters could
@@ -52,10 +59,13 @@ undum.game.qualities = {
  * the end. It is an error to have a quality definition belong to a
  * non-existent group. */
 undum.game.qualityGroups = {
+    mochila: new undum.QualityGroup('<span title="A lo largo de la aventura, Víctor Jones podrá recoger objetos de su entorno y llevarlo en su mochila.">Mochila</span>', {priority: "0001"}),
 };
 
 // ---------------------------------------------------------------------------
 /* This function gets run before the game begins. It is normally used
  * to configure the character at the start of play. */
 undum.game.init = function(character, system) {
+
+    system.setCharacterText("<p><span title='Poner el cursor encima de tus objetos revelará más información.'>Coloca el ratón encima de tus objetos o habilidades para más información.</span></p>");
 };
