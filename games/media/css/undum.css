@@ -355,3 +355,9 @@ img.float_left {
 #menu {
     display: none;
 }
+
+.gameover{
+    font-size: 30px;
+    color: red;
+    text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87
+}

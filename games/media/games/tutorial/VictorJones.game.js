@@ -42,9 +42,45 @@ undum.game.situations = {
         "<p>Compañero 1 - <em>Según tengo entendido está en un lugar desértico donde siempre hay mucha calima. Lo llaman 'Oasis C'.</em></p>" +
         "<p>Compañero 2 - <em>Va a ir quié' yo me sé ha'ta allí. No te creas todo lo que está por el Interné dese'.</em></p></br>" +
 
-        "<p>Víctor, fascinado y curioso por la idea de vivir eternamente, al acabar sus clases de la universidad <a href='final'>vuelve a su casa</a> para coger todo lo necesario " +
-        "y hacer un plan para llegar hasta allí</p>"
+        "<p>Víctor, fascinado y curioso por la idea de vivir eternamente, al acabar sus clases de la universidad <a href='hub1'>vuelve a su casa</a> para coger todo lo necesario y hacer un plan para llegar hasta allí</p>"
     ),
+    situationsautobus: new undum.Situation({
+        enter: function(character, system, from) {
+            system.setQuality("cartera", character.qualities.cartera-1);
+            system.write($("#EleccionAutobus").html());
+        },
+        tags: ["topic1"],
+        optionText: "Coger el Autobus...",
+        displayOrder: 1
+    }),
+    /** 
+    situationstaxi: new undum.Situation({
+        enter: function(character, system, from) {
+            system.setQuality("cartera", character.qualities.cartera-1);
+            system.write($("#EleccionTaxi").html());
+        },
+        tags: ["topic1"],
+        optionText: "Coger el Taxi...",
+        displayOrder: 2
+    }),
+    situationsblablacar: new undum.Situation({
+        enter: function(character, system, from) {
+            system.setQuality("cartera", character.qualities.cartera-);
+            system.write($("#EleccionBlablacar").html());
+        },
+        tags: ["topic1"],
+        optionText: "Coger el BlaBlaCar...",
+        displayOrder: 3
+    }),
+    */
+    situationsautostop: new undum.Situation({
+        enter: function(character, system, from) {
+            system.write($("#EleccionAutostop").html());
+        },
+        tags: ["topic1"],
+        optionText: "Hacer autostop...",
+        displayOrder: 4
+    }),
     final: new undum.SimpleSituation(
         "<h1>Todo lo que empieza, acaba</h1>" +
         "<p>HACER LA HISTORIA DEL FINAL</p>"
