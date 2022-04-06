@@ -43,11 +43,29 @@ undum.game.situations = {
         "<p>Compañero 2 - <em>Va a ir quié' yo me sé ha'ta allí. No te creas todo lo que está por el Interné dese'.</em></p></br>" +
 
         "<p>Víctor, fascinado y curioso por la idea de vivir eternamente, al acabar sus clases de la universidad <a href='final'>vuelve a su casa</a> para coger todo lo necesario " +
-        "y hacer un plan para llegar hasta allí</p>"
+        "y hacer un plan para llegar hasta allí</p>",
+        {
+            enter: function (character, system, from){
+                //
+            },
+            exit: function(character, system, to) {
+                //INTRODUCIR AQUÍ LAS COSAS QUE V.JONES SE LLEVA DE SU CASA
+                //system.setQuality("NOMBRE_DEL_OBJETO", 1);
+            }
+        }
     ),
     final: new undum.SimpleSituation(
         "<h1>Todo lo que empieza, acaba</h1>" +
-        "<p>HACER LA HISTORIA DEL FINAL</p>"
+        "<p>Por fin, Víctor Jones logra ver, delante de sus narices, la receta de la inmortalidad encima de un altar de piedra.</p>" +
+        "</br><p>Ya no hay vuelta atrás. Víctor saca el corcho de la botella, y en la luz del atardecer, extiende el papel enrollado con sus dos brazos. " +
+        "Sus ojos leyeron lo más rápido posible aquel escrito:</br></br></p>" +
+        "<p>Víctor Jones - <em>¿Estás de guasa?.</em></p>" +
+        "</br><p>A Víctor se le abrieron aún más los ojos cuando descubrió, que lo que era una receta de la inmortalidad, resultó ser nada menos que una receta para hacer churros con chocolate.</p>" +
+        "</br><p>Estaba cansado, le ilusionó mucho que fuera de verdad la receta de la inmortalidad pero no se ha aburrido y hasta se ha divertido con la experiencia. " +
+        "Además, Víctor es joven y aún no sabe hacerse ni un huevo frito, por lo que, valorando cuánto le ha gustado encontrar finalmente la receta, le comenta a los cuatro vientos: </br></p>" +
+        "<p>Víctor Jones - <em>¿Para hacer churros?. Nah, de locos.</em></p>" +
+        "</br><p>Acto seguido, llama a su madre para ver si le recogen y para negociar el desayuno de mañana.</p>"
+
     )
 };
 
