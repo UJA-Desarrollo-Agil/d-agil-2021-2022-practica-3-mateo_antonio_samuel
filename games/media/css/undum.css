@@ -361,3 +361,7 @@ img.float_left {
     color: red;
     text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87
 }
+
+.imagenLogo{
+    width: 50%;
+}

@@ -46,17 +46,17 @@ undum.game.situations = {
     ),
     situationsautobus: new undum.Situation({
         enter: function(character, system, from) {
-            system.setQuality("cartera", character.qualities.cartera-1);
-            system.write($("#EleccionAutobus").html());
+            system.setQuality("dinero", character.qualities.dinero-21);
+            system.write($("#EleccionAutobus").html());   
         },
         tags: ["topic1"],
         optionText: "Coger el Autobus...",
         displayOrder: 1
     }),
-    /** 
+    
     situationstaxi: new undum.Situation({
         enter: function(character, system, from) {
-            system.setQuality("cartera", character.qualities.cartera-1);
+            system.setQuality("dinero", character.qualities.dinero-40);
             system.write($("#EleccionTaxi").html());
         },
         tags: ["topic1"],
@@ -65,14 +65,14 @@ undum.game.situations = {
     }),
     situationsblablacar: new undum.Situation({
         enter: function(character, system, from) {
-            system.setQuality("cartera", character.qualities.cartera-);
-            system.write($("#EleccionBlablacar").html());
+            system.setQuality("dinero", character.qualities.dinero-8);
+            system.write($("#EleccionBlaBlaCar").html());
         },
         tags: ["topic1"],
         optionText: "Coger el BlaBlaCar...",
         displayOrder: 3
     }),
-    */
+    
     situationsautostop: new undum.Situation({
         enter: function(character, system, from) {
             system.write($("#EleccionAutostop").html());
@@ -81,6 +81,9 @@ undum.game.situations = {
         optionText: "Hacer autostop...",
         displayOrder: 4
     }),
+
+
+    
     final: new undum.SimpleSituation(
         "<h1>Todo lo que empieza, acaba</h1>" +
         "<p>HACER LA HISTORIA DEL FINAL</p>"
@@ -96,6 +99,9 @@ undum.game.start = "comienzo";
  * possess. We don't have to be exhaustive, but if we miss one out then
  * that quality will never show up in the character bar in the UI. */
 undum.game.qualities = {
+    dinero: new undum.IntegerQuality(
+        "Dinero", {priority:"0001", group:'stats'}
+    )
 };
 
 // ---------------------------------------------------------------------------
@@ -106,12 +112,13 @@ undum.game.qualities = {
  * non-existent group. */
 undum.game.qualityGroups = {
     mochila: new undum.QualityGroup('<span title="A lo largo de la aventura, Víctor Jones podrá recoger objetos de su entorno y llevarlo en su mochila.">Mochila</span>', {priority: "0001"}),
+    stats: new undum.QualityGroup(null, {priority:"0002"}),
 };
 
 // ---------------------------------------------------------------------------
 /* This function gets run before the game begins. It is normally used
  * to configure the character at the start of play. */
 undum.game.init = function(character, system) {
-
+    character.qualities.dinero = 50;
     system.setCharacterText("<p><span title='Poner el cursor encima de tus objetos revelará más información.'>Coloca el ratón encima de tus objetos o habilidades para más información.</span></p>");
 };
