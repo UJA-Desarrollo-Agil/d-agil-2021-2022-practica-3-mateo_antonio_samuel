@@ -365,3 +365,11 @@ img.float_left {
 .imagenLogo{
     width: 50%;
 }
+
+.imagenConversacion{
+    width: 20%;
+}
+
+.transient{
+    color: #943
+}

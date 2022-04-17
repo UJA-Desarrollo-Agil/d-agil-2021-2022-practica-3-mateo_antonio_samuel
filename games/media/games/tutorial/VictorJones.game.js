@@ -50,7 +50,7 @@ undum.game.situations = {
             system.write($("#EleccionAutobus").html());   
         },
         tags: ["topic1"],
-        optionText: "Coger el Autobus...",
+        optionText: "Coger el Autobus... (21€)",
         displayOrder: 1
     }),
     
@@ -60,7 +60,7 @@ undum.game.situations = {
             system.write($("#EleccionTaxi").html());
         },
         tags: ["topic1"],
-        optionText: "Coger el Taxi...",
+        optionText: "Coger el Taxi... (40€)",
         displayOrder: 2
     }),
     situationsblablacar: new undum.Situation({
@@ -69,19 +69,81 @@ undum.game.situations = {
             system.write($("#EleccionBlaBlaCar").html());
         },
         tags: ["topic1"],
-        optionText: "Coger el BlaBlaCar...",
+        optionText: "Coger el BlaBlaCar... (8€)",
         displayOrder: 3
     }),
-    
     situationsautostop: new undum.Situation({
         enter: function(character, system, from) {
             system.write($("#EleccionAutostop").html());
         },
         tags: ["topic1"],
-        optionText: "Hacer autostop...",
+        optionText: "Hacer autostop... (0€)",
         displayOrder: 4
     }),
-
+    situationopccara: new undum.Situation({
+        enter: function(character, system, from) {
+            system.setQuality("dinero", character.qualities.dinero-18);
+            if (character.qualities.dinero<0) {
+                system.write($("#EleccionComidaCaraMal").html());
+            } else {
+                system.write($("#EleccionComidaCaraBien").html());
+            }  
+        },
+        tags: ["topic2"],
+        optionText: "Chuletón de ternera (18€)",
+        displayOrder: 1
+    }),
+    situationopcnormal: new undum.Situation({
+        enter: function(character, system, from) {
+            system.setQuality("dinero", character.qualities.dinero-10);
+            system.write($("#EleccionComidaNormal").html());
+        },
+        tags: ["topic2"],
+        optionText: "Nachos y quesadillas (10€)",
+        displayOrder: 2
+    }),
+    situationopcbarata: new undum.Situation({
+        enter: function(character, system, from) {
+            system.setQuality("dinero", character.qualities.dinero-6);
+            system.write($("#EleccionComidaBarata").html());
+        },
+        tags: ["topic2"],
+        optionText: "Menú pizza turca (6€)",
+        displayOrder: 3
+    }),
+    situationconversacion1: new undum.Situation({
+        enter: function(character, system, from) {
+            system.write($("#EleccionConversacion1mal").html());
+        },
+        tags: ["topic3"],
+        optionText: "No me interesan...",
+        displayOrder: 1
+    }),
+    situationconversacion1part2: new undum.Situation({
+        enter: function(character, system, from) {
+            system.write($("#EleccionConversacion1bien").html());
+        },
+        tags: ["topic3"],
+        optionText: "Solo lo estaban mirando...",
+        displayOrder: 2
+    }),
+    situationconversacion2: new undum.Situation({
+        enter: function(character, system, from) {
+            system.setQuality("dinero", character.qualities.dinero-5);
+            system.write($("#EleccionConversacion2bien").html());
+        },
+        tags: ["topic4"],
+        optionText: "Me lo llevo... (5€)",
+        displayOrder: 1
+    }),
+    situationconversacion2part2: new undum.Situation({
+        enter: function(character, system, from) {
+            system.write($("#EleccionConversacion2mal").html());
+        },
+        tags: ["topic4"],
+        optionText: "No gracias, no lo voy a comprar...",
+        displayOrder: 2
+    }),
 
     
     final: new undum.SimpleSituation(
@@ -119,6 +181,6 @@ undum.game.qualityGroups = {
 /* This function gets run before the game begins. It is normally used
  * to configure the character at the start of play. */
 undum.game.init = function(character, system) {
-    character.qualities.dinero = 50;
+    character.qualities.dinero = 55;
     system.setCharacterText("<p><span title='Poner el cursor encima de tus objetos revelará más información.'>Coloca el ratón encima de tus objetos o habilidades para más información.</span></p>");
 };
