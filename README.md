@@ -30,7 +30,9 @@ Somos estudiantes del curso 2021/2022 de Ingeniría Informática en la Universid
 
 [5. Capturas de pantalla en trello](#5-capturas-de-pantalla-del-tablero-de-trello)
 
-[6. Planing Poker](#6-planning-poker)
+[6. Plannning Poker](#6-planning-poker)
+
+[7. Actualización: Nuevos requisitos](#7-actualizacin-del-proyecto-con-nuevos-requisitos)
 
 # 1. Titulo y descripción de la práctica
 
@@ -83,3 +85,7 @@ _Captura de pantalla del tablero Trello al inicio de la practica (3/3)_
 ![Planing](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/planning_poker.png)
 
 _Captura de pantalla de Telegram, votacion del planing poker_
+
+# 7. Actualización del proyecto con nuevos requisitos
+
+El día 6 de abril de 2022 se encontraron nuevos requisitos a considerar para el proyecto
