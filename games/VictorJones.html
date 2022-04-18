@@ -23,7 +23,9 @@
   <!--[if !IE]>-->
   <link media="only screen and (max-width: 640px)" rel="stylesheet" type="text/css" href="media/css/undum-mobile.css">
   <!--<![endif]-->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -53,6 +55,8 @@
         <h1>Victor Jones</h1>
         <p>
           <!-- INFO DEL JUEGO (Columna izquierda)-->
+          La aventura tratará sobre Víctor Jones, un jóven que ya es casi un licenciado en ingeniería informática que sólo le faltan aprobar algunas asignaturas. Un día, yendo a una de sus clases, escucha de otros compañeros en los pasillos un cierto rumor que corre sobre la receta de la inmortalidad pero que sólo se encuentra en una zona desértica de Almería donde siempre hay mucha calima.
+          Fascinado y curioso por la idea, se preparará para zambullirse de lleno a la trepidante aventura que le aguarda en Oasis C.
         </p>
         <!-- End of Game Background -->
 
@@ -184,7 +188,7 @@
           Como apasionado de la carne en general, buscas un asador en el Carrefive, encuentras uno y miras la carta, dudoso de lo que pedir ya que te encanta todo, te paras a pensar y vistes que estaban preparando costillas con salsa barbacoa para otro cliente, pero eso lo comiste hace poco en el Foster´s Hollywood, por lo tanto descartado, sales de dudas ya que tienes dinero suficiente para darte el gusto y te pides un chuletón de ternera de 400g acompañado de unas patatas fritas, como sabes comer bien la ternera se la pedimos al camarero poco hecha, casi como si fuera vuelta y vuelta, ya que quien se la pida hecha esta desperdiciando ese manjar de los dioses.
         </p>
         <p class='transient'>
-          <a href='hub3'>Click para continuar...</a> 
+          <a href='vendedor'>Click para continuar...</a> 
         </p>
       </div>
 
@@ -205,7 +209,7 @@
           Como apasionado de la comida mexicana, buscas un mexicano en el Carrefive, encuentras uno y miras la carta, dudoso de lo que pedir ya que te encanta todo, te paras a pensar y vistes que estaban preparando hamburguesas para otro cliente, pero eso lo comiste hace poco por lo tanto descartado, sales de dudas ya que tienes dinero suficiente para darte el gusto (ya que los mexicanos son carillos) y te pides unos nachos acompañado de su guacamole y pico de gallo, como no estabas convencido del todo ya que lo veías poca comida la mejor opción es pedirse también unas quesadillas para rematar.
         </p>
         <p class='transient'>
-          <a href='hub3'>Click para continuar...</a> 
+          <a href='vendedor'>Click para continuar...</a> 
         </p>
       </div>
 
@@ -215,7 +219,7 @@
           Como apasionado del kebab que eres, buscas la kebaberia del Carrefive, allí miras la carta, dudoso de lo que pedir ya que te encanta todo, te paras a pensar y vistes que estaban preparando patata asada para otro cliente, pero eso lo comiste hace poco por lo tanto descartado, la real duda estaba si pedirse un menú pizza turca o menú kebab de pan de pita, ya que todo el mundo sabe y damos por hecho de que el durum es una mierda ya que tienes la pizza turca que es lo mismo pero mejor. Por lo tanto sales de dudas y te pides un menú pizza turca, ya que es menú te viene acompañado de unas patatas y una bebida a elegir, en nuestro caso Nestea.
         </p>
         <p class='transient'>
-          <a href='hub3'>Click para continuar...</a> 
+          <a href='vendedor'>Click para continuar...</a> 
         </p>
       </div>
 
@@ -254,7 +258,7 @@
         <br>
         Cuando te vas de la sección y miras para atrás el hombre misterioso que vende indalos ya no esta, te parece raro pero prosigues con tu camino.
         <p class='transient'>
-          <a href='hub5'>Click para continuar...</a> 
+          <a href='final'>Click para continuar...</a> 
         </p>
       </div>
 
@@ -271,7 +275,18 @@
         <br>
         Cuando te vas de la sección y miras para atrás el hombre misterioso que vende indalos ya no esta, te parece raro pero prosigues con tu camino.
         <p class='transient'>
-          <a href='hub5'>Click para continuar...</a> 
+          <a href='final'>Click para continuar...</a> 
+        </p>
+      </div>
+
+
+      <div id="indalos">
+        <img src="media/img/victorjones/kebab.jpg" alt="imagen de un kebab" class="float_right imagenLogo">
+        <p>
+          Como apasionado del kebab que eres, buscas la kebaberia del Carrefive, allí miras la carta, dudoso de lo que pedir ya que te encanta todo, te paras a pensar y vistes que estaban preparando patata asada para otro cliente, pero eso lo comiste hace poco por lo tanto descartado, la real duda estaba si pedirse un menú pizza turca o menú kebab de pan de pita, ya que todo el mundo sabe y damos por hecho de que el durum es una mierda ya que tienes la pizza turca que es lo mismo pero mejor. Por lo tanto sales de dudas y te pides un menú pizza turca, ya que es menú te viene acompañado de unas patatas y una bebida a elegir, en nuestro caso Nestea.
+        </p>
+        <p class='transient'>
+          <a href='hub3'>Click para continuar...</a> 
         </p>
       </div>
       <!--/Elecciones-->
@@ -288,18 +303,13 @@
       <div id="hub2" class="situation" data-choices="#topic2" data-option-text="View Topic List">
         <h1 class="transient">Moverse en la ciudad</h1>
         <p>Llegas a la gran ciudad de Almería y no tienes idea de cómo orientarte así que vas a explorar un poco. Tras ir a ver la famosa Alacazaba te entra cierta hambre y entras a un centro comercial llamado Carrefive, allí puedes elegir entre distintos sitios donde comer.</p>
-        <img src="media/img/victorjones/carrefive.png" alt="imagen carrefive" class=" imagenLogo">
+        <img src="media/img/victorjones/carrefive.png" alt="imagen carrefive" class=" imagenLogo centrado">
         <p class="transient">Elija una de las opciones de abajo.</p>
         <br>
       </div>
 
       <div id="hub3" class="situation" data-choices="#topic3" data-option-text="View Topic List">
-        <p>Tras ingerir la comida te sientes con energía y te acuerdas que a tu prima pequeña le gustan mucho los souvenirs y cada vez que viajas intentas llevarle algo. Dando una vuelta por el Carrefive para ver donde comprar los souvenirs, te encuentras con una sección con unos indalos que te llaman la atención y te acercas a verlos. </p>
-        <img src="media/img/victorjones/indalo.jpg" alt="imagen indalo" class=" imagenLogo">
-        <p>
-          <img src="media/img/victorjones/desconocido.jpg" alt="imagen de persona desconocida" class=" imagenConversacion">
-          - Buenas, ¿parece que te han llamado la atención los indalos son muy especiales qué te parecén?
-        </p>
+        
         <p class="transient">Elija una de las opciones de abajo.</p>
         <br>
       </div>

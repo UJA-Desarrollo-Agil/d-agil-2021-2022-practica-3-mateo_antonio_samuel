@@ -32,7 +32,7 @@ undum.game.situations = {
         "<h1>Una receta para ser inmortal</h1>" +
         "<p>Víctor Jones es un jóven que ya es casi un licenciado en ingeniería informática, pues sólo le faltan aprobar algunas asignaturas.</p></br></br>" +
         "<p>Un día, yendo a una de sus clases, escucha de otros compañeros en los pasillos un <em>cierto rumor</em> que corre sobre la receta de la inmortalidad..</br></br></p>" +
-        "<img src='media/img/victorjones/rumor.jpg' width='60%' style='alignment: center'>" +
+        "<img src='media/img/victorjones/rumor.jpg' width='60%' class='centrado'>" +
         "<p>Compañero 1 - <em>Oye, ¿sabes que en Almería está la receta de la inmortalidad?</em></p>" +
         "<p>Compañero 2 - <em>Pero qué dices</em></p>" +
         "<p>Compañero 1 - <em>Que sí, que allí está la vida eterna. Te lo digo yo.</em></br></p>" +
@@ -44,7 +44,7 @@ undum.game.situations = {
 
 
 
-        "<p>Víctor, fascinado y curioso por la idea de vivir eternamente, al acabar sus clases de la universidad <a href='final'>vuelve a su casa</a> para coger todo lo necesario " +
+        "<p>Víctor, fascinado y curioso por la idea de vivir eternamente, al acabar sus clases de la universidad <a href='hub1'>vuelve a su casa</a> para coger todo lo necesario " +
         "y hacer un plan para llegar hasta allí</p>",
         {
             enter: function (character, system, from){
@@ -143,7 +143,9 @@ undum.game.situations = {
         enter: function(character, system, from) {
             system.setQuality("dinero", character.qualities.dinero-5);
             system.write($("#EleccionConversacion2bien").html());
+            system.setQuality("indalo",1);
         },
+
         tags: ["topic4"],
         optionText: "Me lo llevo... (5€)",
         displayOrder: 1
@@ -157,7 +159,20 @@ undum.game.situations = {
         displayOrder: 2
     }),
 
-    
+
+    vendedor: new undum.SimpleSituation(
+        "<p>Tras ingerir la comida te sientes con energía y te acuerdas que a tu prima pequeña le gustan mucho los souvenirs y cada vez que viajas intentas llevarle algo. Dando una vuelta por el Carrefive para ver donde comprar los souvenirs, te encuentras con una sección con unos indalos que te llaman la atención y te acercas a verlos. </p>"+
+        "<img src='media/img/victorjones/indalo.jpg' alt='imagen indalo' class='imagenLogo'>"+
+        "<p>"+
+          "<img src='media/img/victorjones/desconocido.jpg' alt='imagen de persona desconocida' class='imagenConversacion'>"+
+          "- Buenas, ¿parece que te han llamado la atención los <a href='indalos'>indalos</a> son muy especiales qué te parecén?"+
+        "</p>"+
+        "<p class='transient'><a href='hub3'>Click para continuar...</a></p>"
+    ),
+    indalos: new undum.SimpleSituation(
+        "<p> <em>Cuando te acercas para verlo puedes notar que no es de gran valor pero te llama la atención lo antiguo y mistico que es. Tiene un color Marroncillo y esta hecho como de piedra tallado.</em></p></br>"+
+        "<p class='transient'><a href='hub3'>Click para continuar...</a></p>"
+    ),
     final: new undum.SimpleSituation(
         "<h1>Todo lo que empieza, acaba</h1>" +
         "<p>Por fin, Víctor Jones logra ver, delante de sus narices, la receta de la inmortalidad encima de un altar de piedra.</p>" +
@@ -183,7 +198,10 @@ undum.game.start = "comienzo";
  * that quality will never show up in the character bar in the UI. */
 undum.game.qualities = {
     dinero: new undum.IntegerQuality(
-        "Dinero", {priority:"0001", group:'stats'}
+        "Dinero", {priority:"0001", group:'mochila'}
+    ),
+    indalo: new undum.OnOffQuality(
+        "Indalo", {priority:"0002", group:'mochila'}
     )
 };
 
@@ -195,7 +213,7 @@ undum.game.qualities = {
  * non-existent group. */
 undum.game.qualityGroups = {
     mochila: new undum.QualityGroup('<span title="A lo largo de la aventura, Víctor Jones podrá recoger objetos de su entorno y llevarlo en su mochila.">Mochila</span>', {priority: "0001"}),
-    stats: new undum.QualityGroup(null, {priority:"0002"}),
+    
 };
 
 // ---------------------------------------------------------------------------
@@ -203,5 +221,6 @@ undum.game.qualityGroups = {
  * to configure the character at the start of play. */
 undum.game.init = function(character, system) {
     character.qualities.dinero = 55;
+    character.qualities.indalo = 0;
     system.setCharacterText("<p><span title='Poner el cursor encima de tus objetos revelará más información.'>Coloca el ratón encima de tus objetos o habilidades para más información.</span></p>");
 };
