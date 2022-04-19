@@ -12,30 +12,30 @@ Somos estudiantes del curso 2021/2022 de Ingeniría Informática en la Universid
 
 ## Índice
 
-[1. Titulo y descripción de la práctica](#1-titulo-y-descripcin-de-la-prctica)
+[1. Titulo y descripción de la práctica](#1-titulo-y-descripción-de-la-práctica)
 
-- [1.1. Titulo](#11-titulo)
+- [1.1. Título](#11-titulo)
 
-- [1.2. Descripcion de la práctica](#12-descripcion-de-la-prctica)
+- [1.2. Descripción de la práctica](#12-descripción-de-la-práctica)
 
-[2. Descripción del juego](#2-descripcin-del-juego)
+[2. Descripción del juego](#2-descripción-del-juego)
 
 - [2.1. Titulo del juego](#21-titulo-del-juego) 
 
-- [2.2. Descripción de la aventura](#22-descripcin-de-la-aventura)
+- [2.2. Descripción de la aventura](#22-descripción-de-la-aventura)
 
-[3. ¿Qué es Undum?](#3-qu-es-undum)
+[3. ¿Qué es Undum?](#3-qué-es-undum)
 
 [4. URL del tablero en trello](#4-url-del-tablero-en-trello)
 
 [5. Capturas de pantalla del 1er Sprint de Trello](#5-capturas-de-pantalla-del-tablero-de-trello-del-1er-sprint)
 - [5.1. Capturas de Sprint Backlog](#51-sprint-backlog)
   - [_El jugador podrá moverse de unas situaciones a otras._](#511-el-jugador-podrá-moverse-de-unas-situaciones-a-otras)
-  - [_El jugador podrá recoger objetos a lo largo del juego._](#512-el-jugador-podr-recoger-objetos-a-lo-largo-del-juego)
+  - [_El jugador podrá recoger objetos a lo largo del juego._](#512-el-jugador-podrá-recoger-objetos-a-lo-largo-del-juego)
   - [_Crear un prototipo inicial del juego._](#513-crear-un-prototipo-inicial-del-juego)
-  - [_El jugador podrá usar objetos para resolver puzzles._](#514-el-jugador-podr-usar-objetos-para-resolver-puzzles)
-  - [_El jugador podrá usar la acción "mirar detalladamente"._](#515-el-jugador-podr-usar-la-accin-mirar-detalladamente)
-  - [_El juego incluirá imágenes._](#516-el-juego-incluir-imgenes)
+  - [_El jugador podrá usar objetos para resolver puzzles._](#514-el-jugador-podrá-usar-objetos-para-resolver-puzzles)
+  - [_El jugador podrá usar la acción "mirar detalladamente"._](#515-el-jugador-podrá-usar-la-acción-mirar-detalladamente)
+  - [_El juego incluirá imágenes._](#516-el-juego-incluirá-imágenes)
 - [5.2. Cambios entre Sprint Backlog y el Product Backlog Refinement](#52-cambios-entre-sprint-backlog-y-el-product-backlog-refinement)
 - [5.3. Product Backlog Refinement](#53-product-backlog-refinement)
 - [5.4. Tras el Product Backlog Refinement](#54-tras-el-product-backlog-refinement)
@@ -55,7 +55,7 @@ Somos estudiantes del curso 2021/2022 de Ingeniría Informática en la Universid
 
 **Proyecto Grupal. Sprint 1**
 
-## 1.2. Descripcion de la práctica
+## 1.2. Descripción de la práctica
 
 En esta cuarta práctica evaluable para la asignatura Desarrollo Ágil impartida por el profesor Víctor M. Rivas consiste en utilizar la metodología Scrum para desarrollar una aventura conversacional en el framework Undum. 
 Esta practica se centra concretamente en realizar el primer Sprint Backlog para repartirnos el trabajo, establecer la Daily Scrum y empezar a desarrollar nuestra historia.
@@ -92,12 +92,12 @@ Aún así se pueden ver las historias de usuario en la imagen a continuación:
 ![Trello1](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/Trello1.png)
 
 _Al empezar esta práctica, tal y como se ha mencionado antes, en el Sprint Backlog teníamos:_
-- [_El jugador podrá moverse de unas situaciones a otras._](#511-el-jugador-podr-moverse-de-unas-situaciones-a-otras)
-- [_El jugador podrá recoger objetos a lo largo del juego._](#512-el-jugador-podr-recoger-objetos-a-lo-largo-del-juego)
+- [_El jugador podrá moverse de unas situaciones a otras._](#511-el-jugador-podrá-moverse-de-unas-situaciones-a-otras)
+- [_El jugador podrá recoger objetos a lo largo del juego._](#512-el-jugador-podrá-recoger-objetos-a-lo-largo-del-juego)
 - [_Crear un prototipo inicial del juego._](#513-crear-un-prototipo-inicial-del-juego)
-- [_El jugador podrá usar objetos para resolver puzzles._](#514-el-jugador-podr-usar-objetos-para-resolver-puzzles)
-- [_El jugador podrá usar la acción "mirar detalladamente"._](#515-el-jugador-podr-usar-la-accin-mirar-detalladamente)
-- [_El juego incluirá imágenes._](#516-el-juego-incluir-imgenes)
+- [_El jugador podrá usar objetos para resolver puzzles._](#514-el-jugador-podrá-usar-objetos-para-resolver-puzzles)
+- [_El jugador podrá usar la acción "mirar detalladamente"._](#515-el-jugador-podrá-usar-la-acción-mirar-detalladamente)
+- [_El juego incluirá imágenes._](#516-el-juego-incluirá-imágenes)
 
 __A continuación explicamos porqué hemos escogido estas historias de usuario para comenzar este Sprint.__
 
@@ -114,7 +114,7 @@ Decidimos que crear un prototipo muy sencillo del juego sería lo mejor para pod
 el siguente Sprint de tal forma que nos sea también sencillo modificar las situaciones ya existentes en el anterior Sprint. 
 
 ### 5.1.4. El jugador podrá usar objetos para resolver puzzles.
-Aunque es similar a [recoger objetos a lo largo del juego](#52-el-jugador-podr-recoger-objetos-a-lo-largo-del-juego), realmente está enfocado a desarrollar 
+Aunque es similar a [recoger objetos a lo largo del juego](#52-el-jugador-podrá-recoger-objetos-a-lo-largo-del-juego), realmente está enfocado a desarrollar 
 objetos para el personaje principal de la historia, ya que este es quién se va a encargar de resolver los diferentes puzzles que se le presenten a lo largo del juego.
 
 ### 5.1.5. El jugador podrá usar la acción "mirar detalladamente".
@@ -219,9 +219,11 @@ Teniendo en cuentas las implementaciones de este sprint, podemos decir que de ca
 
 En cuanto a nuestro equipo de trabajo hemos llegado a la conclusión de que no hemos tenido ningún inconveniente grave durante el sprint. Si que es cierto que de cara a la próxima iteración podemos mejorar algunas cosas: 
 
--En telegram podríamos mejorar que las notificaciones lleguen a todos por igual, para facilitar y agilizar los tiempos de respuesta y la fluidez de la comunicación entre el grupo.
--A la hora de trabajar con Git hemos tenido problemas puntuales debidos al programa que se ha utilizado, lo cuál debemos solucionar con algún otro programa estable que no de problemas a ninguno.
--Para nuestro equipo de trabajo ha resultado de mucho agrado el bot de github en telegram, pues nos ha sorprendido la utilidad para tener en mente quién ha estado trabajando últimamente en el proyecto.
+- En telegram podríamos mejorar que las notificaciones lleguen a todos por igual, para facilitar y agilizar los tiempos de respuesta y la fluidez de la comunicación entre el grupo.
+
+- A la hora de trabajar con Git hemos tenido problemas puntuales debidos al programa que se ha utilizado, lo cuál debemos solucionar con algún otro programa estable que no de problemas a ninguno.
+
+- Para nuestro equipo de trabajo ha resultado de mucho agrado el bot de github en telegram, pues nos ha sorprendido la utilidad para tener en mente quién ha estado trabajando últimamente en el proyecto.
 
 Como podemos observar debido a los pocos problemas que hemos tenido como equipo de trabajo, hemos concluido entre todos que somos bastante afines y productivos como grupo de trabajo.
 
