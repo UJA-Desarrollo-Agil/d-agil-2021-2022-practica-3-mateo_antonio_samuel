@@ -158,6 +158,67 @@ undum.game.situations = {
         optionText: "No gracias, no lo voy a comprar...",
         displayOrder: 2
     }),
+	situationrutacorrecta: new undum.Situation({
+        enter: function(character, system, from) {
+            system.write($("#EleccionRutaBuena").html());
+        },
+        tags: ["topic5"],
+        optionText: "Carretera 24",
+        displayOrder: 1
+    }),
+	situationrutaincorrecta: new undum.Situation({
+        enter: function(character, system, from) {
+            system.write($("#EleccionRutaMala").html());
+        },
+        tags: ["topic5"],
+        optionText: "Carretera 19",
+        displayOrder: 2
+    }),
+	situationrutaincorrecta2: new undum.Situation({
+        enter: function(character, system, from) {
+            system.write($("#EleccionRutaMala").html());
+        },
+        tags: ["topic5"],
+        optionText: "Carretera 12",
+        displayOrder: 3
+    }),
+	situationmochila: new undum.Situation({
+        enter: function(character, system, from) {
+            system.write($("#EleccionMochila").html());
+			system.setQuality("indalo",0);
+			system.setQuality("dinero", 0);
+        },
+        tags: ["topic6"],
+        optionText: "Te colocas la mochila en la cabeza y sigues recto",
+        displayOrder: 1
+    }),
+	situationantebrazo: new undum.Situation({
+        enter: function(character, system, from) {
+            system.write($("#EleccionAntebrazo").html());
+        },
+        tags: ["topic6"],
+        optionText: "Pones tu antebrazo ante tus ojos para protegerte y sigues adelante",
+        displayOrder: 2
+    }),
+	situationindalo: new undum.Situation({
+        enter: function(character, system, from) {
+            system.write($("#EleccionIndalo").html());
+        },
+        tags: ["topic7"],
+        optionText: "Introducir el Índalo (Requiere tener el Índalo)",
+        displayOrder: 1,
+		canChoose: function(character, system, host) {
+            return character.qualities.indalo;
+        }
+    }),
+	situationvacio: new undum.Situation({
+        enter: function(character, system, from) {
+            system.write($("#EleccionVacio").html());
+        },
+        tags: ["topic7"],
+        optionText: "No dispones de nada para probar.",
+        displayOrder: 2
+    }),
 
 
     vendedor: new undum.SimpleSituation(
@@ -172,6 +233,22 @@ undum.game.situations = {
     indalos: new undum.SimpleSituation(
         "<p> <em>Cuando te acercas para verlo puedes notar que no es de gran valor pero te llama la atención lo antiguo y mistico que es. Tiene un color Marroncillo y esta hecho como de piedra tallado.</em></p></br>"+
         "<p class='transient'><a href='hub3'>Click para continuar...</a></p>"
+    ),
+	ruta: new undum.SimpleSituation(
+		"<h1>Ruta a Oasis C</h1>"+
+        "<p> Después de estar un tiempo por Carrefive decides que es momento de proseguir con el viaje. No hay mucha gente por las calles así que sigues caminando. Te encuentras en una zona rural de por allí y parece que has dado con la ruta pero el caso es que hay más de una. </p>"+
+        "<img src='media/img/victorjones/cruce.jpg' alt='imagen cruce' class='imagenLogo'>"+
+		"<p> Fijándote a tu alrededor encuentras un cartel que indica una pista del camino que debes tomar.</p>"+
+		"<p class='transient'><a href='hub5'>Observar el cartel...</a></p>"
+        
+    ),
+	calima: new undum.SimpleSituation(
+		"<h1>La famosa calima</h1>"+
+        "<p>Con la tremenda suerte que tienes, mientras te hayas de camino en la ruta empieza a surgir la famosa calima que rodea la zona.</p>"+
+        "<img src='media/img/victorjones/calima.jpg' alt='imagen cruce' class='imagenLogo'>"+
+		"<p> Empieza a ser bastante densa y debes protegerte de ella.</p>"+
+		"<p class='transient'><a href='hub6'>Click para continuar...</a></p>"
+        
     ),
     final: new undum.SimpleSituation(
         "<h1>Todo lo que empieza, acaba</h1>" +
