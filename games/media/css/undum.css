@@ -1,6 +1,6 @@
 body {
-    background: #170804 url("../img/page_bg.jpg") repeat-x left top;
-    font-family: Palatino, Times, "Times New Roman", serif;
+    background: #170804 url("../img/victorjones/tiled.jpg") repeat left top;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     line-height: 1.6em;
     background-attachment: fixed;
@@ -22,7 +22,7 @@ body {
 }
 #title {
     max-width: 28em;
-    background: #e6e6c6 url("../img/title_bg.jpg") repeat -1.1em -1.1em;
+    background: #e6e6c6 url("../img/victorjones/indianaCuadrito.jpg") repeat -1.1em -1.1em;
     margin: 2.2em auto 1.1em auto;
     padding: 1.7em;
     border: 1.1em solid rgba(0,0,0,0.25);
@@ -354,4 +354,28 @@ img.float_left {
 }
 #menu {
     display: none;
+}
+
+.gameover{
+    font-size: 30px;
+    color: red;
+    text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87
+}
+
+.imagenLogo{
+    width: 50%;
+}
+
+.imagenConversacion{
+    width: 20%;
+}
+
+.transient{
+    color: #943
+}
+
+.centrado{
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
 }
