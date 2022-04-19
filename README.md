@@ -30,7 +30,7 @@ Somos estudiantes del curso 2021/2022 de Ingeniría Informática en la Universid
 
 [5. Capturas de pantalla del 1er Sprint de Trello](#5-capturas-de-pantalla-del-tablero-de-trello-del-1er-sprint)
 - [5.1. Capturas de Sprint Backlog](#51-sprint-backlog)
-  - [_El jugador podrá moverse de unas situaciones a otras._](#511-el-jugador-podr-moverse-de-unas-situaciones-a-otras)
+  - [_El jugador podrá moverse de unas situaciones a otras._](#511-el-jugador-podrá-moverse-de-unas-situaciones-a-otras)
   - [_El jugador podrá recoger objetos a lo largo del juego._](#512-el-jugador-podr-recoger-objetos-a-lo-largo-del-juego)
   - [_Crear un prototipo inicial del juego._](#513-crear-un-prototipo-inicial-del-juego)
   - [_El jugador podrá usar objetos para resolver puzzles._](#514-el-jugador-podr-usar-objetos-para-resolver-puzzles)
@@ -156,7 +156,25 @@ _En la imagen situada encima de este párrafo se puede ver que se han colocado a
 
 _En la imagen situada encima de este párrafo se puede apreciar que se han colocado las HU que hemos considerado como realizadas dentro de la columna Done después de ser revisadas._
 
+![review2](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint1/review2.png)
+
+_En la imagen(1/2) situada encima de este párrafo se puede ver que antes de pasarlas a la columna Done la pasamos a la columna review._
+
+![review3](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint1/review3.png)
+
+_En la imagen(2/2) situada encima de este párrafo se puede ver que antes de pasarlas a la columna Done la pasamos a la columna review._
+
+
+
 ## 5.5. El trablero de Trello al final del Sprint 1
+
+![final1](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint1/final1.png)
+
+_En la imagen(1/2) situada encima de este párrafo se puede apreciar que se han colocado las HU que hemos considerado como realizadas dentro de la columna Done después de ser revisadas._
+
+![final2](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint1/final2.png)
+
+_En la imagen(2/2) situada encima de este párrafo se puede apreciar que se han colocado las HU que hemos considerado como realizadas dentro de la columna Done después de ser revisadas._
 
 
 
@@ -189,6 +207,21 @@ diálogo predefinido entre los personajes del juego._
 
 # 8. Conclusiones de nuestra Sprint Review
 
+Analizando el sprint backlog de esta iteración, podemos observar que no hemos cumplido con la realización de una única historia de usuario, pero la razón para que este incompleta se debe a que durante el desarrollo del juego nos hemos dado cuenta de que la historia de usuario no se adaptaba a las necesidades del producto y era innecesario para esta iteración. Por lo tanto, podemos concluir que la planificación de HU se ha ajustado a nuestra capacidad de trabajo de una forma bastante correcta.
+
+En cuanto al desarrollo del proyecto han surgido pocos problemas y de carácter menor, como por ejemplo, alguna duda respecto a la forma de implementar una nueva funcionalidad. Para lo cual se ha usado la Daily Scrum para ponernos al tanto de los problemas de nuestros compañeros y ayudar siempre en todo lo posible.
+
+En esta iteración todos hemos estado de acuerdo respecto a los valores de las historias de usuario y también respecto al esfuerzo que conllevaba implementarlas. 
+
+Teniendo en cuentas las implementaciones de este sprint, podemos decir que de cara a la próxima iteración debemos pulir los detalles de la hisotria ya implementada y explorar nuevas funcionalidades y propiedades que añadan valor a nuestra base del juego.
 
 # 9. Conclusiones de nuestra Sprint Retrospective
+
+En cuanto a nuestro equipo de trabajo hemos llegado a la conclusión de que no hemos tenido ningún inconveniente grave durante el sprint. Si que es cierto que de cara a la próxima iteración podemos mejorar algunas cosas: 
+
+-En telegram podríamos mejorar que las notificaciones lleguen a todos por igual, para facilitar y agilizar los tiempos de respuesta y la fluidez de la comunicación entre el grupo.
+-A la hora de trabajar con Git hemos tenido problemas puntuales debidos al programa que se ha utilizado, lo cuál debemos solucionar con algún otro programa estable que no de problemas a ninguno.
+-Para nuestro equipo de trabajo ha resultado de mucho agrado el bot de github en telegram, pues nos ha sorprendido la utilidad para tener en mente quién ha estado trabajando últimamente en el proyecto.
+
+Como podemos observar debido a los pocos problemas que hemos tenido como equipo de trabajo, hemos concluido entre todos que somos bastante afines y productivos como grupo de trabajo.
 
