@@ -362,6 +362,12 @@ img.float_left {
     text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87
 }
 
+.fin{
+    font-size: 30px;
+    color: forestgreen;
+    text-shadow: 0 0 0.2em #90ee90, 0 0 0.2em #90ee90;
+}
+
 .imagenLogo{
     width: 50%;
 }
@@ -378,4 +384,20 @@ img.float_left {
     display: block;
     margin: auto;
     margin-bottom: 15px;
+}
+
+.receta{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 75%;
+}
+
+.atardecer{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
 }

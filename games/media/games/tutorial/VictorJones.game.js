@@ -220,12 +220,11 @@ undum.game.situations = {
         displayOrder: 2
     }),
 
-
     vendedor: new undum.SimpleSituation(
         "<p>Tras ingerir la comida te sientes con energía y te acuerdas que a tu prima pequeña le gustan mucho los souvenirs y cada vez que viajas intentas llevarle algo. Dando una vuelta por el Carrefive para ver donde comprar los souvenirs, te encuentras con una sección con unos indalos que te llaman la atención y te acercas a verlos. </p>"+
         "<img src='media/img/victorjones/indalo.jpg' alt='imagen indalo' class='imagenLogo'>"+
         "<p>"+
-          "<img src='media/img/victorjones/desconocido.jpg' alt='imagen de persona desconocida' class='imagenConversacion'>"+
+          "<img src='media/img/victorjones/desconocido.jpg' alt='Imagen de una persona desconocida' class='imagenConversacion'>"+
           "- Buenas, ¿parece que te han llamado la atención los <a href='indalos'>indalos</a> son muy especiales qué te parecén?"+
         "</p>"+
         "<p class='transient'><a href='hub3'>Click para continuar...</a></p>"
@@ -237,32 +236,32 @@ undum.game.situations = {
 	ruta: new undum.SimpleSituation(
 		"<h1>Ruta a Oasis C</h1>"+
         "<p> Después de estar un tiempo por Carrefive decides que es momento de proseguir con el viaje. No hay mucha gente por las calles así que sigues caminando. Te encuentras en una zona rural de por allí y parece que has dado con la ruta pero el caso es que hay más de una. </p>"+
-        "<img src='media/img/victorjones/cruce.jpg' alt='imagen cruce' class='imagenLogo'>"+
+        "<img src='media/img/victorjones/cruce.jpg' alt='Hay un cruce en el camino y debes elegir por dónde ir.' class='centrado'>"+
 		"<p> Fijándote a tu alrededor encuentras un cartel que indica una pista del camino que debes tomar.</p>"+
 		"<p class='transient'><a href='hub5'>Observar el cartel...</a></p>"
-        
     ),
 	calima: new undum.SimpleSituation(
 		"<h1>La famosa calima</h1>"+
         "<p>Con la tremenda suerte que tienes, mientras te hayas de camino en la ruta empieza a surgir la famosa calima que rodea la zona.</p>"+
-        "<img src='media/img/victorjones/calima.jpg' alt='imagen cruce' class='imagenLogo'>"+
+        "<img src='media/img/victorjones/calima.jpg' alt='Hay una calima delante tuya y debes atravesarla.' class='centrado'>"+
 		"<p> Empieza a ser bastante densa y debes protegerte de ella.</p>"+
 		"<p class='transient'><a href='hub6'>Click para continuar...</a></p>"
-        
     ),
     final: new undum.SimpleSituation(
-        "<h1>Todo lo que empieza, acaba</h1>" +
+        "<h1 class='fin'>Todo lo que empieza, acaba</h1>" +
         "<p>Por fin, Víctor Jones logra ver, delante de sus narices, la receta de la inmortalidad encima de un altar de piedra.</p>" +
         "</br><p>Ya no hay vuelta atrás. Víctor saca el corcho de la botella, y en la luz del atardecer, extiende el papel enrollado con sus dos brazos. " +
         "Sus ojos leyeron lo más rápido posible aquel escrito:</br></br></p>" +
         "<p>Víctor Jones - <em>¿Estás de guasa?.</em></p>" +
-        "</br><p>A Víctor se le abrieron aún más los ojos cuando descubrió, que lo que era una receta de la inmortalidad, resultó ser nada menos que una receta para hacer churros con chocolate.</p>" +
-        "</br><p>Estaba cansado, le ilusionó mucho que fuera de verdad la receta de la inmortalidad pero no se ha aburrido y hasta se ha divertido con la experiencia. " +
+        "</br><p>A Víctor se le abrieron aún más los ojos cuando descubrió, que lo que era una receta de la inmortalidad, resultó ser nada menos que una receta para hacer churros de calidad.</p>" +
+        "<img src='media/img/victorjones/receta.webp' alt='La receta de la inmortalidad es una receta para hacer churros.' class='atardecer'>" +
+        "</br><p>Estaba cansado. Le ilusionó mucho que fuese de verdad la receta de la inmortalidad aunque no se ha aburrido e incluso se ha divertido con la experiencia. " +
         "Además, Víctor es joven y aún no sabe hacerse ni un huevo frito, por lo que, valorando cuánto le ha gustado encontrar finalmente la receta, le comenta a los cuatro vientos: </br></p>" +
-        "<p>Víctor Jones - <em>¿Para hacer churros?. Nah, de locos.</em></p>" +
-        "</br><p>Acto seguido, llama a su madre para ver si le recogen y para negociar el desayuno de mañana.</p>"
-
-    )
+        "</br><p>Víctor Jones - <em>¿Para hacer churros?. Nah, de locos.</em></p>" +
+        "</br><p>Acto seguido, llama a su madre para ver si le recogen y para negociar el desayuno de mañana.</p>" +
+        "<img src='media/img/victorjones/atardecer.png' alt='Llamas a tu madre' class='atardecer'>" +
+        "<h1>F I N</h1>"
+    ),
 };
 
 // ---------------------------------------------------------------------------
@@ -275,10 +274,10 @@ undum.game.start = "comienzo";
  * that quality will never show up in the character bar in the UI. */
 undum.game.qualities = {
     dinero: new undum.IntegerQuality(
-        "Dinero", {priority:"0001", group:'mochila'}
+        '<span title=\"Siempre está bien llevar algo de dinero encima por si lo necesitases en alguna ocasión.\">Dinero</span>', {priority:"0001", group:'mochila'}
     ),
     indalo: new undum.OnOffQuality(
-        "Indalo", {priority:"0002", group:'mochila'}
+        '<span title=\"Es un recuedo para tu prima. Tiene un color marroncete y está hecho como de piedra tallada...\">Indalo</span>', {priority:"0002", group:'mochila'}
     )
 };
 
