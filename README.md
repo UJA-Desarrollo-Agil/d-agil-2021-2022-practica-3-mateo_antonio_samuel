@@ -1,4 +1,4 @@
-# Práctica 4 de Desarrollo ágil
+# Práctica 5 de Desarrollo ágil
 
 ## Autores
 
@@ -29,17 +29,9 @@ Somos estudiantes del curso 2021/2022 de Ingeniría Informática en la Universid
 [4. URL del tablero en trello](#4-url-del-tablero-en-trello)
 
 [5. Capturas de pantalla del 1er Sprint de Trello](#5-capturas-de-pantalla-del-tablero-de-trello-del-1er-sprint)
-- [5.1. Capturas de Sprint Backlog](#51-sprint-backlog)
-  - [_El jugador podrá moverse de unas situaciones a otras._](#511-el-jugador-podrá-moverse-de-unas-situaciones-a-otras)
-  - [_El jugador podrá recoger objetos a lo largo del juego._](#512-el-jugador-podrá-recoger-objetos-a-lo-largo-del-juego)
-  - [_Crear un prototipo inicial del juego._](#513-crear-un-prototipo-inicial-del-juego)
-  - [_El jugador podrá usar objetos para resolver puzzles._](#514-el-jugador-podrá-usar-objetos-para-resolver-puzzles)
-  - [_El jugador podrá usar la acción "mirar detalladamente"._](#515-el-jugador-podrá-usar-la-acción-mirar-detalladamente)
-  - [_El juego incluirá imágenes._](#516-el-juego-incluirá-imágenes)
-- [5.2. Cambios entre Sprint Backlog y el Product Backlog Refinement](#52-cambios-entre-sprint-backlog-y-el-product-backlog-refinement)
-- [5.3. Product Backlog Refinement](#53-product-backlog-refinement)
-- [5.4. Tras el Product Backlog Refinement](#54-tras-el-product-backlog-refinement)
-- [5.5. El trablero de Trello al final del Sprint 1](#55-el-trablero-de-trello-al-final-del-sprint-1)
+- [5.1. Situación inicial del tablero en este sprint](#51-situación-inicial-del-tablero-en-este-sprint)
+- [5.2. Modificaciones del Product Backlog y Sprint Backlog](#52-modificaciones-del-product-backlog-y-sprint-backlog)
+- [5.3. Primeras historias de usuario escogias a realizar del Sprint Backlog](#53-primeras-historias-de-usuario-escogidas-a-realizar-del-sprint-backlog)
 
 [6. Plannning Poker](#6-planning-poker)
 
@@ -53,12 +45,12 @@ Somos estudiantes del curso 2021/2022 de Ingeniría Informática en la Universid
 
 ## 1.1. Titulo
 
-**Proyecto Grupal. Sprint 1**
+**Proyecto Grupal. Sprint 2**
 
 ## 1.2. Descripción de la práctica
 
-En esta cuarta práctica evaluable para la asignatura Desarrollo Ágil impartida por el profesor Víctor M. Rivas consiste en utilizar la metodología Scrum para desarrollar una aventura conversacional en el framework Undum. 
-Esta practica se centra concretamente en realizar el primer Sprint Backlog para repartirnos el trabajo, establecer la Daily Scrum y empezar a desarrollar nuestra historia.
+En esta quinta práctica evaluable para la asignatura Desarrollo Ágil impartida por el profesor Víctor M. Rivas consiste en utilizar la metodología Scrum para desarrollar una aventura conversacional en el framework Undum. 
+Esta practica se centra concretamente en realizar el segundo Sprint que a su vez incluye modificaciones en el Product Backlog y Sprint Backlog para repartirnos el trabajo, mantener la Daily Scrum y seguir con el desarrollo.
 
 # 2. Descripción del juego
 
@@ -82,100 +74,23 @@ Está disponible en http://github.com/idmillington/undum, desde donde se puede d
 
 El siguente enlace lleva a nuestro tablero grupal de Trello: **[https://trello.com/b/yuunbfUG/proyecto-desarrollo-%C3%A1gil](https://trello.com/b/yuunbfUG/proyecto-desarrollo-%C3%A1gil)**
 
-# 5. Capturas de pantalla del tablero de Trello del 1er Sprint
+# 5. Capturas de pantalla del tablero de Trello del segundo Sprint
 
-## 5.1. Sprint Backlog
+Toda la información que se detalla en este apartado está ordenado de forma cronológica, así como las posibles
+imágenes que se muestren.
 
-Debido a que en la anterior práctica nos adelantamos y decidimos que tarjetas iban a ir en el Sprint Backlog no llegamos a modificarlo de columna en Trello.
-Aún así se pueden ver las historias de usuario en la imagen a continuación:
+# 5.1. Situación inicial del Tablero en este Sprint
 
-![Trello1](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/Trello1.png)
-
-_Al empezar esta práctica, tal y como se ha mencionado antes, en el Sprint Backlog teníamos:_
-- [_El jugador podrá moverse de unas situaciones a otras._](#511-el-jugador-podrá-moverse-de-unas-situaciones-a-otras)
-- [_El jugador podrá recoger objetos a lo largo del juego._](#512-el-jugador-podrá-recoger-objetos-a-lo-largo-del-juego)
-- [_Crear un prototipo inicial del juego._](#513-crear-un-prototipo-inicial-del-juego)
-- [_El jugador podrá usar objetos para resolver puzzles._](#514-el-jugador-podrá-usar-objetos-para-resolver-puzzles)
-- [_El jugador podrá usar la acción "mirar detalladamente"._](#515-el-jugador-podrá-usar-la-acción-mirar-detalladamente)
-- [_El juego incluirá imágenes._](#516-el-juego-incluirá-imágenes)
-
-__A continuación explicamos porqué hemos escogido estas historias de usuario para comenzar este Sprint.__
-
-### 5.1.1 El jugador podrá moverse de unas situaciones a otras.
-Es fundamental en este tipo de juegos el hecho de situar al jugador en diferentes situaciones. Por este motivo se ha 
-incluido en el Sprint Backlog.
-
-### 5.1.2. El jugador podrá recoger objetos a lo largo del juego.
-Como nuestra historia bebe bastante de la aventura es indispensable que en nuestro juego se puedan recoger objetos que el jugador
-considere. Es por esta razón que también lo incluimos a nuestro Sprint Backlog inicial.
-
-### 5.1.3. Crear un prototipo inicial del juego.
-Decidimos que crear un prototipo muy sencillo del juego sería lo mejor para poder empezar a desarrollarlo. Además, nos permite enfocar
-el siguente Sprint de tal forma que nos sea también sencillo modificar las situaciones ya existentes en el anterior Sprint. 
-
-### 5.1.4. El jugador podrá usar objetos para resolver puzzles.
-Aunque es similar a [recoger objetos a lo largo del juego](#52-el-jugador-podrá-recoger-objetos-a-lo-largo-del-juego), realmente está enfocado a desarrollar 
-objetos para el personaje principal de la historia, ya que este es quién se va a encargar de resolver los diferentes puzzles que se le presenten a lo largo del juego.
-
-### 5.1.5. El jugador podrá usar la acción "mirar detalladamente".
-En un principio incluimos esta tarjeta para que el jugador se sienta más inmerso en la historia principal y esto tiene  más relevancia cuando se
-puede describir más detalles de algún suceso, objeto o situación. Para nosotros fue razón suficiente para incluirlo en un primer momento. 
-
-### 5.1.6. El juego incluirá imágenes.
-Nuestra aventura conversacional la describimos con palabras pero las imaginamos con imágenes. Tal y como está escrita en nuestro borrador personal
-(no vamos a desvelar qué relación tiene con la historia para no adelantar acontecimientos), es un elemento que le añade valor al juego. Este motivo nos pareció
-suficiente en su momento para incluirlo en el Sprint Backlog.
-
-## 5.2. Cambios entre Sprint Backlog y el Product Backlog Refinement
-En esta fase del Sprint retocamos algunas tarjetas del Product Backlog debido a la retroalimentación que nos dió Víctor Rivas y también
-debido a que hemos precisado mejor cómo iban a ser esas historias de usuario. Después pasamos varias tarjetas del Sprint Backlog a Doing 
-(para ver estos cambios mirar las imágenes de los siguientes apartados).
-
-## 5.3. Product Backlog Refinement
-Este apartado lo explicamos en el [punto 7](#7-product-backlog-refinement-del-proyecto) con mejor detalle (haz click en el enlace para desplazarte).
-
-## 5.4 Tras el Product Backlog Refinement
-
-A continuación se describen como han evolucionado las historias de usuarios del tablero después del Product Backlog Refinement junto a imágenes:
-
-![PBR2](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint1/objeto1.png)
-
-_En la imagen de arriba se puede apreciar que la historia de usuario "El jugador podrá recoger objetos a lo largo del juego" está en la columna Sprint Backlog.
-Esta HU decidimos dividirla según un objeto importante dentro del juego._
-
-![PBR3](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint1/objeto2.png)
-
-_En esta imagen se ve que la HU "El jugador podrá recoger objetos a lo largo del juego" ha sido divida en dos (una para la columna Product Backlog y otra para
-la columna Sprint Backlog)._
-
-![review](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint1/review.png)
-
-_En la imagen situada encima de este párrafo se puede ver que se han colocado algunas HU dentro de la columna 'Review'. Estas fueron revisadas por todos los compañeros._
-
-![done1](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint1/done1.png)
-
-_En la imagen situada encima de este párrafo se puede apreciar que se han colocado las HU que hemos considerado como realizadas dentro de la columna Done después de ser revisadas._
-
-![review2](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint1/review2.png)
-
-_En la imagen(1/2) situada encima de este párrafo se puede ver que antes de pasarlas a la columna Done la pasamos a la columna review._
-
-![review3](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint1/review3.png)
-
-_En la imagen(2/2) situada encima de este párrafo se puede ver que antes de pasarlas a la columna Done la pasamos a la columna review._
+![0](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint2/0.png)
 
 
+# 5.2. Modificaciones del Product Backlog y Sprint Backlog
 
-## 5.5. El trablero de Trello al final del Sprint 1
+![1](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint2/1.png)
 
-![final1](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint1/final1.png)
+# 5.3. Primeras Historias de usuario escogidas a realizar del Sprint Backlog
 
-_En la imagen(1/2) situada encima de este párrafo se puede apreciar que se han colocado las HU que hemos considerado como realizadas dentro de la columna Done después de ser revisadas._
-
-![final2](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint1/final2.png)
-
-_En la imagen(2/2) situada encima de este párrafo se puede apreciar que se han colocado las HU que hemos considerado como realizadas dentro de la columna Done después de ser revisadas._
-
+![2](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint2/2.png)
 
 
 # 6. Planning Poker

@@ -254,12 +254,12 @@ undum.game.situations = {
         "Sus ojos leyeron lo más rápido posible aquel escrito:</br></br></p>" +
         "<p>Víctor Jones - <em>¿Estás de guasa?.</em></p>" +
         "</br><p>A Víctor se le abrieron aún más los ojos cuando descubrió, que lo que era una receta de la inmortalidad, resultó ser nada menos que una receta para hacer churros de calidad.</p>" +
-        "<img src='media/img/victorjones/receta.webp' alt='La receta de la inmortalidad es una receta para hacer churros.' class='atardecer'>" +
+        "<img src='media/img/victorjones/receta.webp' alt='La receta de la inmortalidad es una receta para hacer churros.' class='cienxcien'>" +
         "</br><p>Estaba cansado. Le ilusionó mucho que fuese de verdad la receta de la inmortalidad aunque no se ha aburrido e incluso se ha divertido con la experiencia. " +
         "Además, Víctor es joven y aún no sabe hacerse ni un huevo frito, por lo que, valorando cuánto le ha gustado encontrar finalmente la receta, le comenta a los cuatro vientos: </br></p>" +
         "</br><p>Víctor Jones - <em>¿Para hacer churros?. Nah, de locos.</em></p>" +
         "</br><p>Acto seguido, llama a su madre para ver si le recogen y para negociar el desayuno de mañana.</p>" +
-        "<img src='media/img/victorjones/atardecer.png' alt='Llamas a tu madre' class='atardecer'>" +
+        "<img src='media/img/victorjones/atardecer.png' alt='Llamas a tu madre' class='cienxcien'>" +
         "<h1>F I N</h1>"
     ),
 };
