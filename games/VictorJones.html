@@ -50,7 +50,6 @@
 
     <div id="tools_wrapper">
       <div id="info_panel" class="tools left">
-
         <!-- Game Background: edit this -->
         <h1>Victor Jones</h1>
         <p>
@@ -393,12 +392,35 @@
     </div>
   </div>
 
+
+
   <!-- Load the libraries we depend on -->
   <script type="text/javascript" src="media/js/jquery-2.1.3.min.js"></script>
   <script type="text/javascript" src="media/js/undum.js"></script>
 
   <!-- Change the name of this file. It is your main game file. -->
   <script type="text/javascript" src="media/games/tutorial/VictorJones.game.js"></script>
+  <!--<audio controls autoplay loop>
+    <source src="media/img/victorjones/indianaJones.mp3" type="audio/mpeg">
+    Tu audio no es compatible con el audio de HTML
+  </audio>-->
+
+
+  <audio src="" controls></audio>
+  <script>
+    
+    
+    let boton = document.querySelector(".click_message")
+    let audioEtiqueta = document.querySelector("audio")
+  
+    boton.addEventListener("click", () => {
+      audioEtiqueta.setAttribute("src", "media/img/victorjones/indianaJones.mp3")
+      audioEtiqueta.play()
+      console.log(`Reproduciendo: ${audioEtiqueta.src}`)
+      
+    })
+  </script>
+
 </body>
 
 </html>
