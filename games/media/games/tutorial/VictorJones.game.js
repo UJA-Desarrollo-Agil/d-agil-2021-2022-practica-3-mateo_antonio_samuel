@@ -232,6 +232,26 @@ undum.game.situations = {
         displayOrder: 2
     }),
 
+    situationbotella: new undum.Situation({
+        enter: function (character, system, from) {
+            system.write($("#EleccionBotella").html());
+        },
+        tags: ["topicDesierto"],
+        optionText: "Botella de agua",
+        displayOrder: 1,
+        canChoose: function (character, system, host) {
+            return character.qualities.indalo;
+        }
+    }),
+    situationnobotella: new undum.Situation({
+        enter: function (character, system, from) {
+            system.write($("#EleccionnoBotella").html());
+        },
+        tags: ["topicDesierto"],
+        optionText: "Te desvías",
+        displayOrder: 2
+    }),
+
     vendedor: new undum.SimpleSituation(
         "<p>Tras ingerir la comida te sientes con energía y te acuerdas que a tu prima pequeña le gustan mucho los souvenirs y cada vez que viajas intentas llevarle algo. Dando una vuelta por el Carrefive para ver donde comprar los souvenirs, te encuentras con una sección con unos indalos que te llaman la atención y te acercas a verlos. </p>" +
         "<img src='media/img/victorjones/indalo.jpg' alt='imagen indalo' class='imagenLogo'>" +
@@ -252,6 +272,12 @@ undum.game.situations = {
         "<p> Fijándote a tu alrededor encuentras un cartel que indica una pista del camino que debes tomar.</p>" +
         "<p class='transient'><a href='hub5'>Observar el cartel...</a></p>"
     ),
+    desierto: new undum.SimpleSituation(
+        "<h1>Contacto con el desierto</h1>"+
+        "<p>El asfalto acaba donde empiezan los senderos de arena que guían a Víctor y ahora hay más calor que antes. Como vas a buen ritmo te fijas en los alrededores y hay, muy a lo lejos, algo parecido a un oasis aunque no figuraba en el mapa de antes.</p>"+
+        "<img src='media/img/victorjones/espejismo.jpg' alt='Desierto' class='centrado imagenLogo'>" +
+        "<p class='transient'><a href='hubdesierto'>Click para continuar...</a></p>"
+        ),
     calima: new undum.SimpleSituation(
         "<h1>La famosa calima</h1>" +
         "<p>Con la tremenda suerte que tienes, mientras te hayas de camino en la ruta empieza a surgir la famosa calima que rodea la zona.</p>" +
@@ -290,6 +316,9 @@ undum.game.qualities = {
     ),
     indalo: new undum.OnOffQuality(
         '<span title=\"Es un recuedo para tu prima. Tiene un color marroncete y está hecho como de piedra tallada...\">Indalo</span>', { priority: "0002", group: 'mochila' }
+    ),
+    botella: new undum.OnOffQuality(
+        '<span title=\"Botella de agua...\">Botella de agua</span>', { priority: "0003", group: 'mochila' }
     )
 };
 
@@ -310,5 +339,6 @@ undum.game.qualityGroups = {
 undum.game.init = function (character, system) {
     character.qualities.dinero = 55;
     character.qualities.indalo = 0;
+    character.qualities.botella = 0;
     system.setCharacterText("<p><span title='Poner el cursor encima de tus objetos revelará más información.'>Coloca el ratón encima de tus objetos o habilidades para más información.</span></p>");
 };
