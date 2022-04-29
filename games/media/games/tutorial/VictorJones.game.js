@@ -136,7 +136,7 @@ undum.game.situations = {
             system.write($("#EleccionConversacion1bien").html());
         },
         tags: ["topic3"],
-        optionText: "Solo lo estaban mirando...",
+        optionText: "Sólo los estaba mirando...",
         displayOrder: 2
     }),
     situationconversacion2: new undum.Situation({
@@ -219,13 +219,13 @@ undum.game.situations = {
         optionText: "No dispones de nada para probar.",
         displayOrder: 2
     }),
-
     vendedor: new undum.SimpleSituation(
-        "<p>Tras ingerir la comida te sientes con energía y te acuerdas que a tu prima pequeña le gustan mucho los souvenirs y cada vez que viajas intentas llevarle algo. Dando una vuelta por el Carrefive para ver donde comprar los souvenirs, te encuentras con una sección con unos indalos que te llaman la atención y te acercas a verlos. </p>"+
-        "<img src='media/img/victorjones/indalo.jpg' alt='imagen indalo' class='imagenLogo'>"+
+        "<img src='media/img/victorjones/indalo.jpg' alt='imagen indalo' class='float_right imagenLogo'>"+
+        "</br><p>Tras saciarte, te sientes con energía y te acuerdas que a tu prima pequeña le gustan mucho los souvenirs y cada vez que viajas intentas llevarle algo.</p>" +
+        "<p></br>Dando una vuelta por el Carrefive para ver donde comprar los souvenirs, te encuentras con una sección con unos indalos que te llaman la atención y te acercas a verlos:</br></br> </p>" +
         "<p>"+
-          "<img src='media/img/victorjones/desconocido.jpg' alt='Imagen de una persona desconocida' class='imagenConversacion'>"+
-          "- Buenas, ¿parece que te han llamado la atención los <a href='indalos'>indalos</a> son muy especiales qué te parecén?"+
+        "<img src='media/img/victorjones/desconocido.jpg' alt='Imagen de una persona desconocida' class='imagenConversacion'>"+
+        " - <em>Buenas. Parece que te han llamado la atención los <a href='indalos'>indalos</a>. Son muy especiales. ¿Qué te parecnen?</em>"+
         "</p>"+
         "<p class='transient'><a href='hub3'>Click para continuar...</a></p>"
     ),
@@ -239,13 +239,6 @@ undum.game.situations = {
         "<img src='media/img/victorjones/cruce.jpg' alt='Hay un cruce en el camino y debes elegir por dónde ir.' class='centrado'>"+
 		"<p> Fijándote a tu alrededor encuentras un cartel que indica una pista del camino que debes tomar.</p>"+
 		"<p class='transient'><a href='hub5'>Observar el cartel...</a></p>"
-    ),
-	calima: new undum.SimpleSituation(
-		"<h1>La famosa calima</h1>"+
-        "<p>Con la tremenda suerte que tienes, mientras te hayas de camino en la ruta empieza a surgir la famosa calima que rodea la zona.</p>"+
-        "<img src='media/img/victorjones/calima.jpg' alt='Hay una calima delante tuya y debes atravesarla.' class='centrado'>"+
-		"<p> Empieza a ser bastante densa y debes protegerte de ella.</p>"+
-		"<p class='transient'><a href='hub6'>Click para continuar...</a></p>"
     ),
     final: new undum.SimpleSituation(
         "<h1 class='fin'>Todo lo que empieza, acaba</h1>" +
@@ -289,7 +282,6 @@ undum.game.qualities = {
  * non-existent group. */
 undum.game.qualityGroups = {
     mochila: new undum.QualityGroup('<span title="A lo largo de la aventura, Víctor Jones podrá recoger objetos de su entorno y llevarlo en su mochila.">Mochila</span>', {priority: "0001"}),
-    
 };
 
 // ---------------------------------------------------------------------------
