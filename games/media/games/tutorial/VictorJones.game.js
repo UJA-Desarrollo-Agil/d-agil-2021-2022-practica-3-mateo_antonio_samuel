@@ -42,20 +42,51 @@ undum.game.situations = {
         "<p>Compañero 1 - <em>Según tengo entendido está en un lugar desértico donde siempre hay mucha calima. Lo llaman 'Oasis C'.</em></p>" +
         "<p>Compañero 2 - <em>Va a ir quié' yo me sé ha'ta allí. No te creas todo lo que está por el Interné dese'.</em></p></br>" +
 
-
-
-        "<p>Víctor, fascinado y curioso por la idea de vivir eternamente, al acabar sus clases de la universidad <a href='hub1'>vuelve a su casa</a> para coger todo lo necesario " +
-        "y hacer un plan para llegar hasta allí</p>",
-        {
-            enter: function (character, system, from){
-                //
-            },
-            exit: function(character, system, to) {
-                //INTRODUCIR AQUÍ LAS COSAS QUE V.JONES SE LLEVA DE SU CASA
-                //system.setQuality("NOMBRE_DEL_OBJETO", 1);
+        "<p>Víctor, fascinado y curioso por la idea de vivir eternamente, al acabar sus clases de la universidad <a href='casa'>vuelve a su casa</a> para coger todo lo necesario " +
+        "y hacer un plan para llegar hasta allí.</p>"
+    ),
+    casa: new undum.SimpleSituation(
+        "<p></br>Después de una larga sesión de prácticas en la universidad, Víctor entra a su habitación para recoger cosas que va a necesitar para el viaje.</br></p>" +
+        "<p><img src='media/img/victorjones/habitacion.jpg' width='100%' class='centrado'></p>" +
+        "<p><br>Entra muy bien los rayos de luz por la ventana, así que puede ver con claridad lo que puede llevarse de su estantería o escritorio:</p>" +
+        "<p class='transient'><a href='./panuelos'>Pañuelos</a></p>" +
+        "<p class='transient'><a href='./gafassol'>Gafas de sol y Botella de agua</a></p>" +
+        "<p class='transient'><a href='./linterna'>Linterna</a></p>" +
+        "<p class='transient'><a href='salircasa'>Salir</a></p>"
+        ,{
+            actions: {
+                'panuelos' : function (character, system, action) {
+                    if(character.qualities.linterna > 0 || character.qualities.gafassol > 0){
+                        system.setQuality("panuelos",1);
+                        system.doLink("salircasa");
+                    }else{
+                        system.setQuality("panuelos",1);
+                    }
+                    system.setQuality("panuelos",1);
+                },
+                'gafassol' : function (character, system, action) {
+                    if (character.qualities.panuelos > 0 || character.qualities.linterna > 0){
+                        system.setQuality("gafassol",1);
+                        system.setQuality("botella",1);
+                        system.doLink("salircasa");
+                    }else{
+                        system.setQuality("gafassol",1);
+                        system.setQuality("botella",1);
+                    }
+                },
+                'linterna' : function (character, system, action) {
+                    if(character.qualities.panuelos > 0 || character.qualities.gafassol > 0){
+                        system.setQuality("linterna",1);
+                        system.doLink("salircasa");
+                    }else{
+                        system.setQuality("linterna",1);
+                    }
+                }
             }
         }
     ),
+    salircasa: new undum.SimpleSituation(
+        "<p><br/>Crees que ya has cogido lo necesario y estás listo para <a href='hub1'>irte</a></p>"),
     situationsautobus: new undum.Situation({
         enter: function(character, system, from) {
             system.setQuality("dinero", character.qualities.dinero-21);
@@ -225,7 +256,7 @@ undum.game.situations = {
         "<p></br>Dando una vuelta por el Carrefive para ver donde comprar los souvenirs, te encuentras con una sección con unos indalos que te llaman la atención y te acercas a verlos:</br></br> </p>" +
         "<p>"+
         "<img src='media/img/victorjones/desconocido.jpg' alt='Imagen de una persona desconocida' class='imagenConversacion'>"+
-        " - <em>Buenas. Parece que te han llamado la atención los <a href='indalos'>indalos</a>. Son muy especiales. ¿Qué te parecnen?</em>"+
+        " - <em>Buenas. Parece que te han llamado la atención los <a href='indalos'>indalos</a>. Son muy especiales. ¿Qué te parecen?</em>"+
         "</p>"+
         "<p class='transient'><a href='hub3'>Click para continuar...</a></p>"
     ),
@@ -239,6 +270,33 @@ undum.game.situations = {
         "<img src='media/img/victorjones/cruce.jpg' alt='Hay un cruce en el camino y debes elegir por dónde ir.' class='centrado'>"+
 		"<p> Fijándote a tu alrededor encuentras un cartel que indica una pista del camino que debes tomar.</p>"+
 		"<p class='transient'><a href='hub5'>Observar el cartel...</a></p>"
+    ),
+    inhospito: new undum.SimpleSituation(
+        "<h1>Un lugar inhóspito</h1>" +
+        "<p><a href='http://www.youtube.es/watch?v=WVSnLBKJfso'>Caminando, crees que ves a indígenas del templo con armas, por lo que te desvías a un hueco de la pared. Parece que no estás solo en el templo, pues, van a realizar un sacrificio...</a></p>" +
+        "<p>Como te da muy mala espina esa situación, aprovechas que están distraídos para ir a encontrar rápido la receta de la inmortalidad y salir de allí cuánto antes.</p>" +
+        "<p><br>Por fin, Víctor Jones logra ver, delante de sus narices, la receta de la inmortalidad encima de un altar de piedra. " +
+        "En la sala no parece haber nada más que el altar de piedra, lo cuál es motivo para que Víctor sospeche.</p>" +
+        "<p></br>Además, en este viaje sólo has pasado por una tormenta de arena, resolver puzzles muy raros, gente extraña haciendo sacrificios, lo cuál es de lo más mundano, pero ese altar te provoca ciertas sospechas. " +
+        "Víctor se acerca al altar y encuentra que hay un mecanismo que detecta el peso de la receta. ¡No puede ser! Hay que sustituir la botella por algo… </p>" +
+        "<img src='media/img/victorjones/indiana.jpg' alt='Hay un cruce en el camino y debes elegir por dónde ir.' class='cienxcien'></br>" +
+        "<p class='transient'><a href='cogerbotella'>Intentar coger la botella.</a></br>" +
+        "<a href='sustituirbotella'>Sustituir el índalo por la botella.</a></p>"
+    ),
+    cogerbotella: new undum.SimpleSituation(
+        "<p>Tratas de coger la botella y salir corriendo, pero el mecanismo cierra todas las puertas y te encierra allí, hasta el fin de los días.</p>" +
+        "<img src='media/img/victorjones/encerrado.png' alt='Hay un cruce en el camino y debes elegir por dónde ir.' class='cienxcien'>" +
+        "<h1 class='gameover'>HAS PERDIDO</h1>"
+    ),
+    sustituirbotella: new undum.SimpleSituation(
+        "<p>Todo parece ir fenomenal y sales <em>pitando</em> de allí por donde crees que es la salida.</p>" +
+        "<img src='media/img/victorjones/salida.jpg' alt='Hay un cruce en el camino y debes elegir por dónde ir.' class='cienxcien'>" +
+        "<p>Finalmente logras <a href='final'>salir de la cueva</a> sudando <em>'la gota gorda'</em>.</p>"
+        ,{
+            enter: function(character, system, from) {
+                system.setQuality("indalo", 0);
+            }
+        }
     ),
     final: new undum.SimpleSituation(
         "<h1 class='fin'>Todo lo que empieza, acaba</h1>" +
@@ -271,6 +329,18 @@ undum.game.qualities = {
     ),
     indalo: new undum.OnOffQuality(
         '<span title=\"Es un recuedo para tu prima. Tiene un color marroncete y está hecho como de piedra tallada...\">Indalo</span>', {priority:"0002", group:'mochila'}
+    ),
+    linterna: new undum.OnOffQuality(
+        '<span title=\"Es una linterna de las que necesitan las pilas más grandes que tengas.\">Linterna</span>', {priority:"0003", group:'mochila'}
+    ),
+    gafassol: new undum.OnOffQuality(
+        '<span title=\"Esas Ray-Ban Ultra Deluxe que te regalaron y que te hacen lucir tan bien.. Son polarizadas\">Gafas de sol</span>', {priority:"0004", group:'mochila'}
+    ),
+    panuelos: new undum.OnOffQuality(
+        '<span title=\"Nunca sabes cuando te va a asomar un moco.\">Pañuelos</span>', {priority:"0005", group:'mochila'}
+    ),
+    botella: new undum.OnOffQuality(
+        '<span title=\"Es muy importante beber agua. Sobretodo porque lo dicen los médicos.\">Botella de agua</span>', {priority:"0006", group:'mochila'}
     )
 };
 
@@ -290,5 +360,8 @@ undum.game.qualityGroups = {
 undum.game.init = function(character, system) {
     character.qualities.dinero = 55;
     character.qualities.indalo = 0;
+    character.qualities.gafassol = 0;
+    character.qualities.linterna = 0;
+    character.qualities.panuelos = 0;
     system.setCharacterText("<p><span title='Poner el cursor encima de tus objetos revelará más información.'>Coloca el ratón encima de tus objetos o habilidades para más información.</span></p>");
 };
