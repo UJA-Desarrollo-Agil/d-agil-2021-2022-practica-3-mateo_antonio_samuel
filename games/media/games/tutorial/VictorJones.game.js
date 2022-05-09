@@ -247,6 +247,22 @@ undum.game.situations = {
         optionText: "No dispones de nada para probar.",
         displayOrder: 2
     }),
+	situationlinterna: new undum.Situation({
+        enter: function(character, system, from) {
+            system.write($("#EleccionLinterna").html());
+        },
+        tags: ["topic8"],
+        optionText: "Utilizar la linterna que traes de tu casa.",
+        displayOrder: 1
+    }),
+	situationatravesar: new undum.Situation({
+        enter: function(character, system, from) {
+            system.write($("#EleccionAtravesar").html());
+        },
+        tags: ["topic8"],
+        optionText: "Intentar atravesar el pasillo.",
+        displayOrder: 2
+    }),
     vendedor: new undum.SimpleSituation(
         "<img src='media/img/victorjones/indalo.jpg' alt='imagen indalo' class='float_right imagenLogo ocultarse'>"+
         "</br><p>Tras saciarte, te sientes con energía y te acuerdas que a tu prima pequeña le gustan mucho los souvenirs y cada vez que viajas intentas llevarle algo.</p>" +
