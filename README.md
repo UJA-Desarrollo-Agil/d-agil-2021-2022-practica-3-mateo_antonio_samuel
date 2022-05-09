@@ -28,10 +28,12 @@ Somos estudiantes del curso 2021/2022 de Ingeniría Informática en la Universid
 
 [4. URL del tablero en trello](#4-url-del-tablero-en-trello)
 
-[5. Capturas de pantalla del 1er Sprint de Trello](#5-capturas-de-pantalla-del-tablero-de-trello-del-1er-sprint)
+[5. Capturas de pantalla del tablero de Trello del segundo Sprint](#5-capturas-de-pantalla-del-tablero-de-trello-del-segundo-sprint)
+
 - [5.1. Situación inicial del tablero en este sprint](#51-situación-inicial-del-tablero-en-este-sprint)
 - [5.2. Modificaciones del Product Backlog y Sprint Backlog](#52-modificaciones-del-product-backlog-y-sprint-backlog)
 - [5.3. Primeras historias de usuario escogias a realizar del Sprint Backlog](#53-primeras-historias-de-usuario-escogidas-a-realizar-del-sprint-backlog)
+- [5.4. Product Backlog Refinement](#54-product-backlog-refinement)
 
 [6. Plannning Poker](#6-planning-poker)
 
@@ -81,17 +83,49 @@ imágenes que se muestren.
 
 # 5.1. Situación inicial del Tablero en este Sprint
 
+Después de terminar el primer sprint y recibir la retroalimentación correspondiente decidimos arreglar los problemas que surgieron. Uno de ellos fue que el porcentaje de actividad de cada uno de los miembros del equipo no se correspondían con el trabajo que pertenecía al primer Sprint. Para solucionarlo hemos tenido en cuenta la duración del Sprint en la herramienta que desarrolló el profesor responsable.
+
+En esencia, esta situación es prácticamente la misma que cuando finalizamos el primer Sprint, ya que no habido cambios desde que acabamos el primer Sprint. Aún así, hemos decidido indicar esta situación para ver la evolución del tablero en modificaciones futuras.
+
 ![0](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint2/0.png)
 
+_La imagen anterior muestra como es el estado de nuestro tablero de Trello antes de cualquier modificación._
 
 # 5.2. Modificaciones del Product Backlog y Sprint Backlog
 
+Después de analizar el tablero y teniendo en cuenta el progreso del proyecto con el Sprint anterior, nos asignamos las siguientes HU en el Sprint Backlog:
+
+- El jugador podrá dejar todos los objetos para liberar espacio.
+- El juego tendrá como mínimo 9 situaciones.
+- El juego incluirá imágenes en el segundo sprint.
+- Si una nueva versión del juego incluye nuevas situaciones, deben complicar la misión inicial o añadir nuevas misiones.
+- El jugador debe poder saber cuántos puntos lleva en la partida.
+- Se añadirá música de fondo al juego.
+- Se podrá personalizar el juego preguntando el nombre y modificando los textos para que lo citen.
+- Crear versión sin distracciones.
+- El jugador podrá recoger objetos a lo largo del juego para los puzzles.
+
+El resto de HU que están en la columna Product Backlog no las hemos incluido por varios motivos, entre ellos, la dificultad que supondría desarrollarlas, tiempo para aprender a como implementarlas en el proyecto y que el valor de estas HU son muy bajas. Además, viendo el ritmo de trabajo que tuvimos en el anterior Sprint escogimos una cantidad que supusiera el mismo esfuerzo para implementar las HU que se han mencionado anteriormente.
+
 ![1](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint2/1.png)
+
+_En la imagen de arriba se aprecia que las columnas de Product Backlog y Sprint Backlog han sido modificados tras consensuar las HU en equipo, respectivamente._
 
 # 5.3. Primeras Historias de usuario escogidas a realizar del Sprint Backlog
 
+Como se ha visto en el apartado anterior, escogimos estas HU. A la hora de repartirlas tuvimos en cuenta las situaciones personales de cada uno y el conocimiento necesario para avanzar el desarrollo de nuestro juego conversacional. Movimos todas excepto cuatro para ver si progresábamos de la misma forma que en primer Sprint. También decir que había algunas HU que eran muy específicas y solo una persona sabía hacerla o era suficiente.  
+
 ![2](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint2/2.png)
 
+_Tras hacer modificaciones necesarias en el tablero decidimos como equipo elegir y repartir las HU para llevarlas al Sprint Backlog._
+
+# 5.4. Product Backlog Refinement
+
+Tras recibir nuevas HU tuvimos que reunirnos y ver la situación en la que estaba el tablero del proyecto. En nuestro caso decidimos que no se iban a añadir HU a la columna Sprint Backlog, pues no eran innegociables y no queríamos introducir más HU de las que sopesamos que íbamos a cumplir. Sí que es cierto que modificamos tarjeta de Trello para definir mejor las tareas y las propias tarjetas. Después de esta fase decidimos continuar como estábamos. También decir que las nuevas HU se sometieron a una evaluación con su Planning Póker correspondiente.
+
+![5](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint2/5.png)
+
+_En la imagen de arriba se aprecia como se han incluido aquellas historias de usuario en el Product Backlog. Se aprecia mejor en la imagen del apartado [PBR](#7-product-backlog-refinement-del-proyecto)._
 
 # 6. Planning Poker
 
@@ -101,24 +135,26 @@ _Captura de pantalla de Telegram, votacion del planning poker de la Práctica 3_
 
 ![pp2](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint1/pp2.png)
 
-_Captura de pantalla de Telegram, en el momento de la votación con Planning Póker de las nuevas HU debido al [PBR](#7-product-backlog-refinement-del-proyecto)._
+_Captura de pantalla de Telegram, en el momento de la votación con Planning Póker de las nuevas HU debido al [PBR](#7-product-backlog-refinement-del-proyecto) del sprint 1._
+
+![pp](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint2/pp.png)
+
+_Captura de pantalla de Telegram, en el momento de la votación con Planning Póker de las nuevas HU debido al [PBR](#7-product-backlog-refinement-del-proyecto) del sprint 2._
+
 
 # 7. Product Backlog Refinement del proyecto
 
-El día 6 de abril de 2022 se encontraron nuevos requisitos a considerar para el proyecto. Estos son:
- - Modificar el CSS del juego original.
- - Una versión del juego sin distracciones de CSS.
- - Al menos una situación de las existentes tendrá un diálogo preestablecido y escrito con otro personaje del juego.
- - Cada situación deberá llevar una imagen descriptiva asociada.
-
+El día 27 de abril de 2022 se encontraron nuevos requisitos a considerar para el proyecto. Estos son:
+ - El jugador podrá solicitar ayuda al juego y recibirá información que le sirva para entender el juego y lograr llegar al final del mismo.
+ - La ayuda que aporte el juego será sensible al contexto, es decir, en función de la situación en que esté y/o los objetos que tenga y/o la puntuación que lleve y/o cualquier otro aspecto que deseéis considerar se le aportará una información de ayuda u otra.
+ - El juego estará disponible en español y en otro idioma.
 
 Para ello tuvimos que añadir tarjetas nuevas al Product Backlog, asignarles sus puntos de historia 
 y su valor correspondiente. Después de esto las pasamos al Sprint Backlog, como se puede apreciar en la siguiente imagen a continuación:
 
-![PBR](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint1/PBR.png)
+![4_PBR](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint2/4_PBR.png)
 
-_En el Product Backlog Refinement pasamos las tarjetas: Una imagen descriptiva por situación, Modificar el CSS original y que exista un
-diálogo predefinido entre los personajes del juego._
+_En el Product Backlog Refinement pasamos las tarjetas que el cliente nos ha solicitado incluir_
 
 # 8. Conclusiones de nuestra Sprint Review
 
