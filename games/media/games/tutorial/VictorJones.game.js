@@ -26,11 +26,11 @@ undum.game.fadeSpeed = 1500
  * option. */
 undum.game.slideUpSpeed = 500
 
-/* The situations that the game can be in. Each has a unique ID. */
+/* The situations that the game can be in. Each has a unique ID. Víctor */
 undum.game.situations = {
     comienzo: new undum.SimpleSituation(
         "<h1>Una receta para ser inmortal</h1>" +
-        "<p>Víctor Jones es un jóven que ya es casi un licenciado en ingeniería informática, pues sólo le faltan aprobar algunas asignaturas.</p></br></br>" +
+        "<p> "+ nombre+" Jones es un jóven que ya es casi un licenciado en ingeniería informática, pues sólo le faltan aprobar algunas asignaturas.</p></br></br>" +
         "<p>Un día, yendo a una de sus clases, escucha de otros compañeros en los pasillos un <em>cierto rumor</em> que corre sobre la receta de la inmortalidad..</br></br></p>" +
         "<img src='media/img/victorjones/rumor.jpg' width='60%' class='centrado'>" +
         "<p>Compañero 1 - <em>Oye, ¿sabes que en Almería está la receta de la inmortalidad?</em></p>" +
@@ -44,7 +44,7 @@ undum.game.situations = {
 
 
 
-        "<p>Víctor, fascinado y curioso por la idea de vivir eternamente, al acabar sus clases de la universidad <a href='hub1'>vuelve a su casa</a> para coger todo lo necesario " +
+        "<p>"+ nombre+", fascinado y curioso por la idea de vivir eternamente, al acabar sus clases de la universidad <a href='hub1'>vuelve a su casa</a> para coger todo lo necesario " +
         "y hacer un plan para llegar hasta allí</p>",
         {
             enter: function (character, system, from){
@@ -242,15 +242,15 @@ undum.game.situations = {
     ),
     final: new undum.SimpleSituation(
         "<h1 class='fin'>Todo lo que empieza, acaba</h1>" +
-        "<p>Por fin, Víctor Jones logra ver, delante de sus narices, la receta de la inmortalidad encima de un altar de piedra.</p>" +
-        "</br><p>Ya no hay vuelta atrás. Víctor saca el corcho de la botella, y en la luz del atardecer, extiende el papel enrollado con sus dos brazos. " +
+        "<p>Por fin, "+ nombre+" Jones logra ver, delante de sus narices, la receta de la inmortalidad encima de un altar de piedra.</p>" +
+        "</br><p>Ya no hay vuelta atrás. "+ nombre+" saca el corcho de la botella, y en la luz del atardecer, extiende el papel enrollado con sus dos brazos. " +
         "Sus ojos leyeron lo más rápido posible aquel escrito:</br></br></p>" +
-        "<p>Víctor Jones - <em>¿Estás de guasa?.</em></p>" +
-        "</br><p>A Víctor se le abrieron aún más los ojos cuando descubrió, que lo que era una receta de la inmortalidad, resultó ser nada menos que una receta para hacer churros de calidad.</p>" +
+        "<p>"+ nombre+" Jones - <em>¿Estás de guasa?.</em></p>" +
+        "</br><p>A "+ nombre+" se le abrieron aún más los ojos cuando descubrió, que lo que era una receta de la inmortalidad, resultó ser nada menos que una receta para hacer churros de calidad.</p>" +
         "<img src='media/img/victorjones/receta.webp' alt='La receta de la inmortalidad es una receta para hacer churros.' class='cienxcien'>" +
         "</br><p>Estaba cansado. Le ilusionó mucho que fuese de verdad la receta de la inmortalidad aunque no se ha aburrido e incluso se ha divertido con la experiencia. " +
-        "Además, Víctor es joven y aún no sabe hacerse ni un huevo frito, por lo que, valorando cuánto le ha gustado encontrar finalmente la receta, le comenta a los cuatro vientos: </br></p>" +
-        "</br><p>Víctor Jones - <em>¿Para hacer churros?. Nah, de locos.</em></p>" +
+        "Además, "+ nombre+" es joven y aún no sabe hacerse ni un huevo frito, por lo que, valorando cuánto le ha gustado encontrar finalmente la receta, le comenta a los cuatro vientos: </br></p>" +
+        "</br><p>"+ nombre+" Jones - <em>¿Para hacer churros?. Nah, de locos.</em></p>" +
         "</br><p>Acto seguido, llama a su madre para ver si le recogen y para negociar el desayuno de mañana.</p>" +
         "<img src='media/img/victorjones/atardecer.png' alt='Llamas a tu madre' class='cienxcien'>" +
         "<h1>F I N</h1>"
@@ -292,3 +292,16 @@ undum.game.init = function(character, system) {
     character.qualities.indalo = 0;
     system.setCharacterText("<p><span title='Poner el cursor encima de tus objetos revelará más información.'>Coloca el ratón encima de tus objetos o habilidades para más información.</span></p>");
 };
+
+var els = document.getElementsByClassName("nombre");
+
+for (let i=0; i<els.length; i++){
+	if(i<=2){
+		els[i].innerHTML = nombre + " Jones";
+	}else 
+		els[i].innerHTML = nombre;
+}
+
+
+
+

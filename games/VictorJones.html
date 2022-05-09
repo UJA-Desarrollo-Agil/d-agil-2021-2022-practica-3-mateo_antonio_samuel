@@ -1,6 +1,10 @@
 <!DOCTYPE HTML>
 <html lang="es">
 
+<script language="JavaScript">
+	var nombre=prompt('Ingrese su nombre:','');
+</script>
+
 <head>
   <meta charset="utf-8">
   <!-- Game Title: edit this -->
@@ -52,10 +56,10 @@
       <div id="info_panel" class="tools left">
 
         <!-- Game Background: edit this -->
-        <h1>Victor Jones</h1>
+        <h1 class="nombre"></h1>
         <p>
           <!-- INFO DEL JUEGO (Columna izquierda)-->
-          La aventura tratará sobre Víctor Jones, un jóven que ya es casi un licenciado en ingeniería informática que sólo le faltan aprobar algunas asignaturas. Un día, yendo a una de sus clases, escucha de otros compañeros en los pasillos un cierto rumor que corre sobre la receta de la inmortalidad pero que sólo se encuentra en una zona desértica de Almería donde siempre hay mucha calima.
+          La aventura tratará sobre <span class="nombre"></span>, un jóven que ya es casi un licenciado en ingeniería informática que sólo le faltan aprobar algunas asignaturas. Un día, yendo a una de sus clases, escucha de otros compañeros en los pasillos un cierto rumor que corre sobre la receta de la inmortalidad pero que sólo se encuentra en una zona desértica de Almería donde siempre hay mucha calima.
           Fascinado y curioso por la idea, se preparará para zambullirse de lleno a la trepidante aventura que le aguarda en Oasis C.
         </p>
         <!-- End of Game Background -->
@@ -81,7 +85,7 @@
         <div class="label">
 
             <!-- Game Title: edit this -->
-            <h1>Victor Jones</h1>
+            <h1 class="nombre"> </h1>
             <h2>por Mateo, Samuel y Antonio</h2>
             <!-- End of Game Title -->
 
@@ -145,9 +149,9 @@
       <!--Elecciones-->
       <div id="EleccionAutobus">
         <img src="media/img/victorjones/autobus.jpg" alt="imagen de autobus" class="float_right imagenLogo">
-        <p>Por 21€, Victor decide tomar el autobús de Jaen a Almería, con parada en Abla, que tardaría unas 3 horas en hacer 242 Km de distancia.</p>
+        <p>Por 21€, <span class="nombre"></span> decide tomar el autobús de Jaen a Almería, con parada en Abla, que tardaría unas 3 horas en hacer 242 Km de distancia.</p>
         </br>
-        <p>Es una decisión tan segura y cómoda, que Víctor se queda dormido y se despierta cuando está llegando a su destino.</p>
+        <p>Es una decisión tan segura y cómoda, que <span class="nombre"></span> se queda dormido y se despierta cuando está llegando a su destino.</p>
         </br>
         <p>Se le ha pasado el viaje en un santiamén.</p>
         <p class='transient'>
@@ -157,7 +161,7 @@
 
       <div id="EleccionTaxi">
         <img src="media/img/victorjones/taxi.jpg" alt="imagen de autobus" class="float_right imagenLogo">
-        <p>Por 40€ (casi todo lo que tenía de dinero), Victor decide tomar el autobús de Jaen a Almería que tardaría unas 2 horas y media en hacer 242 Km de distancia.</p>
+        <p>Por 40€ (casi todo lo que tenía de dinero), <span class="nombre"></span> decide tomar el autobús de Jaen a Almería que tardaría unas 2 horas y media en hacer 242 Km de distancia.</p>
         </br>
         <p>Es una decisión segura y cómoda pero cara. Como el conductor le daba todo igual, y él lo que quería era cobrar más, pensó que no había prisa para llegar.</p>
         <p></br>El conductor era poco simpático y en el trayecto va quejándose de todo, por lo que fue un viaje bastante incómodo y pesado.</p>
@@ -168,10 +172,10 @@
 
       <div id="EleccionBlaBlaCar">
         <img src="media/img/victorjones/blablacar.png" alt="imagen de BlaBlaCar" class="float_right imagenLogo">
-        <p>Por 21€, Victor decide tomar un BlaBlaCar de Jaen a Almería que tardaría unas 2 horas y media en hacer 242 Km de distancia.</p>
+        <p>Por 21€, <span class="nombre"></span> decide tomar un BlaBlaCar de Jaen a Almería que tardaría unas 2 horas y media en hacer 242 Km de distancia.</p>
         </br>
         <p>Es una decisión difícil de tomar porque no sabes como va a ser el conductor que te va a llevar, pero por suerte hablaste con una muchacha muy maja que te iba dando conversación durante el viaje.</p>
-        <p></br>En los momentos en los que no sabían de que hablar Victor buscaba en internet temas de conversación como por ejemplo "<em>¿Cuál ha sido tu viaje más divertido?</em>" o "<em>¿Cuánto tiempo hace que utilizas BlaBlaCar?</em>".</p>
+        <p></br>En los momentos en los que no sabían de que hablar <span class="nombre"></span> buscaba en internet temas de conversación como por ejemplo "<em>¿Cuál ha sido tu viaje más divertido?</em>" o "<em>¿Cuánto tiempo hace que utilizas BlaBlaCar?</em>".</p>
         <p class='transient'>
           <a href='hub2'>Click para continuar...</a> 
         </p>
@@ -179,13 +183,13 @@
 
       <div id="EleccionAutostop">
         <img src="media/img/victorjones/autostop.jpeg" alt="imagen de autoStop" class="float_right imagenLogo">
-        <p> Al intentar abaratar tanto la situación, Víctor se paró en la primera autopista con un cartel en las manos que decía Almería.</p>
+        <p> Al intentar abaratar tanto la situación, <span class="nombre"></span> se paró en la primera autopista con un cartel en las manos que decía Almería.</p>
         </br>
-        <p> Un camionero que pasaba por allí, que no veía muy bien, le dijo que podía subir con eĺ. El camionero en realidad leyó mal el cartel de Víctor
+        <p> Un camionero que pasaba por allí, que no veía muy bien, le dijo que podía subir con eĺ. El camionero en realidad leyó mal el cartel de <span class="nombre"></span>
           creyendo que ponía Mérida, pero como iba para Badajoz y le pillaba de camino decidió llevarle sin preguntarle más.</p>
         </br>
-        <p> Victor sospechó porque tardaba mucho pero como iba hablando con el camionero ni se dio cuenta de que iban por la carretera incorrecta para su destino.
-          Cuando llegaron a Mérida, Victor se dio por vencido, llamando a sus padres para que lo recogieran y volver a su casa, dando la aventura por terminada por ahora. Victor aprendió que no se debe montar en vehículos ajenos. </p>
+        <p> <span class="nombre"></span> sospechó porque tardaba mucho pero como iba hablando con el camionero ni se dio cuenta de que iban por la carretera incorrecta para su destino.
+          Cuando llegaron a Mérida, <span class="nombre"></span> se dio por vencido, llamando a sus padres para que lo recogieran y volver a su casa, dando la aventura por terminada por ahora. <span class="nombre"></span> aprendió que no se debe montar en vehículos ajenos. </p>
         <h1 class="gameover">HAS PERDIDO</h1>
       </div>
 
@@ -200,7 +204,7 @@
         <img src="media/img/victorjones/preso.jpg" alt="imagen de una persona encarcelada" class="float_right imagenLogo">
         <p> Como apasionado de la carne en general, buscas un asador en el Carrefive, encuentras uno y miras la carta. </p>
         <p> Dudoso de lo que pedir, te paras a pensar y recuerdas que vistes que estaban preparando costillas con salsa barbacoa para otro cliente, pero eso lo comiste hace poco en el Foster´s Hollywood, por lo tanto lo descartas. Sales de dudas ya que tienes dinero suficiente para darte el gusto y te pides un chuletón de ternera de 400g acompañado de unas patatas fritas. Como sabes comer bien la ternera se la pides al camarero poco hecha, casi como si fuera vuelta y vuelta, ya que quien se la pida hecha esta desperdiciando ese manjar de los dioses. <br></p>
-        <p> Cuando vas a pagar te das cuenta de que no tienes dinero suficiente, por lo tanto piensas que puede ser buena idea irte disimuladamente sin pagar pero te acaba pillando y llaman a los guardias de seguridad del Carrefive, los cuales llaman a tus padres los cuales van a buscarte y llevarte para la casa, dando por terminado la aventura por ahora. Victor aprendió que debe fijarse más en el dinero que tiene y no gastárselo en cualquier cosa y por supuesto no irse sin pagar. </p>
+        <p> Cuando vas a pagar te das cuenta de que no tienes dinero suficiente, por lo tanto piensas que puede ser buena idea irte disimuladamente sin pagar pero te acaba pillando y llaman a los guardias de seguridad del Carrefive, los cuales llaman a tus padres los cuales van a buscarte y llevarte para la casa, dando por terminado la aventura por ahora. <span class="nombre"></span> aprendió que debe fijarse más en el dinero que tiene y no gastárselo en cualquier cosa y por supuesto no irse sin pagar. </p>
         <h1 class="gameover">HAS PERDIDO</h1>
       </div>
 
@@ -344,7 +348,7 @@
       <!-- diferentes opciones -->
       <div id="hub1" class="situation" data-choices="#topic1" data-option-text="View Topic List">
         <h1 class="transient">Automovil</h1>
-        <p>Con el dinero que tiene en la mochila, Víctor tiene que elegir una manera de ir desde Jaen hasta Almería.</p>
+        <p>Con el dinero que tiene en la mochila, <span class="nombre"></span> tiene que elegir una manera de ir desde Jaen hasta Almería.</p>
         <img src="media/img/victorjones/JaenAlmeria.png" alt="imagen de distancia Jaen - Almería" class="cienxcien centrado">
         <p class="transient">Elija una de las opciones de abajo.</p>
         <br>
@@ -373,7 +377,7 @@
       </div>
 	  
 	  <div id="hub5" class="situation" data-choices="#topic5" data-option-text="View Topic List">
-        <p>Víctor con la información de los carteles debe tomar una sabia decisión.</p>
+        <p><span class="nombre"></span> con la información de los carteles debe tomar una sabia decisión.</p>
         <img src="media/img/victorjones/acertijo.jpg" alt="acertijo" class="centrado">
 		<p>En la escritura del cartel se halla escrito: "Aquel que logre acertar el número de triángulos ocultos en la figura, obtendrá como respuesta el numero de la carretera que le llevará al destino deseado." </p>
         <p class="transient">Elija una de las opciones de abajo.</p>
@@ -384,7 +388,7 @@
         <h1>La famosa calima</h1>
         <p>Con la tremenda suerte que tienes, mientras te hayas de camino en la ruta empieza a surgir la famosa calima que rodea la zona.</p>
         <img src='media/img/victorjones/calima.jpg' alt='Hay una calima delante tuya y debes atravesarla.' class='centrado'>
-        <p></br>Empieza a ser bastante densa y debes protegerte. Víctor debe tomar una sabia decisión rápidamente:</p>
+        <p></br>Empieza a ser bastante densa y debes protegerte. <span class="nombre"></span> debe tomar una sabia decisión rápidamente:</p>
         <p class="transient"></br>Elija una de las opciones de abajo.</p>
       </div>
 	  
