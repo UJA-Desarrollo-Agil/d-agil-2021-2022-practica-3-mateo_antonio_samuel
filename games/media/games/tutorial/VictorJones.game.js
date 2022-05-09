@@ -182,21 +182,33 @@ undum.game.situations = {
         optionText: "Carretera 12",
         displayOrder: 3
     }),
+	situationcomodin: new undum.Situation({
+        enter: function(character, system, from) {
+            system.write($("#EleccionComodin").html());
+			system.setQuality("dinero", character.qualities.dinero-5);
+        },
+        tags: ["topic5"],
+        optionText: "Comodín de la llamada. (Necesitas dinero para recargar el saldo)",
+        displayOrder: 4,
+		canChoose: function(character, system, host) {
+            return character.qualities.dinero>5;
+        }
+    }),
 	situationesquivar: new undum.Situation({
         enter: function(character, system, from) {
             system.write($("#EleccionEsquivar").html());
         },
         tags: ["topic6"],
         optionText: "Izquierda, derecha, izquierda, derecha...",
-        displayOrder: 3
+        displayOrder: 1
     }),
 	situationrodear: new undum.Situation({
         enter: function(character, system, from) {
             system.write($("#EleccionRodear").html());
         },
         tags: ["topic6"],
-        optionText: "Aunque tardes más tiempo, rodeas la zona de cactus.",
-        displayOrder: 3
+        optionText: "Aunque tardes más tiempo, rodeas la zona de los cactus.",
+        displayOrder: 2
     }),	
 	situationmochila: new undum.Situation({
         enter: function(character, system, from) {
