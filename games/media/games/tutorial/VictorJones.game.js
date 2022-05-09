@@ -182,13 +182,29 @@ undum.game.situations = {
         optionText: "Carretera 12",
         displayOrder: 3
     }),
+	situationesquivar: new undum.Situation({
+        enter: function(character, system, from) {
+            system.write($("#EleccionEsquivar").html());
+        },
+        tags: ["topic6"],
+        optionText: "Izquierda, derecha, izquierda, derecha...",
+        displayOrder: 3
+    }),
+	situationrodear: new undum.Situation({
+        enter: function(character, system, from) {
+            system.write($("#EleccionRodear").html());
+        },
+        tags: ["topic6"],
+        optionText: "Aunque tardes más tiempo, rodeas la zona de cactus.",
+        displayOrder: 3
+    }),	
 	situationmochila: new undum.Situation({
         enter: function(character, system, from) {
             system.write($("#EleccionMochila").html());
 			system.setQuality("indalo",0);
 			system.setQuality("dinero", 0);
         },
-        tags: ["topic6"],
+        tags: ["topic6-1"],
         optionText: "Te colocas la mochila en la cabeza y sigues recto",
         displayOrder: 1
     }),
@@ -196,7 +212,7 @@ undum.game.situations = {
         enter: function(character, system, from) {
             system.write($("#EleccionAntebrazo").html());
         },
-        tags: ["topic6"],
+        tags: ["topic6-1"],
         optionText: "Pones tu antebrazo ante tus ojos para protegerte y sigues adelante",
         displayOrder: 2
     }),
