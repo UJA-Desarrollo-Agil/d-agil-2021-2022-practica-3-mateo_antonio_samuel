@@ -382,7 +382,7 @@
 
     <div id="EleccionBotella">
       <p>Hace tanta calor, tienes la boca seca, te estas desidratando, pero te acuerdas que tienes una botella de agua en la mochila por lo tanto cuando la bebes te sientes mucho mejor y puedes seguir con el camino que tiene por delante.</p>
-        <img src="media/img/victorjones/botella.jpg" alt="botella" class='imagenLogo centrado'>
+        <img src="media/img/victorjones/botella.jpg" alt="botella" class='imagenLogo centrado ocultarse'>
         <p class='transient'>
           <a href='hub6'>Click para continuar...</a>
         </p>
@@ -390,7 +390,7 @@
 
     <div id="EleccionnoBotella">
       <p>Te desvías del camino con la calor que hace, a lo lejos puedes ver un oasis pequeñito, pero caminas y caminas y no llegas, en verdad era una ilusión del calor que crea un espejismo del oasis, algo muy común en cuentos e historias de los países arenosos. Al final te encuentran un morador del desierto y que te lleva a la ciudad más cercana en la cual te hidratan, por lo cual tu aventura termina aquí.</p>
-        <img src="media/img/victorjones/llorando.jpg" alt="llorando" class='imagenLogo centrado'>
+        <img src="media/img/victorjones/llorando.jpg" alt="llorando" class='imagenLogo centrado ocultarse'>
       <h1 class="gameover">HAS PERDIDO</h1>
     </div>
 
@@ -463,7 +463,7 @@
 	  <div id="hub6-1" class="situation" data-choices="#topic6-1" data-option-text="View Topic List">
         <h1>La famosa calima</h1>
         <p>Con la tremenda suerte que tienes, mientras te hayas de camino en la ruta empieza a surgir la famosa calima que rodea la zona.</p>
-        <img src="media/img/victorjones/calima.jpg" alt="Hay una calima delante tuya y debes atravesarla." class="centrado ocultars">
+        <img src="media/img/victorjones/calima.jpg" alt="Hay una calima delante tuya y debes atravesarla." class="centrado ocultarse">
         <p></br>Empieza a ser bastante densa y debes protegerte. <span class="nombre"></span> debe tomar una sabia decisión rápidamente:</p>
         <p class="transient"></br>Elija una de las opciones de abajo.</p>
       </div>
@@ -505,9 +505,9 @@
   </audio>-->
 
 
-  <audio src="" controls></audio>
+  <audio src="" controls id="audiocss" class=""></audio>
+  
   <script>
-
 
     let boton = document.querySelector(".click_message")
     let audioEtiqueta = document.querySelector("audio")

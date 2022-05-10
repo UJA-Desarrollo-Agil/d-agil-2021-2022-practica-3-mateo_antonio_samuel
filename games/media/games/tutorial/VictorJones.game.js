@@ -71,7 +71,7 @@ undum.game.situations = {
     ),
     casa: new undum.SimpleSituation(
         "<p></br>Después de una larga sesión de prácticas en la universidad, Víctor entra a su habitación para recoger cosas que va a necesitar para el viaje.</br></p>" +
-        "<p><img src='media/img/victorjones/habitacion.jpg' width='100%' class='centrado'></p>" +
+        "<p><img src='media/img/victorjones/habitacion.jpg' width='100%' class='centrado ocultarse'></p>" +
         "<p><br>Entra muy bien los rayos de luz por la ventana, así que puede ver con claridad lo que puede llevarse de su estantería o escritorio:</p>" +
         "<p class='transient'><a href='./panuelos'>Pañuelos</a></p>" +
         "<p class='transient'><a href='./gafassol'>Gafas de sol y Botella de agua</a></p>" +
@@ -363,7 +363,7 @@ undum.game.situations = {
     ruta: new undum.SimpleSituation(
         "<h1>Ruta a Oasis C</h1>" +
         "<p> Después de estar un tiempo por Carrefive decides que es momento de proseguir con el viaje. No hay mucha gente por las calles así que sigues caminando. Te encuentras en una zona rural de por allí y parece que has dado con la ruta pero el caso es que hay más de una. </p>" +
-        "<img src='media/img/victorjones/cruce.jpg' alt='Hay un cruce en el camino y debes elegir por dónde ir.' class='centrado'>" +
+        "<img src='media/img/victorjones/cruce.jpg' alt='Hay un cruce en el camino y debes elegir por dónde ir.' class='centrado ocultarse'>" +
         "<p> Fijándote a tu alrededor encuentras un cartel que indica una pista del camino que debes tomar.</p>" +
         "<p class='transient'><a href='hub5'>Observar el cartel...</a></p>"
     ),
@@ -376,18 +376,18 @@ undum.game.situations = {
         "En la sala no parece haber nada más que el altar de piedra, lo cuál es motivo para que Víctor sospeche.</p>" +
         "<p></br>Además, en este viaje sólo has pasado por una tormenta de arena, resolver puzzles muy raros, gente extraña haciendo sacrificios, lo cuál es de lo más mundano, pero ese altar te provoca ciertas sospechas. " +
         "Víctor se acerca al altar y encuentra que hay un mecanismo que detecta el peso de la receta. ¡No puede ser! Hay que sustituir la botella por algo… </p>" +
-        "<img src='media/img/victorjones/indiana.jpg' alt='Hay un cruce en el camino y debes elegir por dónde ir.' class='cienxcien'></br>" +
+        "<img src='media/img/victorjones/indiana.jpg' alt='Hay un cruce en el camino y debes elegir por dónde ir.' class='cienxcien ocultarse'></br>" +
         "<p class='transient'><a href='cogerbotella'>Intentar coger la receta.</a></br>" +
         "<a href='sustituirbotella'>Sustituir el índalo por la receta.</a></p>"
     ),
     cogerbotella: new undum.SimpleSituation(
         "<p>Tratas de coger la botella y salir corriendo, pero el mecanismo cierra todas las puertas y te encierra allí, hasta el fin de los días.</p>" +
-        "<img src='media/img/victorjones/encerrado.png' alt='Hay un cruce en el camino y debes elegir por dónde ir.' class='cienxcien'>" +
+        "<img src='media/img/victorjones/encerrado.png' alt='Hay un cruce en el camino y debes elegir por dónde ir.' class='cienxcien ocultarse'>" +
         "<h1 class='gameover'>HAS PERDIDO</h1>"
     ),
     sustituirbotella: new undum.SimpleSituation(
         "<p>Todo parece ir fenomenal y sales <em>pitando</em> de allí por donde crees que es la salida.</p>" +
-        "<img src='media/img/victorjones/salida.jpg' alt='Hay un cruce en el camino y debes elegir por dónde ir.' class='cienxcien'>" +
+        "<img src='media/img/victorjones/salida.jpg' alt='Hay un cruce en el camino y debes elegir por dónde ir.' class='cienxcien ocultarse'>" +
         "<p>Finalmente logras <a href='final'>salir de la cueva</a> sudando <em>'la gota gorda'</em>.</p>"
         ,{
             enter: function(character, system, from) {
@@ -399,7 +399,7 @@ undum.game.situations = {
     desierto: new undum.SimpleSituation(
         "<h1>Contacto con el desierto</h1>"+
         "<p>El asfalto acaba donde empiezan los senderos de arena que guían a Víctor y ahora hay más calor que antes. Como vas a buen ritmo te fijas en los alrededores y hay, muy a lo lejos, algo parecido a un oasis aunque no figuraba en el mapa de antes.</p>"+
-        "<img src='media/img/victorjones/espejismo.jpg' alt='Desierto' class='centrado imagenLogo'>" +
+        "<img src='media/img/victorjones/espejismo.jpg' alt='Desierto' class='centrado imagenLogo ocultarse'>" +
         "<p class='transient'><a href='hubdesierto'>Click para continuar...</a></p>"
         ),
     
