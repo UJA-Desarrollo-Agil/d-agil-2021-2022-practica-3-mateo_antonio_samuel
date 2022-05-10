@@ -68,6 +68,12 @@ La aventura tratará sobre Víctor Jones, un joven que ya es casi un licenciado 
 
 A lo largo de la historia se podrán coger y soltar objetos de la mochila, además de utilizarlos para algún puzzle en específico. Víctor Jones no es practicante de halterofilia así que el peso que puede llevar consigo es limitado. Además, tendrá que tener en cuenta el dinero que lleva encima a pesar de ser estudiante universitario. Cada partida guardará la puntuación acumulada del jugador según las opciones que haya escogido.
 
+## 2.3. Enlace al juego online
+
+El juego esta subido a un hosting gratuito llamado [000WebHost](https://es.000webhost.com/).
+
+El enlace a nuestro juego es [https://victorjones.000webhostapp.com/](https://victorjones.000webhostapp.com/)
+
 # 3. ¿Qué es Undum?
 
 Undum es un framework que se ejecuta en un navegador y permite crear juegos interactivos basados en HTML, CSS y Javascript.
@@ -145,7 +151,10 @@ Esto es, entre otros motivos, porque teníamos más claro cuál era nuestro ritm
 Decir también que fuimos tachando de cada una de las HU sus respectivas tareas de las checklist que dispone Trello.
 
 ![6](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint2/6.png)
-_Tal y como se aprecia en la imagen superior, las HU que anteriormente estaban en las columnas Sprint Backlog y Doing se encuentran ahora en la columna Review._
+_Tal y como se aprecia en la imagen superior, las HU que anteriormente estaban en las columnas Sprint Backlog y Doing se encuentran ahora en la columna Review._ (1/2)
+
+![61](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint2/6-1.png)
+_Tal y como se aprecia en la imagen superior, las HU que anteriormente estaban en las columnas Sprint Backlog y Doing se encuentran ahora en la columna Review._ (2/2)
 
 # 5.6 Finalización del Sprint en el tablero grupal de Trello
 
@@ -153,7 +162,13 @@ Al acabar de revisar que todas las HU cumplen los requisitos para considerarlas 
 Para cuando acabamos de mover estas HU a la columna Doing no daba más tiempo para implementar nada más por lo que decidimos que el resto de HU de la columna Product Backlog no se someterían a modificaciones.
 
 ![7](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint2/7.png)
-_En la anterior imagen las HU son desplazadas a la columna Done, tras ser haber pasado por la etapa Review._
+_En la anterior imagen las HU son desplazadas a la columna Done, tras ser haber pasado por la etapa Review._ (1/3)
+
+![71](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint2/7-1.png)
+_En la anterior imagen las HU son desplazadas a la columna Done, tras ser haber pasado por la etapa Review._ (2/3)
+
+![72](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint2/7-2.png)
+_En la anterior imagen las HU son desplazadas a la columna Done, tras ser haber pasado por la etapa Review._ (3/3)
 
 # 6. Planning Poker
 
