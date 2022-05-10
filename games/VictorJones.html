@@ -1,8 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="es">
 
-<script language="JavaScript">
+<script>
 	var nombre=prompt('Ingrese su nombre:','');
+    if (nombre ==""){
+      nombre="Víctor";
+    }
 </script>
 
 <head>
@@ -150,7 +153,7 @@
       <!--Elecciones-->
       <div id="EleccionAutobus">
         <img src="media/img/victorjones/autobus.jpg" alt="imagen de autobus" class="float_right imagenLogo ocultarse" >
-        <p>Por 21€, <span class="nombre"></span> decide tomar el autobús de Jaen a Almería, con parada en Abla, que tardaría unas 3 horas en hacer 242 Km de distancia.</p>
+        <p>Por 32€, <span class="nombre"></span> decide tomar el autobús de Jaen a Almería, con parada en Abla, que tardaría unas 3 horas en hacer 242 Km de distancia.</p>
         </br>
         <p>Es una decisión tan segura y cómoda, que <span class="nombre"></span> se queda dormido y se despierta cuando está llegando a su destino.</p>
         </br>
@@ -173,7 +176,7 @@
 
       <div id="EleccionBlaBlaCar">
         <img src="media/img/victorjones/blablacar.png" alt="imagen de BlaBlaCar" class="float_right imagenLogo ocultarse">
-        <p>Por 21€, <span class="nombre"></span> decide tomar un BlaBlaCar de Jaen a Almería que tardaría unas 2 horas y media en hacer 242 Km de distancia.</p>
+        <p>Por 32€, <span class="nombre"></span> decide tomar un BlaBlaCar de Jaen a Almería que tardaría unas 2 horas y media en hacer 242 Km de distancia.</p>
         </br>
         <p>Es una decisión difícil de tomar porque no sabes como va a ser el conductor que te va a llevar, pero por suerte hablaste con una muchacha muy maja que te iba dando conversación durante el viaje.</p>
         <p></br>En los momentos en los que no sabían de que hablar <span class="nombre"></span> buscaba en internet temas de conversación como por ejemplo "<em>¿Cuál ha sido tu viaje más divertido?</em>" o "<em>¿Cuánto tiempo hace que utilizas BlaBlaCar?</em>".</p>
@@ -389,7 +392,7 @@
     </div>
 
     <div id="EleccionnoBotella">
-      <p>Te desvías del camino con la calor que hace, a lo lejos puedes ver un oasis pequeñito, pero caminas y caminas y no llegas, en verdad era una ilusión del calor que crea un espejismo del oasis, algo muy común en cuentos e historias de los países arenosos. Al final te encuentran un morador del desierto y que te lleva a la ciudad más cercana en la cual te hidratan, por lo cual tu aventura termina aquí.</p>
+      <p>Te desvías del camino con la calor que hace. A lo lejos puedes ver un oasis pequeñito, pero caminas y caminas y no llegas. En realidad era una ilusión, un oasis que ha surgido por el calor que hace allí, algo muy común en cuentos e historias en países arenosos. Al final un morador del desierto te encuentra y te lleva a la ciudad más cercana en la cual te hidratan, por lo cual tu aventura termina aquí.</p>
         <img src="media/img/victorjones/llorando.jpg" alt="llorando" class='imagenLogo centrado ocultarse'>
       <h1 class="gameover">HAS PERDIDO</h1>
     </div>
@@ -398,7 +401,7 @@
 	  <div id="EleccionLinterna">
         </br>
         <p> <img src="media/img/victorjones/linterna.jpg" alt="Linterna" class='imagenLogo centrado ocultarse'>
-          Por suerte antes de salir de casa fuiste precavido y cuidadoso, ahora ese esfuerzo ha valido la pena, gracias a la linterna atraviesas ileso el pasillo. </p>
+          Por suerte antes de salir de casa fuiste precavido y ahora ese esfuerzo ha valido la pena. Gracias a la linterna atraviesas ileso el pasillo. Se le agotan las pilas pero el resto del templo tiene iluminación suficiente para ir sin linterna. </p>
 		<p class='transient'>
           <a href='inhospito'>Click para continuar...</a> 
         </p>
@@ -483,15 +486,13 @@
 	  <div id="hub8" class="situation" data-choices="#topic8" data-option-text="View Topic List">
 	    <h1>El Gran Templo de C </h1>
         <img src="media/img/victorjones/dentro.jpg" alt="Dentro del templo" class="cienxcien ocultarse">
-        <p>Tras la puerta, te adentras poco a poco en el templo. Nada más entrar hay una C enorme en el suelo de la primera sala del templo. Te vas adentrando poco a poco pero cada vez hay menos luz en el interior del pasillo. Por suerte ves un palo de madera cerca de una antorcha, pero vas a necesitar de alguna tela para mantener el fuego..</p>
+        <p>Tras la puerta, te adentras poco a poco en el templo. Nada más entrar hay una C enorme en el suelo de la primera sala del templo. Te vas adentrando poco a poco pero cada vez hay menos luz en el interior del pasillo. De alguna forma vas a tener que atravesar el pasillo....</p>
         <p class="transient">Elija una de las opciones de abajo.</p>
 	  </div>
 
       <!-- / diferentes opciones-->
     </div>
   </div>
-
-
 
   <!-- Load the libraries we depend on -->
   <script type="text/javascript" src="media/js/jquery-2.1.3.min.js"></script>

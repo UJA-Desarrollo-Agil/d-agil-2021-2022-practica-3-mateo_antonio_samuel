@@ -34,6 +34,8 @@ Somos estudiantes del curso 2021/2022 de Ingeniría Informática en la Universid
 - [5.2. Modificaciones del Product Backlog y Sprint Backlog](#52-modificaciones-del-product-backlog-y-sprint-backlog)
 - [5.3. Primeras historias de usuario escogias a realizar del Sprint Backlog](#53-primeras-historias-de-usuario-escogidas-a-realizar-del-sprint-backlog)
 - [5.4. Product Backlog Refinement](#54-product-backlog-refinement)
+- [5.5. Review de las Historias de Usuario](#55-review-de-historias-de-usuario)
+- [5.6. Finalización del Sprint en el tablero grupal de Trello](#56-finalización-del-sprint-en-el-tablero-grupal-de-trello)
 
 [6. Plannning Poker](#6-planning-poker)
 
@@ -113,7 +115,11 @@ _En la imagen de arriba se aprecia que las columnas de Product Backlog y Sprint 
 
 # 5.3. Primeras Historias de usuario escogidas a realizar del Sprint Backlog
 
-Como se ha visto en el apartado anterior, escogimos estas HU. A la hora de repartirlas tuvimos en cuenta las situaciones personales de cada uno y el conocimiento necesario para avanzar el desarrollo de nuestro juego conversacional. Movimos todas excepto cuatro para ver si progresábamos de la misma forma que en primer Sprint. También decir que había algunas HU que eran muy específicas y solo una persona sabía hacerla o era suficiente.  
+Como se ha visto en el apartado anterior, escogimos estas HU. 
+A la hora de repartirlas tuvimos en cuenta las situaciones personales de cada uno y el conocimiento necesario para avanzar el desarrollo de nuestro juego conversacional. 
+Movimos todas excepto cuatro para ver si progresábamos de la misma forma que en primer Sprint. 
+También decir que había algunas HU que eran muy específicas y solo una persona sabía hacerla o era suficiente.
+Fue en esta etapa cuando modificamos las HU a realizar en tareas, repartiendo así el trabajo para cada uno de los integrantes del proyecto.
 
 ![2](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint2/2.png)
 
@@ -121,17 +127,39 @@ _Tras hacer modificaciones necesarias en el tablero decidimos como equipo elegir
 
 # 5.4. Product Backlog Refinement
 
-Tras recibir nuevas HU tuvimos que reunirnos y ver la situación en la que estaba el tablero del proyecto. En nuestro caso decidimos que no se iban a añadir HU a la columna Sprint Backlog, pues no eran innegociables y no queríamos introducir más HU de las que sopesamos que íbamos a cumplir. Sí que es cierto que modificamos tarjeta de Trello para definir mejor las tareas y las propias tarjetas. Después de esta fase decidimos continuar como estábamos. También decir que las nuevas HU se sometieron a una evaluación con su Planning Póker correspondiente.
+Tras recibir nuevas HU tuvimos que reunirnos y ver la situación en la que estaba el tablero del proyecto. 
+En nuestro caso decidimos que no se iban a añadir HU a la columna Sprint Backlog, pues no eran innegociables y no queríamos introducir más HU de las que sopesamos que íbamos a cumplir. 
+Sí que es cierto que modificamos tarjeta de Trello para definir mejor las tareas y las propias tarjetas. 
+Después de esta fase decidimos continuar como estábamos. 
+También decir que las nuevas HU se sometieron a una evaluación con su Planning Póker correspondiente.
 
 ![5](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint2/5.png)
 
 _En la imagen de arriba se aprecia como se han incluido aquellas historias de usuario en el Product Backlog. Se aprecia mejor en la imagen del apartado [PBR](#7-product-backlog-refinement-del-proyecto)._
 
+# 5.5 Review de Historias de Usuario
+
+Tras haber desarrollado e implementado todas las HU de la columna de Sprint Backlog las fuimos colocando en la columna de Review antes de darlas por realizadas.
+En nuestro caso acabamos cada una de las HU que nos propusimos a realizar.
+Esto es, entre otros motivos, porque teníamos más claro cuál era nuestro ritmo de trabajo de cara a este Sprint.
+Decir también que fuimos tachando de cada una de las HU sus respectivas tareas de las checklist que dispone Trello.
+
+![6](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint2/6.png)
+_Tal y como se aprecia en la imagen superior, las HU que anteriormente estaban en las columnas Sprint Backlog y Doing se encuentran ahora en la columna Review._
+
+# 5.6 Finalización del Sprint en el tablero grupal de Trello
+
+Al acabar de revisar que todas las HU cumplen los requisitos para considerarlas realizadas, las pasamos a la columna Doing, dando así por finalizada esta iteración.
+Para cuando acabamos de mover estas HU a la columna Doing no daba más tiempo para implementar nada más por lo que decidimos que el resto de HU de la columna Product Backlog no se someterían a modificaciones.
+
+![7](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint2/7.png)
+_En la anterior imagen las HU son desplazadas a la columna Done, tras ser haber pasado por la etapa Review._
+
 # 6. Planning Poker
 
 ![Planing](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/planning_poker.png)
 
-_Captura de pantalla de Telegram, votacion del planning poker de la Práctica 3_
+_Captura de pantalla de Telegram, votación del planning poker de la Práctica 3_
 
 ![pp2](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/sprint1/pp2.png)
 
@@ -158,23 +186,32 @@ _En el Product Backlog Refinement pasamos las tarjetas que el cliente nos ha sol
 
 # 8. Conclusiones de nuestra Sprint Review
 
-Analizando el sprint backlog de esta iteración, podemos observar que no hemos cumplido con la realización de una única historia de usuario, pero la razón para que este incompleta se debe a que durante el desarrollo del juego nos hemos dado cuenta de que la historia de usuario no se adaptaba a las necesidades del producto y era innecesario para esta iteración. Por lo tanto, podemos concluir que la planificación de HU se ha ajustado a nuestra capacidad de trabajo de una forma bastante correcta.
+Analizando el Sprint Backlog de esta iteración, hemos concluido que nos hemos podido adaptar de igual forma o mejor a como lo hicimos en el anterior Sprint.
+En este Sprint hemos acabado todas las HU del Sprint Backlog, lo cual fue algo positivo. Además hemos organizado cada HU en tareas para que las implementaciones y el ámbito correspondiente a cada persona fuese más claro.
+Nuestra capacidad de trabajo ha mejorado con respecto a la anterior iteración gracias a que dejamos por escrito también los fallos que hubo en el primer Sprint.
 
-En cuanto al desarrollo del proyecto han surgido pocos problemas y de carácter menor, como por ejemplo, alguna duda respecto a la forma de implementar una nueva funcionalidad. Para lo cual se ha usado la Daily Scrum para ponernos al tanto de los problemas de nuestros compañeros y ayudar siempre en todo lo posible.
+En cuanto al desarrollo del proyecto hemos sido cautelosos, ya que las Historias de Usuario que quedaban restantes requerían de conocimientos de CSS y JavaScript que no todos eramos capaces de abordar, por lo que las delegamos lo mejor posible.
+También hay que decir que nos hemos apoyado entre todos y en varias ocasiones con información disponible en Internet.
+Al igual que el sprint anterior hemos usadoo la Daily Scrum para conocer los problemas de nuestros compañeros y ayudarnos todo lo posible.
 
-En esta iteración todos hemos estado de acuerdo respecto a los valores de las historias de usuario y también respecto al esfuerzo que conllevaba implementarlas. 
+En esta iteración, al igual que la anterior, hemos llegado a un consenso respecto a los valores de las HU y también respecto al esfuerzo que conllevaba implementarlas.
+Esto se refleja bien en el hecho de que hemos realizado las HU que habíamos escogido en un principio para el Sprint Backlog.
 
-Teniendo en cuentas las implementaciones de este sprint, podemos decir que de cara a la próxima iteración debemos pulir los detalles de la hisotria ya implementada y explorar nuevas funcionalidades y propiedades que añadan valor a nuestra base del juego.
+Con respecto a una iteración próxima, podríamos definir mejor las HU restantes con más tareas y dando detalles de qué es lo que desea el cliente. 
+También podríamos clasificar mejor las HU con colores si hubiere tiempo.
 
 # 9. Conclusiones de nuestra Sprint Retrospective
 
-En cuanto a nuestro equipo de trabajo hemos llegado a la conclusión de que no hemos tenido ningún inconveniente grave durante el sprint. Si que es cierto que de cara a la próxima iteración podemos mejorar algunas cosas: 
+De forma similar al anterior sprint, hemos llegado a la conclusión de que no hemos tenido ningún inconveniente grave durante el sprint. De hecho hemos realizado las siguientes cosas que han permitido un mejor desarrollo del proyecto:
 
-- En telegram podríamos mejorar que las notificaciones lleguen a todos por igual, para facilitar y agilizar los tiempos de respuesta y la fluidez de la comunicación entre el grupo.
+- Hemos creado un grupo de Whatsapp que permitiese mejorar la comunicación debido a que las notificaciones de Telegram no le llegan bien del todo a un componente del proyecto. 
+- A pesar de lo anteriormente mencionado, Telegram es de utilidad sobretodo con el bot de Github que tenemos enlazado con el proyecto desde prácticas anteriores.
+- Los problemas que surgieron con Git en el anterior Sprint no han vuelto a surgir debido a que se configuró correctamente en su momento.
 
-- A la hora de trabajar con Git hemos tenido problemas puntuales debidos al programa que se ha utilizado, lo cuál debemos solucionar con algún otro programa estable que no de problemas a ninguno.
+Si que es cierto que de cara a la próxima iteración podemos mejorar algunas cosas: 
 
-- Para nuestro equipo de trabajo ha resultado de mucho agrado el bot de github en telegram, pues nos ha sorprendido la utilidad para tener en mente quién ha estado trabajando últimamente en el proyecto.
+- A la hora de realizar Planning Póker con su respectivo bot de Telegram necesitabamos echarlo del grupo y volverlo a incorporar para que este funcionara correctamente, por lo que podemos seguir usándolo pero sería mejor buscar una alternativa o una solución.
+- Debido a que es un proyecto con HTML y JavaScript sería recomendable que todos tuviésemos un IDE para trabajar en este. No es necesario que sea el mismo IDE para todos.
 
-Como podemos observar debido a los pocos problemas que hemos tenido como equipo de trabajo, hemos concluido entre todos que somos bastante afines y productivos como grupo de trabajo.
+Como podemos observar debido a los pocos problemas que hemos tenido como equipo de trabajo, concluimos que entre todos somo productivos y afines como grupo de trabajo.
 

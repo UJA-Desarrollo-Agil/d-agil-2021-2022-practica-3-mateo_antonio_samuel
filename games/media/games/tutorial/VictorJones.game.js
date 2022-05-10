@@ -72,15 +72,15 @@ undum.game.situations = {
     casa: new undum.SimpleSituation(
         "<p></br>Después de una larga sesión de prácticas en la universidad, Víctor entra a su habitación para recoger cosas que va a necesitar para el viaje.</br></p>" +
         "<p><img src='media/img/victorjones/habitacion.jpg' width='100%' class='centrado ocultarse'></p>" +
-        "<p><br>Entra muy bien los rayos de luz por la ventana, así que puede ver con claridad lo que puede llevarse de su estantería o escritorio:</p>" +
+        "<p><br>Entra muy bien los rayos de luz por la ventana y se puede ver con claridad lo que puede llevarse de su estantería o escritorio. Va a ser un largo viaje, por lo que debe tener en cuenta los objetos a escoger:</p>" +
         "<p class='transient'><a href='./panuelos'>Pañuelos</a></p>" +
         "<p class='transient'><a href='./gafassol'>Gafas de sol y Botella de agua</a></p>" +
         "<p class='transient'><a href='./linterna'>Linterna</a></p>" +
+        "<p class='transient'><a href='./vacio'>Vacíar la mochila y empezar a meter objetos de nuevo</a></p>" +
         "<p class='transient'><a href='salircasa'>Salir</a></p>"
         ,{
             enter: function (character, system, from) {
                 system.setQuality("porcentaje", character.qualities.porcentaje + 5);
-                
             },
             actions: {
                 'panuelos' : function (character, system, action) {
@@ -109,6 +109,12 @@ undum.game.situations = {
                     }else{
                         system.setQuality("linterna",1);
                     }
+                },
+                'vacio': function (character, system, action){
+                    system.setQuality("panuelos",0);
+                    system.setQuality("gafassol",0);
+                    system.setQuality("botella",0);
+                    system.setQuality("linterna",0);
                 }
             }
         }
@@ -123,12 +129,12 @@ undum.game.situations = {
         }),
     situationsautobus: new undum.Situation({
         enter: function (character, system, from) {
-            system.setQuality("dinero", character.qualities.dinero - 21);
+            system.setQuality("dinero", character.qualities.dinero - 32);
             system.setQuality("porcentaje", character.qualities.porcentaje + 5);
             system.write($("#EleccionAutobus").html());
         },
         tags: ["topic1"],
-        optionText: "Coger el Autobus... (21€)",
+        optionText: "Coger el Autobus... (32€)",
         displayOrder: 1
     }),
 
@@ -214,14 +220,14 @@ undum.game.situations = {
     }),
     situationconversacion2: new undum.Situation({
         enter: function (character, system, from) {
-            system.setQuality("dinero", character.qualities.dinero - 5);
+            system.setQuality("dinero", character.qualities.dinero - 10);
             system.setQuality("porcentaje", character.qualities.porcentaje + 5);
             system.write($("#EleccionConversacion2bien").html());
             system.setQuality("indalo", 1);
         },
 
         tags: ["topic4"],
-        optionText: "Me lo llevo... (5€)",
+        optionText: "Me lo llevo... (10€)",
         displayOrder: 1
     }),
     situationconversacion2part2: new undum.Situation({
@@ -355,15 +361,18 @@ undum.game.situations = {
         displayOrder: 2
     }),
 
-
 	situationlinterna: new undum.Situation({
         enter: function(character, system, from) {
             system.setQuality("porcentaje", character.qualities.porcentaje + 5);
+            system.setQuality("linterna",0);
             system.write($("#EleccionLinterna").html());
         },
         tags: ["topic8"],
-        optionText: "Utilizar la linterna que traes de tu casa.",
-        displayOrder: 1
+        optionText: "Utilizar la linterna que traes de casa (Requerido: Linterna).",
+        displayOrder: 1,
+        canChoose: function (character, system, host) {
+            return character.qualities.linterna;
+        }
     }),
 	situationatravesar: new undum.Situation({
         enter: function(character, system, from) {
@@ -422,7 +431,6 @@ undum.game.situations = {
         {
             enter: function (character, system, from) {
                 system.setQuality("porcentaje", character.qualities.porcentaje + 5);
-                
             },
         }
     ),
@@ -432,7 +440,7 @@ undum.game.situations = {
         "<h1 class='gameover'>HAS PERDIDO</h1>"
     ),
     sustituirbotella: new undum.SimpleSituation(
-        "<p>Todo parece ir fenomenal y sales <em>pitando</em> de allí por donde crees que es la salida.</p>" +
+        "<p>El cambiazo parece haber ido fenomenal por lo que sales <em>pitando</em> de allí por donde crees que es la salida.</p>" +
         "<img src='media/img/victorjones/salida.jpg' alt='Hay un cruce en el camino y debes elegir por dónde ir.' class='cienxcien ocultarse'>" +
         "<p>Finalmente logras <a href='final'>salir de la cueva</a> sudando <em>'la gota gorda'</em>.</p>"
         ,{
