@@ -1,6 +1,10 @@
 <!DOCTYPE HTML>
 <html lang="es">
 
+<script language="JavaScript">
+	var nombre=prompt('Ingrese su nombre:','');
+</script>
+
 <head>
   <meta charset="utf-8">
   <!-- Game Title: edit this -->
@@ -12,7 +16,7 @@
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 
   <!-- This is your game's stylesheet, modify it if you like. -->
-  <link media="screen" rel="stylesheet" href="media/css/undum.css">
+  <link media="screen" rel="stylesheet" href="media/css/undum.css" id="cambioCss">
 
   <!-- Suppport for mobile devices. -->
   <meta name="viewport" content="user-scalable=no, width=device-width">
@@ -51,15 +55,11 @@
     <div id="tools_wrapper">
       <div id="info_panel" class="tools left">
         <!-- Game Background: edit this -->
-        <h1>Victor Jones</h1>
+        <h1 class="nombre"></h1>
         <p>
           <!-- INFO DEL JUEGO (Columna izquierda)-->
-          La aventura tratará sobre Víctor Jones, un jóven que ya es casi un licenciado en ingeniería informática que
-          sólo le faltan aprobar algunas asignaturas. Un día, yendo a una de sus clases, escucha de otros compañeros en
-          los pasillos un cierto rumor que corre sobre la receta de la inmortalidad pero que sólo se encuentra en una
-          zona desértica de Almería donde siempre hay mucha calima.
-          Fascinado y curioso por la idea, se preparará para zambullirse de lleno a la trepidante aventura que le
-          aguarda en Oasis C.
+          La aventura tratará sobre <span class="nombre"></span>, un jóven que ya es casi un licenciado en ingeniería informática que sólo le faltan aprobar algunas asignaturas. Un día, yendo a una de sus clases, escucha de otros compañeros en los pasillos un cierto rumor que corre sobre la receta de la inmortalidad pero que sólo se encuentra en una zona desértica de Almería donde siempre hay mucha calima.
+          Fascinado y curioso por la idea, se preparará para zambullirse de lleno a la trepidante aventura que le aguarda en Oasis C.
         </p>
         <!-- End of Game Background -->
 
@@ -76,6 +76,8 @@
           </div>
           <div id="qualities"></div>
         </div>
+		<button onclick="sincss()" type="button" id="botonsin">Sin estilo</button>
+		<button onclick="concss()" type="button" id="botoncon" disabled>Con estilo</button>
       </div>
     </div> <!-- End of div.tools_wrapper -->
 
@@ -83,10 +85,10 @@
       <div id="title">
         <div class="label">
 
-          <!-- Game Title: edit this -->
-          <h1>Victor Jones</h1>
-          <h2>por Mateo, Samuel y Antonio</h2>
-          <!-- End of Game Title -->
+            <!-- Game Title: edit this -->
+            <h1 class="nombre"> </h1>
+            <h2>por Mateo, Samuel y Antonio</h2>
+            <!-- End of Game Title -->
 
           <noscript>
             <p class="noscript_message">This game requires
@@ -147,10 +149,10 @@
 
       <!--Elecciones-->
       <div id="EleccionAutobus">
-        <img src="media/img/victorjones/autobus.jpg" alt="imagen de autobus" class="float_right imagenLogo">
-        <p>Por 21€, Victor decide tomar el autobús de Jaen a Almería, con parada en Abla, que tardaría unas 3 horas en hacer 242 Km de distancia.</p>
+        <img src="media/img/victorjones/autobus.jpg" alt="imagen de autobus" class="float_right imagenLogo ocultarse" >
+        <p>Por 21€, <span class="nombre"></span> decide tomar el autobús de Jaen a Almería, con parada en Abla, que tardaría unas 3 horas en hacer 242 Km de distancia.</p>
         </br>
-        <p>Es una decisión tan segura y cómoda, que Víctor se queda dormido y se despierta cuando está llegando a su destino.</p>
+        <p>Es una decisión tan segura y cómoda, que <span class="nombre"></span> se queda dormido y se despierta cuando está llegando a su destino.</p>
         </br>
         <p>Se le ha pasado el viaje en un santiamén.</p>
         <p class='transient'>
@@ -159,8 +161,8 @@
       </div>
 
       <div id="EleccionTaxi">
-        <img src="media/img/victorjones/taxi.jpg" alt="imagen de autobus" class="float_right imagenLogo">
-        <p>Por 40€ (casi todo lo que tenía de dinero), Victor decide tomar el autobús de Jaen a Almería que tardaría unas 2 horas y media en hacer 242 Km de distancia.</p>
+        <img src="media/img/victorjones/taxi.jpg" alt="imagen de autobus" class="float_right imagenLogo ocultarse">
+        <p>Por 40€ (casi todo lo que tenía de dinero), <span class="nombre"></span> decide tomar el autobús de Jaen a Almería que tardaría unas 2 horas y media en hacer 242 Km de distancia.</p>
         </br>
         <p>Es una decisión segura y cómoda pero cara. Como el conductor le daba todo igual, y él lo que quería era cobrar más, pensó que no había prisa para llegar.</p>
         <p></br>El conductor era poco simpático y en el trayecto va quejándose de todo, por lo que fue un viaje bastante incómodo y pesado.</p>
@@ -170,45 +172,45 @@
       </div>
 
       <div id="EleccionBlaBlaCar">
-        <img src="media/img/victorjones/blablacar.png" alt="imagen de BlaBlaCar" class="float_right imagenLogo">
-        <p>Por 21€, Victor decide tomar un BlaBlaCar de Jaen a Almería que tardaría unas 2 horas y media en hacer 242 Km de distancia.</p>
+        <img src="media/img/victorjones/blablacar.png" alt="imagen de BlaBlaCar" class="float_right imagenLogo ocultarse">
+        <p>Por 21€, <span class="nombre"></span> decide tomar un BlaBlaCar de Jaen a Almería que tardaría unas 2 horas y media en hacer 242 Km de distancia.</p>
         </br>
         <p>Es una decisión difícil de tomar porque no sabes como va a ser el conductor que te va a llevar, pero por suerte hablaste con una muchacha muy maja que te iba dando conversación durante el viaje.</p>
-        <p></br>En los momentos en los que no sabían de que hablar Victor buscaba en internet temas de conversación como por ejemplo "<em>¿Cuál ha sido tu viaje más divertido?</em>" o "<em>¿Cuánto tiempo hace que utilizas BlaBlaCar?</em>".</p>
+        <p></br>En los momentos en los que no sabían de que hablar <span class="nombre"></span> buscaba en internet temas de conversación como por ejemplo "<em>¿Cuál ha sido tu viaje más divertido?</em>" o "<em>¿Cuánto tiempo hace que utilizas BlaBlaCar?</em>".</p>
         <p class='transient'>
           <a href='hub2'>Click para continuar...</a>
         </p>
       </div>
 
       <div id="EleccionAutostop">
-        <img src="media/img/victorjones/autostop.jpeg" alt="imagen de autoStop" class="float_right imagenLogo">
-        <p> Al intentar abaratar tanto la situación, Víctor se paró en la primera autopista con un cartel en las manos que decía Almería.</p>
+        <img src="media/img/victorjones/autostop.jpeg" alt="imagen de autoStop" class="float_right imagenLogo ocultarse">
+        <p> Al intentar abaratar tanto la situación, <span class="nombre"></span> se paró en la primera autopista con un cartel en las manos que decía Almería.</p>
         </br>
-        <p> Un camionero que pasaba por allí, que no veía muy bien, le dijo que podía subir con eĺ. El camionero en realidad leyó mal el cartel de Víctor
+        <p> Un camionero que pasaba por allí, que no veía muy bien, le dijo que podía subir con eĺ. El camionero en realidad leyó mal el cartel de <span class="nombre"></span>
           creyendo que ponía Mérida, pero como iba para Badajoz y le pillaba de camino decidió llevarle sin preguntarle más.</p>
         </br>
-        <p> Victor sospechó porque tardaba mucho pero como iba hablando con el camionero ni se dio cuenta de que iban por la carretera incorrecta para su destino.
-          Cuando llegaron a Mérida, Victor se dio por vencido, llamando a sus padres para que lo recogieran y volver a su casa, dando la aventura por terminada por ahora. Victor aprendió que no se debe montar en vehículos ajenos. </p>
+        <p> <span class="nombre"></span> sospechó porque tardaba mucho pero como iba hablando con el camionero ni se dio cuenta de que iban por la carretera incorrecta para su destino.
+          Cuando llegaron a Mérida, <span class="nombre"></span> se dio por vencido, llamando a sus padres para que lo recogieran y volver a su casa, dando la aventura por terminada por ahora. <span class="nombre"></span> aprendió que no se debe montar en vehículos ajenos. </p>
         <h1 class="gameover">HAS PERDIDO</h1>
       </div>
 
       <div id="EleccionComidaCaraBien">
-        <img src="media/img/victorjones/chuleton.jpg" alt="imagen de un chuleton" class="float_right imagenLogo">
+        <img src="media/img/victorjones/chuleton.jpg" alt="imagen de un chuleton" class="float_right imagenLogo ocultarse">
         <p> Como apasionado de la carne en general, buscas un asador en el Carrefive, encuentras uno y miras la carta. </p>
         <p> Dudoso de lo que pedir, te paras a pensar y recuerdas que vistes que estaban preparando costillas con salsa barbacoa para otro cliente, pero eso lo comiste hace poco en el Foster´s Hollywood, por lo tanto lo descartas. Sales de dudas ya que tienes dinero suficiente para darte el gusto y te pides un chuletón de ternera de 400g acompañado de unas patatas fritas. Como sabes comer bien la ternera se la pides al camarero poco hecha, casi como si fuera vuelta y vuelta, ya que quien se la pida hecha esta desperdiciando ese manjar de los dioses. <br></p>
         <p class='transient'> <a href='vendedor'>Click para continuar...</a> </p>
       </div>
 
       <div id="EleccionComidaCaraMal">
-        <img src="media/img/victorjones/preso.jpg" alt="imagen de una persona encarcelada" class="float_right imagenLogo">
+        <img src="media/img/victorjones/preso.jpg" alt="imagen de una persona encarcelada" class="float_right imagenLogo ocultarse">
         <p> Como apasionado de la carne en general, buscas un asador en el Carrefive, encuentras uno y miras la carta. </p>
         <p> Dudoso de lo que pedir, te paras a pensar y recuerdas que vistes que estaban preparando costillas con salsa barbacoa para otro cliente, pero eso lo comiste hace poco en el Foster´s Hollywood, por lo tanto lo descartas. Sales de dudas ya que tienes dinero suficiente para darte el gusto y te pides un chuletón de ternera de 400g acompañado de unas patatas fritas. Como sabes comer bien la ternera se la pides al camarero poco hecha, casi como si fuera vuelta y vuelta, ya que quien se la pida hecha esta desperdiciando ese manjar de los dioses. <br></p>
-        <p> Cuando vas a pagar te das cuenta de que no tienes dinero suficiente, por lo tanto piensas que puede ser buena idea irte disimuladamente sin pagar pero te acaba pillando y llaman a los guardias de seguridad del Carrefive, los cuales llaman a tus padres los cuales van a buscarte y llevarte para la casa, dando por terminado la aventura por ahora. Victor aprendió que debe fijarse más en el dinero que tiene y no gastárselo en cualquier cosa y por supuesto no irse sin pagar. </p>
+        <p> Cuando vas a pagar te das cuenta de que no tienes dinero suficiente, por lo tanto piensas que puede ser buena idea irte disimuladamente sin pagar pero te acaba pillando y llaman a los guardias de seguridad del Carrefive, los cuales llaman a tus padres los cuales van a buscarte y llevarte para la casa, dando por terminado la aventura por ahora. <span class="nombre"></span> aprendió que debe fijarse más en el dinero que tiene y no gastárselo en cualquier cosa y por supuesto no irse sin pagar. </p>
         <h1 class="gameover">HAS PERDIDO</h1>
       </div>
 
       <div id="EleccionComidaNormal">
-        <img src="media/img/victorjones/nachos.jpg" alt="imagen de unos nachos" class="float_right imagenLogo">
+        <img src="media/img/victorjones/nachos.jpg" alt="imagen de unos nachos" class="float_right imagenLogo ocultarse">
         <p>
           Como apasionado de la comida mexicana, buscas un mexicano en el Carrefive, encuentras uno y miras la carta.
         </p>
@@ -222,7 +224,7 @@
       </div>
 
       <div id="EleccionComidaBarata">
-        <img src="media/img/victorjones/kebab.jpg" alt="imagen de un kebab" class="float_right imagenLogo">
+        <img src="media/img/victorjones/kebab.jpg" alt="imagen de un kebab" class="float_right imagenLogo ocultarse">
         <p>
           Como apasionado del kebab que eres, buscas la kebaberia del Carrefive, allí miras la carta, dudoso de lo que
           pedir ya que te encanta todo, te paras a pensar y vistes que estaban preparando patata asada para otro
@@ -238,7 +240,7 @@
 
       <div id="EleccionConversacion1bien">
         <p>
-          <img src="media/img/victorjones/indiana.webp" alt="imagen de persona desconocida" class=" imagenConversacion">
+          <img src="media/img/victorjones/indiana.webp" alt="imagen de persona desconocida" class=" imagenConversacion ocultarse">
           - <em>Solo estaba mirando. Tengo una prima que le encantan los souvenirs y me gustaria comprarle un recuerdo.</em>
         </p>
         <p class='transient'>
@@ -247,7 +249,7 @@
       </div>
 
       <div id="EleccionConversacion1mal">
-        <p><img src="media/img/victorjones/indiana.webp" alt="imagen de persona desconocida" class=" imagenConversacion">
+        <p><img src="media/img/victorjones/indiana.webp" alt="imagen de persona desconocida" class=" imagenConversacion ocultarse">
           - <em>No me interesan para mi, tengo una prima que le encantan los souvenirs y me gustaria comprarle un recuerdo.</em></p>
         <p class='transient'>
           <a href='hub4'>Click para continuar...</a>
@@ -256,12 +258,12 @@
 
       <div id="EleccionConversacion2bien">
         <p>
-          <img src="media/img/victorjones/indiana.webp" alt="imagen indiana jones" class=" imagenConversacion">
+          <img src="media/img/victorjones/indiana.webp" alt="imagen indiana jones" class=" imagenConversacion ocultarse">
           - <em>Me lo llevo, seguro que le gusta.</em>
         </p>
         <br>
         <p>
-          <img src="media/img/victorjones/desconocido.jpg" alt="imagen de persona desconocida" class=" imagenConversacion">
+          <img src="media/img/victorjones/desconocido.jpg" alt="imagen de persona desconocida" class=" imagenConversacion ocultarse">
           - <em>Muchas gracias por su compra. Que pase un buen día.</em>
         </p>
         <br>
@@ -273,12 +275,12 @@
 
       <div id="EleccionConversacion2mal">
         <p>
-          <img src="media/img/victorjones/indiana.webp" alt="imagen de persona desconocida" class=" imagenConversacion">
+          <img src="media/img/victorjones/indiana.webp" alt="imagen de persona desconocida" class=" imagenConversacion ocultarse">
           - <em>No gracias, no lo voy a comprar me parece un poco aparatoso.</em>
         </p>
         <br>
         <p>
-          <img src="media/img/victorjones/desconocido.jpg" alt="imagen de persona desconocida" class=" imagenConversacion">
+          <img src="media/img/victorjones/desconocido.jpg" alt="imagen de persona desconocida" class=" imagenConversacion ocultarse">
           - <em>Una pena que no lo compre. Que pase un buen día aunque dudo que lo sea y seguro que no encuentra lo que sea que este buscando.</em>
         </p>
         <br>
@@ -289,7 +291,7 @@
       </div>
 
       <div id="indalos">
-        <img src="media/img/victorjones/kebab.jpg" alt="imagen de un kebab" class="float_right imagenLogo">
+        <img src="media/img/victorjones/kebab.jpg" alt="imagen de un kebab" class="float_right imagenLogo ocultarse">
         <p>
           Como apasionado del kebab que eres, buscas la kebaberia del Carrefive, allí miras la carta, dudoso de lo que
           pedir ya que te encanta todo, te paras a pensar y vistes que estaban preparando patata asada para otro
@@ -306,9 +308,8 @@
 	  <div id="EleccionRutaBuena">
 	    <h1 class="transient"> Ruta correcta </h1>
         <p>
-          <img src="media/img/victorjones/tick.png" alt="correcto" class='imagenConversacion'>
-          Tras un poco de paciencia o quizás algo de suerte has consguido descifrar el acertijo y encontrar el camino
-          correcto hacia tu ansiado destino.
+          <img src="media/img/victorjones/tick.png" alt="correcto" class='imagenConversacion ocultarse'>
+          Tras un poco de paciencia o quizás algo de suerte has consguido descifrar el acertijo y encontrar el camino correcto hacia tu ansiado destino.
         </p>
         <p class='transient'>
           <a href='desierto'>Click para continuar...</a>
@@ -317,42 +318,64 @@
 	  
 	  <div id="EleccionRutaMala">
         <p>
-          <img src="media/img/victorjones/cross.png" alt="incorrecto" class='imagenConversacion'>
+          <img src="media/img/victorjones/cross.png" alt="incorrecto" class='imagenConversacion ocultarse'>
           Resulta que, por algún motivo u otro, no has acertado a la hora de contar los triángulos, quizás porque no te apetecía mucho y simplemente lo has echado a suertes. Al final acabas en el pueblo de al lado teniendo que llamar a tu madre para que te recoja.</p>
 		<h1 class="gameover">HAS PERDIDO</h1>
 	  </div>
 	  
+	  <div id="EleccionComodin">
+        <p>
+          <img src="media/img/victorjones/comodin.jpg" alt="comdin" class='centrado cienxcien ocultarse'>
+           Mientras la cabeza te daba vueltas de tanto contar triagulitos, recuerdas que como buen adolescente que eres, tienes el teléfono en la mano y piensas que es buena idea llamar a tu padre, pero tienes que recargar saldo, por suerte como eres una persona ahorradora y que toma buenas decisiones te puedes dar el lujo de pagar esta llamada y tu padre te soluciona el problema en un segundo. No sabes de donde se ha sacado que ahí hay 24 triángulos, pero confías en él y sigues el camino   .</p>
+		<p class='transient'>
+          <a href='hub6'>Click para continuar...</a>
+        </p>
+	  </div>
+	  
+	  <div id="EleccionEsquivar">
+        <p>
+          <img src="media/img/victorjones/dance.jpg" alt="incorrecto" class='centrado ocultarse'>
+          De repente todo encaja en tu cabeza, te vienen recuerdos de todas las tardes que has pasado desde aquellas navidades de 2010, cuando te regalaron la Wii junto al Just Dance. Aquellas tardes en las que pasabas horas y horas bailando como si fuese tu último día, y tras todas esas horas de juego crees que eres capaz de coordinar tus movimientos con la suficiente destreza como para atravesar la zona repleta de cactus para no sufrir ningún daño. Después de esta serie de recuerdos de la infancia vuelves de nuevo al presente, frente al reto que debes afrontar y te lanzas a por él con toda la confianza del mundo. Por desgracia resulta que el Just Dance no era tan fiable como pensabas y empiezas a pensar que tu madre te mentía cuando te decía lo bien que bailabas, pues en realidad parecías un pato mareado, llegas a estas conclusiones cuando tras apenas unos segundo después de haber entrado en los cactus te pinchas con todo lo que puedes y más. Es tan desmotivante el duro de golpe de realidad que decides salir rápidamente por donde habías entrado y decides volver a casa cabizbajo y con la moral un poco destruida.</p>
+		<h1 class="gameover">HAS PERDIDO</h1>
+	  </div>
+	  
+	  <div id="EleccionRodear">
+        <p>
+          <img src="media/img/victorjones/rodear.jpg" alt="correcto" class='centrado ocultarse'>
+           Después de un largo rato pensando no se te ocurre ninguna solución, por lo que en vez de perder más el tiempo decides que lo más conveniente es dar un largo rodeo a la zona de cactus y empiezas tu caminata hacia tu próximo destino .</p>
+		<p class='transient'>
+          <a href='hub6-1'>Click para continuar...</a>
+        </p>
+	  </div>
+	  
 	  <div id="EleccionMochila">
         </br>
-        <img src="media/img/victorjones/mochila.png" alt="mochila en la cabeza" class='imagenLogo centrado'>
+        <img src="media/img/victorjones/mochila.png" alt="mochila en la cabeza" class='imagenLogo centrado ocultarse'>
         <p> Lo primero que se te ha ocurrido ante esta situación ha sido vaciar la mochila y ponértela en la cabeza aprovechando que puedes ver a través del tejido más fino sin dejar de proteger tus ojos.</br> No es una mala idea para salir del paso. Una vez más, tu fiel y varonil mochila de Peppa Pig te ha salvado de un aprieto como lleva haciendo desde que tienes 8 años (ya va siendo hora de cambiarla).</p>
 		<p class='transient'>
           <a href='hub7'>Click para continuar...</a> 
         </p>
-      </div>
-
-      <div id="EleccionAntebrazo">
-        <img src="media/img/victorjones/antebrazo.jpg" alt="antebrazo" class='centrado'>
-        <p> Lo primero que se te ha ocurrido ante esta situación ha sido colocar tu antebrazo delante de tus ojos y
-          tirar pa´lante como un campeón, digamos que no ha sido la opción más inteligente porque has quedado como una
-          croqueta recién empanada, pero al menos has salvado los objetos de tu mochila y has sobrevivido a este
-          fenómeno meteorológico.</p>
-        <p class='transient'>
-          <a href='hub7'>Click para continuar...</a>
+	  </div>
+	  
+	  <div id="EleccionAntebrazo">
+          <img src="media/img/victorjones/antebrazo.jpg" alt="antebrazo" class='centrado ocultarse'>
+        <p> Lo primero que se te ha ocurrido ante esta situación ha sido colocar tu antebrazo delante de tus ojos y tirar pa´lante como un campeón, digamos que no ha sido la opción más inteligente porque has quedado como una croqueta recién empanada, pero al menos has salvado los objetos de tu mochila y has sobrevivido a este fenómeno meteorológico.</p>
+		<p class='transient'>
+          <a href='hub7'>Click para continuar...</a> 
         </p>
 	  </div>
 	  
 	  <div id="EleccionIndalo">
-          <img src="media/img/victorjones/indalo.jpg" alt="indalo" class='cienxcien'>
-        <p> Aunque te sepa un poco mal, decides probar a introducir el Índalo que ibas a regalar a tu prima. Casi al instante de introducirlo escuchas como el suelo tiembla ante ti, parece que se ha puesto en marcha una especie de engranaje que lleva decadas sin funcionar.</p>
+          <img src="media/img/victorjones/indalo.jpg" alt="indalo" class='cienxcien ocultarse'>
+        <p> Aunque te sepa un poco mal, decides probar a introducir el Índalo que ibas a regalar a tu prima. Casi al instante de introudcirlo escuchas como el suelo tiembla ante ti, parece que se ha puesto en marcha una especie de engranaje que lleva decadas sin funcionar.</p>
 		<p class='transient'>
-          <a href='inhospito'>Click para continuar...</a>
+          <a href='hub8'>Click para continuar...</a> 
         </p>
 	  </div>
 	  
 	  <div id="EleccionVacio">
         </br>
-        <p> <img src="media/img/victorjones/llorando.jpg" alt="llorando" class='imagenLogo centrado'>
+        <p> <img src="media/img/victorjones/llorando.jpg" alt="llorando" class='imagenLogo centrado ocultarse'>
           No te lo puedes creer has llegado hasta aquí y no tienes ni idea de como abrir la puerta, ¿como es esto posible?. Tras horas y horas de darle vueltas a la cabeza, no encuentras ninguna forma posible de entrar al templo. Te sientes derrotado, todo lo que has hecho hasta ahora no ha servido para nada, ahora te toca vivir como el resto de los mortales y encima has perdido tu tiempo y dinero  </p>
 		<h1 class="gameover">HAS PERDIDO</h1>
 	  </div>
@@ -370,13 +393,31 @@
         <img src="media/img/victorjones/llorando.jpg" alt="llorando" class='imagenLogo centrado'>
       <h1 class="gameover">HAS PERDIDO</h1>
     </div>
+
+	  
+	  <div id="EleccionLinterna">
+        </br>
+        <p> <img src="media/img/victorjones/linterna.jpg" alt="Linterna" class='imagenLogo centrado ocultarse'>
+          Por suerte antes de salir de casa fuiste precavido y cuidadoso, ahora ese esfuerzo ha valido la pena, gracias a la linterna atraviesas ileso el pasillo. </p>
+		<p class='transient'>
+          <a href='final'>Click para continuar...</a> 
+        </p>
+	  </div>
+	  
+	  <div id="EleccionAtravesar">
+        </br>
+        <p> <img src="media/img/victorjones/oscuro.jpg" alt="llorando" class='imagenLogo centrado ocultarse'>
+          En una mezcla de sentimientos entre valentía e inconsciencia decides atravesar el pasillo a ciegas. Al intentarlo todo parece ir bien, comienzas lento pero seguro y avanzas unos cuantos metros, y empiezas a confiarte, en ese momento por culpa de tu despiste tropiezas con una piedra en mitad del camino, resultando en un esguince grave. No te lo puedes creer, una triste y abandonada piedra ha acabado con tus sueños y tu trepidante aventura en un abrir y cerrar de ojos. Comienzas a andar de vuelta a la entrada lentamente y apoyandote torpemente en la pared, para dar por concluida tu aventura, pues ya es hora de volver a casa.</p>
+		<h1 class="gameover">HAS PERDIDO</h1>
+	  </div>
+
       <!--/Elecciones-->
 
       <!-- diferentes opciones -->
       <div id="hub1" class="situation" data-choices="#topic1" data-option-text="View Topic List">
         <h1 class="transient">Automovil</h1>
-        <p>Con el dinero que tiene en la mochila, Víctor tiene que elegir una manera de ir desde Jaen hasta Almería.</p>
-        <img src="media/img/victorjones/JaenAlmeria.png" alt="imagen de distancia Jaen - Almería" class="cienxcien centrado">
+        <p>Con el dinero que tiene en la mochila, <span class="nombre"></span> tiene que elegir una manera de ir desde Jaen hasta Almería.</p>
+        <img src="media/img/victorjones/JaenAlmeria.png" alt="imagen de distancia Jaen - Almería" class="cienxcien centrado ocultarse">
         <p class="transient">Elija una de las opciones de abajo.</p>
         <br>
       </div>
@@ -384,7 +425,7 @@
       <div id="hub2" class="situation" data-choices="#topic2" data-option-text="View Topic List">
         <h1>Moverse en la ciudad</h1>
         <p>Llegas a la gran ciudad de Almería y no tienes idea de cómo orientarte allí así que vas a explorar un poco. Tras ir a ver la famosa Alacazaba te entra cierta hambre y entras a un centro comercial llamado Carrefive, allí puedes elegir entre distintos sitios donde comer.</p>
-        <img src="media/img/victorjones/carrefive.png" alt="imagen carrefive" class=" imagenLogo centrado">
+        <img src="media/img/victorjones/carrefive.png" alt="imagen carrefive" class=" imagenLogo centrado ocultarse">
         <p class="transient">Elija una de las opciones de abajo.</p>
         <br>
       </div>
@@ -396,40 +437,56 @@
 
       <div id="hub4" class="situation" data-choices="#topic4" data-option-text="View Topic List">
         <p>
-          <img src="media/img/victorjones/desconocido.jpg" alt="imagen de persona desconocida" class=" imagenConversacion">
+          <img src="media/img/victorjones/desconocido.jpg" alt="imagen de persona desconocida" class=" imagenConversacion ocultarse">
           - <em>Todos siempre dicen lo mismo, pero nunca saben que, si compran este indalo, en futuro cercano les puede dar suerte para una cosa u otra. Sé que puede ser un poco confuso jajaja, ya lo entenderá, pero ya usted compra lo que quiera.</em>
         </p>
         <p class="transient">Elija una de las opciones de abajo.</p>
         <br>
       </div>
-
-      <div id="hub5" class="situation" data-choices="#topic5" data-option-text="View Topic List">
-        <p>Víctor con la información de los carteles debe tomar una sabia decisión.</p>
-        <img src="media/img/victorjones/acertijo.jpg" alt="acertijo" class="centrado">
-        <p>En la escritura del cartel se halla escrito: "Aquel que logre acertar el número de triángulos ocultos en la
-          figura, obtendrá como respuesta el numero de la carretera que le llevará al destino deseado." </p>
+	  
+	  <div id="hub5" class="situation" data-choices="#topic5" data-option-text="View Topic List">
+        <p><span class="nombre"></span> con la información de los carteles debe tomar una sabia decisión.</p>
+        <img src="media/img/victorjones/acertijo.jpg" alt="acertijo" class="centrado ocultarse">
+		<p>En la escritura del cartel se halla escrito: "Aquel que logre acertar el número de triángulos ocultos en la figura, obtendrá como respuesta el numero de la carretera que le llevará al destino deseado." </p>
         <p class="transient">Elija una de las opciones de abajo.</p>
         <br>
       </div>
 	  
 	  <div id="hub6" class="situation" data-choices="#topic6" data-option-text="View Topic List">
+        <h1>Zona de cactus</h1>
+        <p>Por si no hubiese suficientes estorbos, te encuentras una zona repleta de cactus.</p>
+        <img src="media/img/victorjones/cactus.jpg" alt="Lo que parece un laberinto de cactus aparece frente a ti." class="cienxcien centrado ocultarse">
+        <p></br>Tienes tiempo para pensar tu próximo movimiento, tras un rato de meditación decides:</p>
+        <p class="transient"></br>Elija una de las opciones de abajo.</p>
+      </div>
+	  
+	  <div id="hub6-1" class="situation" data-choices="#topic6-1" data-option-text="View Topic List">
         <h1>La famosa calima</h1>
         <p>Con la tremenda suerte que tienes, mientras te hayas de camino en la ruta empieza a surgir la famosa calima que rodea la zona.</p>
-        <img src='media/img/victorjones/calima.jpg' alt='Hay una calima delante tuya y debes atravesarla.' class='centrado'>
-        <p></br>Empieza a ser bastante densa y debes protegerte. Víctor debe tomar una sabia decisión rápidamente:</p>
+        <img src="media/img/victorjones/calima.jpg" alt="Hay una calima delante tuya y debes atravesarla." class="centrado ocultars">
+        <p></br>Empieza a ser bastante densa y debes protegerte. <span class="nombre"></span> debe tomar una sabia decisión rápidamente:</p>
         <p class="transient"></br>Elija una de las opciones de abajo.</p>
       </div>
 	  
 	  <div id="hub7" class="situation" data-choices="#topic7" data-option-text="View Topic List">
 	    <h1>El templo </h1>
-        <img src="media/img/victorjones/templo.jpg" alt="acertijo" class="cienxcien">
+        <img src="media/img/victorjones/templo.jpg" alt="acertijo" class="cienxcien ocultarse">
         <p>Parece que la calima empieza a desaparecer y se empieza a ver un templo en la lejanía. Llegas fascinado hasta la gran puerta del templo y parece que para poder desbloquearla necesitas introducir algo, con una forma que te quiere sonar vagamente.</p>
         <p class="transient">Elija una de las opciones de abajo.</p>
 	  </div>
 
+
     <div id="hubdesierto" class="situation" data-choices="#topicDesierto" data-option-text="View Topic List">
       <p class="transient">Elija una de las opciones de abajo.</p>
     </div>
+	  
+	  <div id="hub8" class="situation" data-choices="#topic8" data-option-text="View Topic List">
+	    <h1>El Gran Templo de C </h1>
+        <img src="media/img/victorjones/dentro.jpg" alt="Dentro del templo" class="cienxcien ocultarse">
+        <p>Tras la puerta, te adentras poco a poco en el templo. Nada más entrar hay una C enorme en el suelo de la primera sala del templo. Te vas adentrando poco a poco pero cada vez hay menos luz en el interior del pasillo. Por suerte ves un palo de madera cerca de una antorcha, pero vas a necesitar de alguna tela para mantener el fuego..</p>
+        <p class="transient">Elija una de las opciones de abajo.</p>
+	  </div>
+
       <!-- / diferentes opciones-->
     </div>
   </div>

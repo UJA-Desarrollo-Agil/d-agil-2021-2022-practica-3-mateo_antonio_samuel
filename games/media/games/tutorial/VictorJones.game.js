@@ -37,9 +37,9 @@ undum.game.slideUpSpeed = 500
 undum.game.situations = {
     comienzo: new undum.SimpleSituation(
         "<h1>Una receta para ser inmortal</h1>" +
-        "<p>Víctor Jones es un jóven que ya es casi un licenciado en ingeniería informática, pues sólo le faltan aprobar algunas asignaturas.</p></br></br>" +
+        "<p> "+ nombre+" Jones es un jóven que ya es casi un licenciado en ingeniería informática, pues sólo le faltan aprobar algunas asignaturas.</p></br></br>" +
         "<p>Un día, yendo a una de sus clases, escucha de otros compañeros en los pasillos un <em>cierto rumor</em> que corre sobre la receta de la inmortalidad..</br></br></p>" +
-        "<img src='media/img/victorjones/rumor.jpg' width='60%' class='centrado'>" +
+        "<img src='media/img/victorjones/rumor.jpg' width='60%' class='centrado ocultarse'>" +
         "<p>Compañero 1 - <em>Oye, ¿sabes que en Almería está la receta de la inmortalidad?</em></p>" +
         "<p>Compañero 2 - <em>Pero qué dices</em></p>" +
         "<p>Compañero 1 - <em>Que sí, que allí está la vida eterna. Te lo digo yo.</em></br></p>" +
@@ -50,8 +50,10 @@ undum.game.situations = {
         "<p>Compañero 2 - <em>Va a ir quié' yo me sé ha'ta allí. No te creas todo lo que está por el Interné dese'.</em></p></br>" +
 
 
-        "<p>Víctor, fascinado y curioso por la idea de vivir eternamente, al acabar sus clases de la universidad <a href='casa'>vuelve a su casa</a> para coger todo lo necesario " +
-        "y hacer un plan para llegar hasta allí.</p>",
+
+        "<p>"+ nombre+", fascinado y curioso por la idea de vivir eternamente, al acabar sus clases de la universidad <a href='hub1'>vuelve a su casa</a> para coger todo lo necesario " +
+        "y hacer un plan para llegar hasta allí</p>",
+
         {
             enter: function (character, system, from) {
                 
@@ -235,8 +237,36 @@ undum.game.situations = {
         optionText: "Carretera 12",
         displayOrder: 3
     }),
-    situationmochila: new undum.Situation({
-        enter: function (character, system, from) {
+	situationcomodin: new undum.Situation({
+        enter: function(character, system, from) {
+            system.write($("#EleccionComodin").html());
+			system.setQuality("dinero", character.qualities.dinero-5);
+        },
+        tags: ["topic5"],
+        optionText: "Comodín de la llamada. (Necesitas dinero para recargar el saldo)",
+        displayOrder: 4,
+		canChoose: function(character, system, host) {
+            return character.qualities.dinero>5;
+        }
+    }),
+	situationesquivar: new undum.Situation({
+        enter: function(character, system, from) {
+            system.write($("#EleccionEsquivar").html());
+        },
+        tags: ["topic6"],
+        optionText: "Izquierda, derecha, izquierda, derecha...",
+        displayOrder: 1
+    }),
+	situationrodear: new undum.Situation({
+        enter: function(character, system, from) {
+            system.write($("#EleccionRodear").html());
+        },
+        tags: ["topic6"],
+        optionText: "Aunque tardes más tiempo, rodeas la zona de los cactus.",
+        displayOrder: 2
+    }),	
+	situationmochila: new undum.Situation({
+        enter: function(character, system, from) {
             system.write($("#EleccionMochila").html());
             system.setQuality("indalo", 0);
             system.setQuality("dinero", 0);
@@ -244,7 +274,7 @@ undum.game.situations = {
             system.setQuality("linterna", 0);
             system.setQuality("gafassol", 0);
         },
-        tags: ["topic6"],
+        tags: ["topic6-1"],
         optionText: "Te colocas la mochila en la cabeza y sigues recto",
         displayOrder: 1
     }),
@@ -252,7 +282,7 @@ undum.game.situations = {
         enter: function (character, system, from) {
             system.write($("#EleccionAntebrazo").html());
         },
-        tags: ["topic6"],
+        tags: ["topic6-1"],
         optionText: "Pones tu antebrazo ante tus ojos para protegerte y sigues adelante",
         displayOrder: 2
     }),
@@ -276,6 +306,7 @@ undum.game.situations = {
         displayOrder: 2
     }),
 
+
     situationbotella: new undum.Situation({
         enter: function (character, system, from) {
             system.setQuality("botella", 0);
@@ -297,13 +328,31 @@ undum.game.situations = {
         displayOrder: 2
     }),
 
+
+	situationlinterna: new undum.Situation({
+        enter: function(character, system, from) {
+            system.write($("#EleccionLinterna").html());
+        },
+        tags: ["topic8"],
+        optionText: "Utilizar la linterna que traes de tu casa.",
+        displayOrder: 1
+    }),
+	situationatravesar: new undum.Situation({
+        enter: function(character, system, from) {
+            system.write($("#EleccionAtravesar").html());
+        },
+        tags: ["topic8"],
+        optionText: "Intentar atravesar el pasillo.",
+        displayOrder: 2
+    }),
+
     vendedor: new undum.SimpleSituation(
-        "<img src='media/img/victorjones/indalo.jpg' alt='imagen indalo' class='float_right imagenLogo'>"+
+        "<img src='media/img/victorjones/indalo.jpg' alt='imagen indalo' class='float_right imagenLogo ocultarse'>"+
         "</br><p>Tras saciarte, te sientes con energía y te acuerdas que a tu prima pequeña le gustan mucho los souvenirs y cada vez que viajas intentas llevarle algo.</p>" +
         "<p></br>Dando una vuelta por el Carrefive para ver donde comprar los souvenirs, te encuentras con una sección con unos indalos que te llaman la atención y te acercas a verlos:</br></br> </p>" +
         "<p>"+
-        "<img src='media/img/victorjones/desconocido.jpg' alt='Imagen de una persona desconocida' class='imagenConversacion'>"+
-        " - <em>Buenas. Parece que te han llamado la atención los <a href='indalos'>indalos</a>. Son muy especiales. ¿Qué te parecen?</em>"+
+        "<img src='media/img/victorjones/desconocido.jpg' alt='Imagen de una persona desconocida' class='imagenConversacion ocultarse'>"+
+        " - <em>Buenas. Parece que te han llamado la atención los <a href='indalos'>indalos</a>. Son muy especiales. ¿Qué te parecnen?</em>"+
         "</p>"+
         "<p class='transient'><a href='hub3'>Click para continuar...</a></p>"
     ),
@@ -357,20 +406,35 @@ undum.game.situations = {
     
     final: new undum.SimpleSituation(
         "<h1 class='fin'>Todo lo que empieza, acaba</h1>" +
-        "<p>Por fin, Víctor Jones logra ver, delante de sus narices, la receta de la inmortalidad encima de un altar de piedra.</p>" +
-        "</br><p>Ya no hay vuelta atrás. Víctor saca el corcho de la botella, y en la luz del atardecer, extiende el papel enrollado con sus dos brazos. " +
+        "<p>Por fin, "+ nombre+" Jones logra ver, delante de sus narices, la receta de la inmortalidad encima de un altar de piedra.</p>" +
+        "</br><p>Ya no hay vuelta atrás. "+ nombre+" saca el corcho de la botella, y en la luz del atardecer, extiende el papel enrollado con sus dos brazos. " +
         "Sus ojos leyeron lo más rápido posible aquel escrito:</br></br></p>" +
-        "<p>Víctor Jones - <em>¿Estás de guasa?.</em></p>" +
-        "</br><p>A Víctor se le abrieron aún más los ojos cuando descubrió, que lo que era una receta de la inmortalidad, resultó ser nada menos que una receta para hacer churros de calidad.</p>" +
-        "<img src='media/img/victorjones/receta.webp' alt='La receta de la inmortalidad es una receta para hacer churros.' class='cienxcien'>" +
+        "<p>"+ nombre+" Jones - <em>¿Estás de guasa?.</em></p>" +
+        "</br><p>A "+ nombre+" se le abrieron aún más los ojos cuando descubrió, que lo que era una receta de la inmortalidad, resultó ser nada menos que una receta para hacer churros de calidad.</p>" +
+        "<img src='media/img/victorjones/receta.webp' alt='La receta de la inmortalidad es una receta para hacer churros.' class='cienxcien ocultarse'>" +
         "</br><p>Estaba cansado. Le ilusionó mucho que fuese de verdad la receta de la inmortalidad aunque no se ha aburrido e incluso se ha divertido con la experiencia. " +
-        "Además, Víctor es joven y aún no sabe hacerse ni un huevo frito, por lo que, valorando cuánto le ha gustado encontrar finalmente la receta, le comenta a los cuatro vientos: </br></p>" +
-        "</br><p>Víctor Jones - <em>¿Para hacer churros?. Nah, de locos.</em></p>" +
+        "Además, "+ nombre+" es joven y aún no sabe hacerse ni un huevo frito, por lo que, valorando cuánto le ha gustado encontrar finalmente la receta, le comenta a los cuatro vientos: </br></p>" +
+        "</br><p>"+ nombre+" Jones - <em>¿Para hacer churros?. Nah, de locos.</em></p>" +
         "</br><p>Acto seguido, llama a su madre para ver si le recogen y para negociar el desayuno de mañana.</p>" +
-        "<img src='media/img/victorjones/atardecer.png' alt='Llamas a tu madre' class='cienxcien'>" +
+        "<img src='media/img/victorjones/atardecer.png' alt='Llamas a tu madre' class='cienxcien ocultarse'>" +
         "<h1>F I N</h1>"
     ),
 };
+
+function sincss(){
+    document.getElementById("cambioCss").href="media/css/undum-sin.css";
+    document.querySelector('#botoncon').disabled = false;
+    document.querySelector('#botonsin').disabled = true;
+    document.getElementById("audiocss").classList = "ocultarse";
+    let audioEtiqueta = document.querySelector("audio");
+    audioEtiqueta.pause();
+}
+
+function concss(){
+    document.getElementById("cambioCss").href="media/css/undum.css";
+    document.querySelector('#botoncon').disabled = true;
+    document.querySelector('#botonsin').disabled = false;
+}
 
 // ---------------------------------------------------------------------------
 /* The Id of the starting situation. */
@@ -423,3 +487,16 @@ undum.game.init = function (character, system) {
     character.qualities.botella = 0;
     system.setCharacterText("<p><span title='Poner el cursor encima de tus objetos revelará más información.'>Coloca el ratón encima de tus objetos o habilidades para más información.</span></p>");
 };
+
+var els = document.getElementsByClassName("nombre");
+
+for (let i=0; i<els.length; i++){
+	if(i<=2){
+		els[i].innerHTML = nombre + " Jones";
+	}else 
+		els[i].innerHTML = nombre;
+}
+
+
+
+
