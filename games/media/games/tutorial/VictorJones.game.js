@@ -51,7 +51,7 @@ undum.game.situations = {
 
 
 
-        "<p>"+ nombre+", fascinado y curioso por la idea de vivir eternamente, al acabar sus clases de la universidad <a href='hub1'>vuelve a su casa</a> para coger todo lo necesario " +
+        "<p>"+ nombre+", fascinado y curioso por la idea de vivir eternamente, al acabar sus clases de la universidad <a href='casa'>vuelve a su casa</a> para coger todo lo necesario " +
         "y hacer un plan para llegar hasta allí</p>",
 
         {
