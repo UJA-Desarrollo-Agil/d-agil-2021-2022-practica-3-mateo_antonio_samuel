@@ -24,6 +24,8 @@ Somos estudiantes del curso 2021/2022 de Ingeniría Informática en la Universid
 
 - [2.2. Descripción de la aventura](#22-descripción-de-la-aventura)
 
+- [2.3. Enlace al juego online](#23-enlace-al-juego-online) 
+
 [3. ¿Qué es Undum?](#3-qué-es-undum)
 
 [4. URL del tablero en trello](#4-url-del-tablero-en-trello)
