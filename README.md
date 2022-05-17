@@ -1,5 +1,5 @@
 # Índice de las prácticas relacionadas con el proyecto grupal
-kajsda
+En este fichero Markdown se documenta las prácticas relacionadas con el desarrollo del proyecto grupal en sí. Debido a la gran cantidad de texto que esto supone hemos realizado un índice que ordena y separa cada práctica. Cada práctica tiene su propio índice, por lo que no se refleja en este para no sobrecargar de información al lector. Haga clic en algún enlace para digirse a cada práctica realizada o bien para ver los autores de las mismas.
 
  - [Autores](#autores)
  - [Práctica 4: Sprint 1](#práctica-4-de-desarrollo-ágil)
