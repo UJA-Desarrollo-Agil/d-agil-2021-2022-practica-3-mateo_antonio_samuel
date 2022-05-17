@@ -537,7 +537,7 @@ de las gráficas y no como una etapa del desarrollo del proyecto global.
 
 #### 6.3.2.1  Burndown
 
-![BurnDownPH](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/métricas/BurnDownPH.png)
+![BurnDownPH](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/metricas/BurnDownPH.png)
 _En la imagen que aparece arriba se aprecia la gráfica Burndown de los puntos de historia del proyecto global_
 
 A esta gráfica le corresponde la siguiente tabla de valores:
@@ -552,7 +552,7 @@ A esta gráfica le corresponde la siguiente tabla de valores:
 
 #### 6.3.2.2  Burn-up
 
-![BurnUpPH](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/métricas/BurnUpPH.png)
+![BurnUpPH](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/metricas/BurnUpPH.png)
 _En la imagen que aparece arriba se aprecia la gráfica Burn-up de los puntos de historia del proyecto global_
 
 A esta gráfica le corresponde la siguiente tabla de valores:
@@ -571,7 +571,7 @@ Para las Historias de Usuario, valoramos el valor asociado a cada una de ellas e
 
 #### 6.3.3.1  Burndown
 
-![BurnDownValor](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/métricas/BurnDownValor.png)
+![BurnDownValor](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/metricas/BurnDownValor.png)
 _En la imagen que aparece arriba se aprecia la gráfica Burndown del valor de las HU._
 
 A esta gráfica le corresponde la siguiente tabla de valores:
@@ -586,7 +586,7 @@ A esta gráfica le corresponde la siguiente tabla de valores:
 
 
 #### 6.3.3.2  Burn-up
-![BurnUpValor](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/métricas/BurnUpValor.png)
+![BurnUpValor](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-mateo_antonio_samuel/blob/master/img/metricas/BurnUpValor.png)
 _En la imagen que aparece arriba se aprecia la gráfica Burn-up del valor de las HU._
 
 A esta gráfica le corresponde la siguiente tabla de valores:
