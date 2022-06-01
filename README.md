@@ -615,6 +615,15 @@ Para conocer la velocidad de trabajo que hemos tenido como grupo, se ha realizad
 En la tabla superior aparece repetida la velocidad media y su desviación estándar correspondiente ya que implica a ambos sprints y
 Markdown no deja unir celdas de tablas.
 
+<table>
+ <tr><th>Sprint</th><th>**Velocidad  (PH hechos en cada sprint)**</th><th>**Velocidad media**</th><th>**Desviación estándar**</th></tr>
+ <tr>
+  <td>Sprint 1</td><td>40</td><td rowspan="2">42</td><td rowspan="2">2,828427125</td>
+ </tr>
+ <tr>
+  <td>Sprint 2</td><td>44</td>
+ </tr>
+ </table>
 ## 6.4. Tablas y gráficas de cada Sprint
 
 Hemos concluido que no vamos a incluir las tablas y gráficas de cada Sprint ya que, según como hemos trabajado en ambos sprints, 
